@@ -1,3 +1,2 @@
-# myHomePage
-Hello world.
-j2ee课程网站
+# J2EE
+J2EE课程网站
