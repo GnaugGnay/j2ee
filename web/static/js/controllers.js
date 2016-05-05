@@ -162,12 +162,13 @@ angular.module('myApp')
     })
     .controller('onlineQuizController', function($scope, $http) {
         $http.post('/main/?ct=api&method=quiz.getQuiz').success(function(response) {
-            var quiz = response.data;
-            $scope.quiz = quiz;
+            $scope.quiz = response.data;
         });
         $scope.submit = function() {
+            var quiz = $scope.quiz;
+            console.log(quiz[0]);
             if (confirm("确认提交？")) {
-                for (data in $scope.quiz) {
+                for (data in quiz) {
                     console.log(data);
                 }
             }
