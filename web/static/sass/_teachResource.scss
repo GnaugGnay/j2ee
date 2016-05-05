@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+//教学资源
+.word-list {
+    .list-item {
+        height: 40px;
+        background-color: #FFF;
+        border-bottom: 1px solid #ccc;
+        line-height: 40px;
+        cursor: pointer;
+        padding: 0 15px;
+        color: #555;
+        font-size: 1.4rem;
+        i {
+            font-size: 1.2rem;
+            float: right;
+        }
+        &:active {
+            opacity: .6;
+        }
+    }
+}
+.teach-resource-nav {
+    .nav-item {
+        padding: 10px 0;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+}
+.ppt-wrap {
+    position: relative;
+    .download-link {
+        position: absolute;
+        left: 10px;
+        bottom: 15px;
+        border-bottom: 1px solid #ccc;
+        a:hover {
+            text-decoration: none;
+        }
+        i { 
+            line-height: 0;
+            background-color: #007aff;
+            color: #fff;
+            font-size: 2.5rem;
+            padding: 8px;
+            border-radius: 5px;
+        }
+    }
+}
+.advice-wrap {
+    background-color: #FFF;
+    padding:20px;
+    padding-bottom: 50px;
+    display: none;
+    border-bottom: 1px solid #ccc;
+    a {
+        color: #333;
+    }
+    span {
+        color: #3394FF;
+    }
+}
+@media (max-width: 992px) {
+    .ppt-wrap {
+        display: none;
+    }
+    .advice-wrap {
+        display: block;
+    }
+}

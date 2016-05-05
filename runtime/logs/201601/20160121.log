@@ -1,0 +1,114 @@
+
+-----------------------------------
+[2016-01-21 10:23:08] 127.0.0.1 http://zao.com/zao.php?ct=login&ac=login
+POST: array (
+  'name' => '114',
+  'password' => '114',
+)
+[2016-01-21 10:23:08]Info: E:\php\zao\web\zao\model\ModAuth.php 25
+SQL: select * from `zao_admin` where `phone` ='114' limit 1(OK:1.466)
+[2016-01-21 10:23:08]Info: E:\php\zao\web\zao\model\ModAuth.php 29
+SQL: update `zao_admin` set `lastLoginIP`='127.0.0.1',  `lastLoginTime`='1453342988' where `phone` = '114' (OK:0.29)
+
+-----------------------------------
+[2016-01-21 10:23:08] 127.0.0.1 http://zao.com/zao.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '9b005916920995f4c018fc4a305a8af3',
+  'dm_open_time_zao' => '1453342988',
+)
+[2016-01-21 10:23:08]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.191)
+[2016-01-21 10:23:08]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.055)
+[2016-01-21 10:23:08]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-21 10:23:11] 127.0.0.1 http://zao.com/zao.php?ct=index&ac=typeList
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '9b005916920995f4c018fc4a305a8af3',
+  'dm_open_time_zao' => '1453342988',
+)
+[2016-01-21 10:23:11]Info: E:\php\zao\web\zao\model\ModGoods.php 70
+SQL: select count(*) as c from `zao_category` where 1 limit 1(OK:0.04)
+[2016-01-21 10:23:11]Info: E:\php\zao\web\zao\model\ModGoods.php 74
+SQL: select * from `zao_category` where 1 order by `cid` asc(OK:0.009)
+
+-----------------------------------
+[2016-01-21 10:23:12] 127.0.0.1 http://zao.com/zao.php?ct=index&ac=typeList
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '9b005916920995f4c018fc4a305a8af3',
+  'dm_open_time_zao' => '1453342988',
+)
+[2016-01-21 10:23:12]Info: E:\php\zao\web\zao\model\ModGoods.php 70
+SQL: select count(*) as c from `zao_category` where 1 limit 1(OK:0.011)
+[2016-01-21 10:23:12]Info: E:\php\zao\web\zao\model\ModGoods.php 74
+SQL: select * from `zao_category` where 1 order by `cid` asc(OK:0)
+
+-----------------------------------
+[2016-01-21 10:23:55] 127.0.0.1 http://zao.com/zao.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '9b005916920995f4c018fc4a305a8af3',
+  'dm_open_time_zao' => '1453342988',
+)
+[2016-01-21 10:23:55]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.013)
+[2016-01-21 10:23:55]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0)
+[2016-01-21 10:23:55]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-21 10:23:57] 127.0.0.1 http://zao.com/zao.php?ct=index&ac=typeList
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '9b005916920995f4c018fc4a305a8af3',
+  'dm_open_time_zao' => '1453342988',
+)
+[2016-01-21 10:23:57]Info: E:\php\zao\web\zao\model\ModGoods.php 70
+SQL: select count(*) as c from `zao_category` where 1 limit 1(OK:0.011)
+[2016-01-21 10:23:57]Info: E:\php\zao\web\zao\model\ModGoods.php 74
+SQL: select * from `zao_category` where 1 order by `cid` asc(OK:0.001)
+
+-----------------------------------
+[2016-01-21 10:34:40] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '9b005916920995f4c018fc4a305a8af3',
+  'dm_open_time_zao' => '1453342988',
+)
+[2016-01-21 10:34:40]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.077)
+[2016-01-21 10:34:40]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.002)
+[2016-01-21 10:34:40]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-21 16:15:30] 127.0.0.1 http://zao.com/zao.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '9b005916920995f4c018fc4a305a8af3',
+  'dm_open_time_zao' => '1453342988',
+)
+[2016-01-21 16:15:30]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:1.531)
+[2016-01-21 16:15:30]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.082)
+[2016-01-21 16:15:30]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac

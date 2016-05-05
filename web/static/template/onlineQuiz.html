@@ -1,0 +1,29 @@
+<div class="text-section">
+    <h2 class="f-24"><b>在线测试</b></h2>
+</div>
+<div class="text-section">
+	<div class="quiz-item" ng-repeat="v in quiz">	
+		<p class="question">{{$index+1}}.{{v.question}}</p>
+		<ul class="answer-list" data-answer="{{answer = v.answer}}">
+			<li class="answer">
+				<input type="radio" name="question_{{$index+1}}">
+				<span>{{v.A}}</span>
+			</li>
+			<li class="answer">
+				<input type="radio" name="question_{{$index+1}}">
+				<span>{{v.B}}</span>
+			</li>
+			<li class="answer">
+				<input type="radio" name="question_{{$index+1}}">
+				<span>{{v.C}}</span>
+			</li>
+			<li class="answer">
+				<input type="radio" name="question_{{$index+1}}">
+				<span>{{v.D}}</span>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="bot-button" ng-click="submit()">
+    <span>提交</span>
+</div>

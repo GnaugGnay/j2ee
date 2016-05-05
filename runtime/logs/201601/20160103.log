@@ -1,0 +1,735 @@
+
+-----------------------------------
+[2016-01-03 15:38:24] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"\\/uploads\\/1511\\/181944125749.jpg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 15:38:24]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.428)
+[2016-01-03 15:38:25]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"\\/uploads\\/1511\\/181944125749.jpg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451806704',  '2016010348545449') (OK:0.591)
+[2016-01-03 15:38:25]Warn: E:\php\zao\web\main\service\SrvPayApi.php 83
+require_once(E:\php\zao\web/system/admin/alipay/alipay_submit.class.php): failed to open stream: No such file or directory
+[2016-01-03 15:38:25]Error: E:\php\zao\web\main\service\SrvPayApi.php 83
+require_once(): Failed opening required 'E:\php\zao\web/system/admin/alipay/alipay_submit.class.php' (include_path='.;C:\php\pear')
+
+-----------------------------------
+[2016-01-03 15:40:53] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"\\/uploads\\/1511\\/181944125749.jpg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 15:40:53]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.045)
+[2016-01-03 15:40:53]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"\\/uploads\\/1511\\/181944125749.jpg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451806853',  '2016010353985748') (OK:0.06)
+[2016-01-03 15:40:53]Warn: E:\php\zao\web\main\service\SrvPayApi.php 83
+require_once(E:\php\zao\web/system/admin/alipay/alipay_submit.class.php): failed to open stream: No such file or directory
+[2016-01-03 15:40:53]Error: E:\php\zao\web\main\service\SrvPayApi.php 83
+require_once(): Failed opening required 'E:\php\zao\web/system/admin/alipay/alipay_submit.class.php' (include_path='.;C:\php\pear')
+
+-----------------------------------
+[2016-01-03 15:41:25] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"\\/uploads\\/1511\\/181944125749.jpg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区华南师范大学主学院',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 15:41:25]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.01)
+[2016-01-03 15:41:25]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"\\/uploads\\/1511\\/181944125749.jpg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区华南师范大学主学院',  '小明',  '15913159968',  '100',  '10',  '1',  '1451806885',  '2016010353525710') (OK:0.094)
+[2016-01-03 15:41:25]Warn: E:\php\zao\web\main\service\SrvPayApi.php 83
+require_once(E:\php\zao\web/system/admin/alipay/alipay_submit.class.php): failed to open stream: No such file or directory
+[2016-01-03 15:41:25]Error: E:\php\zao\web\main\service\SrvPayApi.php 83
+require_once(): Failed opening required 'E:\php\zao\web/system/admin/alipay/alipay_submit.class.php' (include_path='.;C:\php\pear')
+
+-----------------------------------
+[2016-01-03 16:01:22] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:01:22]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.002)
+[2016-01-03 16:01:22]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451808082',  '2016010350515797') (OK:0.133)
+[2016-01-03 16:01:22]Warn: E:\php\zao\web\main\service\SrvPayApi.php 84
+require_once(E:\php\zao\web../thirdlib/alipay/alipay_submit.class.php): failed to open stream: No such file or directory
+[2016-01-03 16:01:22]Error: E:\php\zao\web\main\service\SrvPayApi.php 84
+require_once(): Failed opening required 'E:\php\zao\web../thirdlib/alipay/alipay_submit.class.php' (include_path='.;C:\php\pear')
+
+-----------------------------------
+[2016-01-03 16:01:55] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:01:55]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.01)
+[2016-01-03 16:01:55]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451808115',  '2016010351559756') (OK:0.056)
+[2016-01-03 16:01:55]Warn: E:\php\zao\web\main\service\SrvPayApi.php 84
+require_once(E:\php\zao\web../thirdlib/alipay/alipay_submit.class.php): failed to open stream: No such file or directory
+[2016-01-03 16:01:55]Error: E:\php\zao\web\main\service\SrvPayApi.php 84
+require_once(): Failed opening required 'E:\php\zao\web../thirdlib/alipay/alipay_submit.class.php' (include_path='.;C:\php\pear')
+
+-----------------------------------
+[2016-01-03 16:02:15] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:02:15]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.002)
+[2016-01-03 16:02:15]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451808135',  '2016010355575351') (OK:0.075)
+[2016-01-03 16:02:15]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'state' => false,
+  'code' => '1000',
+  'msg' => '支付单号非法',
+)
+
+-----------------------------------
+[2016-01-03 16:15:59] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:15:59]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.02)
+[2016-01-03 16:15:59]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451808959',  '2016010310252999') (OK:0.085)
+[2016-01-03 16:15:59]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '1000',
+  'd' => '支付单号非法',
+  'ct' => 1451808959,
+)
+
+-----------------------------------
+[2016-01-03 16:16:29] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:16:29]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.055)
+[2016-01-03 16:16:29]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451808989',  '2016010310054100') (OK:0.096)
+[2016-01-03 16:16:29]Error: E:\php\zao\lib\DM.php 228
+自动加载ModUserPay时，文件E:\php\zao\web\main/model/ModUserPay.php不存在
+
+-----------------------------------
+[2016-01-03 16:19:54] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:19:54]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.011)
+[2016-01-03 16:19:54]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451809194',  '2016010397545049') (OK:0.097)
+[2016-01-03 16:19:54]Error: E:\php\zao\lib\DM.php 228
+自动加载ModUserPay时，文件E:\php\zao\web\main/model/ModUserPay.php不存在
+
+-----------------------------------
+[2016-01-03 16:27:27] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:27:27]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.103)
+[2016-01-03 16:27:28]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451809647',  '2016010310210157') (OK:0.046)
+[2016-01-03 16:27:28]Error: E:\php\zao\web\main\model\ModPay.php 19
+SQL: select * from `zao_recharge` where `order_id`='2016010310210157' limit 1(error：Table 'zao.zao_recharge' doesn't exist)
+[2016-01-03 16:27:28]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '1000',
+  'd' => '支付单号非法',
+  'ct' => 1451809648,
+)
+
+-----------------------------------
+[2016-01-03 16:29:54] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:29:54]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.047)
+[2016-01-03 16:29:54]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451809794',  '2016010350495252') (OK:0.047)
+[2016-01-03 16:29:54]Error: E:\php\zao\web\main\model\ModPay.php 19
+SQL: select * from `zao_recharge` where `order_id`='2016010350495252' limit 1(error：Table 'zao.zao_recharge' doesn't exist)
+[2016-01-03 16:29:54]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '1000',
+  'd' => '支付单号非法',
+  'ct' => 1451809794,
+)
+
+-----------------------------------
+[2016-01-03 16:31:40] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 16:31:40]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.012)
+[2016-01-03 16:31:40]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451809900',  '2016010399984952') (OK:0.126)
+[2016-01-03 16:31:40]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010399984952' limit 1(OK:0)
+[2016-01-03 16:31:40]Error: E:\php\zao\web\main\model\ModPay.php 29
+SQL: update `zao_order` set `pay_type`='',  `is_jump`='1',  `jtime`='1451809900' where `order_id` = '2016010399984952' (error：Unknown column 'pay_type' in 'field list')
+[2016-01-03 16:31:40]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'state' => false,
+  'code' => '1002',
+  'msg' => '更新订单状态失败',
+)
+
+-----------------------------------
+[2016-01-03 17:02:20] 127.0.0.1 http://zao.com/api/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 17:02:20]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.05)
+[2016-01-03 17:02:20]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451811740',  '2016010399999997') (OK:0.041)
+[2016-01-03 17:02:20]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010399999997' limit 1(OK:0.01)
+[2016-01-03 17:02:20]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '1001',
+  'd' => '该订单已经支付过，请勿重复支付',
+  'ct' => 1451811740,
+)
+[2016-01-03 17:02:20]Error: E:\php\zao\web\main\index.php 8
+Constant WEB_ROOT already defined
+
+-----------------------------------
+[2016-01-03 17:02:27] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 17:02:27]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.013)
+[2016-01-03 17:02:27]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451811747',  '2016010351534955') (OK:0.04)
+[2016-01-03 17:02:27]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010351534955' limit 1(OK:0)
+[2016-01-03 17:02:27]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '1001',
+  'd' => '该订单已经支付过，请勿重复支付',
+  'ct' => 1451811747,
+)
+
+-----------------------------------
+[2016-01-03 17:10:42] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 17:10:42]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.053)
+[2016-01-03 17:10:42]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451812242',  '2016010350975057') (OK:0.059)
+[2016-01-03 17:10:42]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010350975057' limit 1(OK:0.002)
+[2016-01-03 17:10:42]Warn: E:\php\zao\lib\library\LibUtil.php 66
+配置文件：E:\php\zao\web\main/config/ConfPayAppInfo.php不存在，返回false
+[2016-01-03 17:10:43]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'state' => true,
+  'msg' => '成功生成订单！',
+  'url' => '/aliqr.php?id=',
+)
+
+-----------------------------------
+[2016-01-03 17:13:34] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 17:13:34]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.011)
+[2016-01-03 17:13:34]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451812414',  '2016010310110010') (OK:0.08)
+[2016-01-03 17:13:35]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010310110010' limit 1(OK:0.002)
+[2016-01-03 17:13:35]Warn: E:\php\zao\lib\library\LibUtil.php 66
+配置文件：E:\php\zao\web\main/config/ConfPayAppInfo.php不存在，返回false
+[2016-01-03 17:13:35]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'state' => true,
+  'msg' => '成功生成订单！',
+  'url' => '/aliqr.php?id=2016010310110010',
+)
+
+-----------------------------------
+[2016-01-03 17:14:13] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010310110010
+[2016-01-03 17:14:13]Warn: E:\php\zao\web\main\controller\CtlCall.php 15
+require_once(E:\php\zao\web\main/alipay/alipay_submit.class.php): failed to open stream: No such file or directory
+[2016-01-03 17:14:13]Error: E:\php\zao\web\main\controller\CtlCall.php 15
+require_once(): Failed opening required 'E:\php\zao\web\main/alipay/alipay_submit.class.php' (include_path='.;C:\php\pear')
+
+-----------------------------------
+[2016-01-03 17:18:15] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 17:18:15]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.045)
+[2016-01-03 17:18:15]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451812695',  '2016010355971025') (OK:0.058)
+[2016-01-03 17:18:15]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010355971025' limit 1(OK:0.001)
+[2016-01-03 17:18:15]Warn: E:\php\zao\lib\library\LibUtil.php 66
+配置文件：E:\php\zao\web\main/config/ConfPayAppInfo.php不存在，返回false
+[2016-01-03 17:18:15]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'state' => true,
+  'msg' => '成功生成订单！',
+  'url' => '/aliqr.php?id=2016010355971025',
+)
+
+-----------------------------------
+[2016-01-03 17:54:11] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 17:54:11]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.087)
+[2016-01-03 17:54:11]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451814851',  '2016010351571005') (OK:0.065)
+[2016-01-03 17:54:11]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010351571005' limit 1(OK:0.002)
+[2016-01-03 17:54:11]Warn: E:\php\zao\lib\library\LibUtil.php 66
+配置文件：E:\php\zao\web\main/config/ConfPayAppInfo.php不存在，返回false
+[2016-01-03 17:54:11]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => 0,
+  'd' => '/aliqr.php?id=2016010351571005',
+  'ct' => 1451814851,
+)
+
+-----------------------------------
+[2016-01-03 17:57:50] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 17:57:50]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.065)
+[2016-01-03 17:57:50]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451815070',  '2016010310157565') (OK:0.059)
+[2016-01-03 17:57:50]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010310157565' limit 1(OK:0.001)
+[2016-01-03 17:57:50]Warn: E:\php\zao\lib\library\LibUtil.php 66
+配置文件：E:\php\zao\web\main/config/ConfPayAppInfo.php不存在，返回false
+[2016-01-03 17:57:50]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => 0,
+  'd' => '/aliqr.php?id=2016010310157565',
+  'ct' => 1451815070,
+)
+
+-----------------------------------
+[2016-01-03 17:58:43] 127.0.0.1 http://zao.com/main//aliqr.php?id=2016010310157565
+[2016-01-03 17:58:43]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 29 and defined
+[2016-01-03 17:58:43]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 29 and defined
+[2016-01-03 17:58:43]Warn: E:\php\zao\thirdlib\alipay\alipay_rsa.function.php 19
+file_get_contents(E:\php\zao\webrsa_private_key.pem): failed to open stream: No such file or directory
+[2016-01-03 17:58:43]Warn: E:\php\zao\thirdlib\alipay\alipay_rsa.function.php 21
+openssl_sign(): supplied key param cannot be coerced into a private key
+[2016-01-03 17:58:43]Warn: E:\php\zao\thirdlib\alipay\alipay_rsa.function.php 22
+openssl_free_key() expects parameter 1 to be resource, boolean given
+
+-----------------------------------
+[2016-01-03 18:04:39] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:04:39]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:04:39]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:04:49] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:04:49]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:04:49]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:04:49] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:04:49]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:04:49]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:04:50] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:04:50]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:04:50]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:04:52] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:04:52]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:04:52]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:04:57] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:04:57]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:04:57]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:04:58] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:04:58]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:04:58]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:05:05] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:05:05]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:05:05]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:05:07] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:05:07]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:05:07]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:05:08] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:05:08]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:05:08]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:05:14] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:05:14]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:05:14]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+
+-----------------------------------
+[2016-01-03 18:05:19] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010351571005
+[2016-01-03 18:05:19]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:05:19]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 28 and defined
+[2016-01-03 18:05:19]Warn: E:\php\zao\thirdlib\alipay\alipay_rsa.function.php 19
+file_get_contents(E:\php\zao\web/file/pay/alipday/rsa_private_key.pem): failed to open stream: No such file or directory
+[2016-01-03 18:05:19]Warn: E:\php\zao\thirdlib\alipay\alipay_rsa.function.php 21
+openssl_sign(): supplied key param cannot be coerced into a private key
+[2016-01-03 18:05:19]Warn: E:\php\zao\thirdlib\alipay\alipay_rsa.function.php 22
+openssl_free_key() expects parameter 1 to be resource, boolean given
+
+-----------------------------------
+[2016-01-03 18:39:21] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 18:39:21]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.053)
+[2016-01-03 18:39:22]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451817561',  '2016010357985753') (OK:0.286)
+[2016-01-03 18:39:22]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010357985753' limit 1(OK:0.001)
+[2016-01-03 18:39:22]Warn: E:\php\zao\lib\library\LibUtil.php 66
+配置文件：E:\php\zao\web\main/config/ConfPayAppInfo.php不存在，返回false
+[2016-01-03 18:39:22]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => 0,
+  'd' => '/aliqr.php?id=2016010357985753',
+  'ct' => 1451817562,
+)
+
+-----------------------------------
+[2016-01-03 18:39:50] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010357985753
+[2016-01-03 18:39:50]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+[2016-01-03 18:39:50]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+
+-----------------------------------
+[2016-01-03 18:39:52] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010357985753
+[2016-01-03 18:39:52]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+[2016-01-03 18:39:52]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+
+-----------------------------------
+[2016-01-03 18:39:53] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010357985753
+[2016-01-03 18:39:53]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+[2016-01-03 18:39:53]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+
+-----------------------------------
+[2016-01-03 18:39:55] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010357985753
+[2016-01-03 18:39:55]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+[2016-01-03 18:39:55]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+
+-----------------------------------
+[2016-01-03 18:40:01] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010357985753
+[2016-01-03 18:40:01]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+[2016-01-03 18:40:01]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+
+-----------------------------------
+[2016-01-03 18:40:32] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010357985753
+[2016-01-03 18:40:32]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+[2016-01-03 18:40:32]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+
+-----------------------------------
+[2016-01-03 18:41:33] 127.0.0.1 http://zao.com/main/aliqr.php?id=2016010357985753
+[2016-01-03 18:41:33]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 2 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+[2016-01-03 18:41:33]Warn: E:\php\zao\thirdlib\alipay\alipay_submit.class.php 95
+Missing argument 3 for AlipaySubmit::buildRequestForm(), called in E:\php\zao\web\main\controller\CtlCall.php on line 26 and defined
+
+-----------------------------------
+[2016-01-03 18:44:48] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 18:44:48]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.016)
+[2016-01-03 18:44:48]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451817888',  '2016010348100974') (OK:0.043)
+[2016-01-03 18:44:48]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010348100974' limit 1(OK:0.002)
+[2016-01-03 18:44:48]Warn: E:\php\zao\lib\library\LibUtil.php 66
+配置文件：E:\php\zao\web\main/config/ConfPayAppInfo.php不存在，返回false
+[2016-01-03 18:44:48]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => 0,
+  'd' => '/aliqr.php?id=2016010348100974',
+  'ct' => 1451817888,
+)
+
+-----------------------------------
+[2016-01-03 18:47:36] 127.0.0.1 http://zao.com/main/?ct=api&method=order.payorder
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'order_detail' => '[{"gid":1,"name":"\\u8863\\u670d","img":"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg","price":100,"count":1}]',
+  'nickname' => '小明',
+  'address' => '广州市天河区天河北路',
+  'consignee' => '小明',
+  'phone' => '15913159968',
+  'money' => '100',
+  'postage' => '10',
+  'type' => '2',
+)
+[2016-01-03 18:47:36]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.017)
+[2016-01-03 18:47:36]Info: E:\php\zao\web\main\model\ModOrder.php 37
+SQL: insert into `zao_order` (`uid`, `order_detail`, `nickname`, `address`, `consignee`, `phone`, `money`, `postage`, `trade_state`, `ct`, `order_id`) values ('195',  '[{\"gid\":1,\"name\":\"\\u8863\\u670d\",\"img\":\"http://d05.res.meilishuo.net/pic/_o/5e/fc/1b0f33110e260fb4eeda54b9585c_850_850.jpeg\",\"price\":100,\"count\":1}]',  '小明',  '广州市天河区天河北路',  '小明',  '15913159968',  '100',  '10',  '1',  '1451818056',  '2016010356509853') (OK:0.049)
+[2016-01-03 18:47:36]Info: E:\php\zao\web\main\model\ModPay.php 17
+SQL: select * from `zao_order` where `order_id`='2016010356509853' limit 1(OK:0)
+[2016-01-03 18:47:36]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => 0,
+  'd' => '/aliqr.php?id=2016010356509853',
+  'ct' => 1451818056,
+)

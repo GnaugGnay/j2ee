@@ -1,0 +1,334 @@
+
+-----------------------------------
+[2016-01-25 19:02:25] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getgoodslistbytag
+POST: array (
+  'gid' => '33',
+)
+[2016-01-25 19:02:25]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+  ),
+  'ct' => 1453719745,
+)
+
+-----------------------------------
+[2016-01-25 19:03:14] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getgoodslistbytag
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '5',
+)
+[2016-01-25 19:03:14]Info: E:\php\zao\web\main\model\ModGoods.php 69
+SQL: select a.*, b.nickname, b.portrait, c.is_fav, d.cat_one, d.cat_two from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+left join `zao_goods_fav` c on 2147483647 = c.uid and a.gid = c.gid
+left join `zao_category` d on a.cid = d.cid
+where 1 and a.is_del = '0' and a.tag like '%5%' order by a.ct
+desc  limit 0, 300(OK:0.048)
+[2016-01-25 19:03:14]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+  ),
+  'ct' => 1453719794,
+)
+
+-----------------------------------
+[2016-01-25 19:04:15] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getGoodsListByTag
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '5',
+)
+[2016-01-25 19:04:15]Info: E:\php\zao\web\main\model\ModGoods.php 69
+SQL: select a.*, b.nickname, b.portrait, c.is_fav, d.cat_one, d.cat_two from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+left join `zao_goods_fav` c on 2147483647 = c.uid and a.gid = c.gid
+left join `zao_category` d on a.cid = d.cid
+where 1 and a.is_del = '0' and a.tag like '%5%' order by a.ct
+desc  limit 0, 300(OK:0.088)
+[2016-01-25 19:04:15]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+  ),
+  'ct' => 1453719855,
+)
+
+-----------------------------------
+[2016-01-25 19:04:23] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getGoodsListByTag
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '5',
+)
+[2016-01-25 19:04:23]Info: E:\php\zao\web\main\model\ModGoods.php 69
+SQL: select a.*, b.nickname, b.portrait, c.is_fav, d.cat_one, d.cat_two from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+left join `zao_goods_fav` c on 2147483647 = c.uid and a.gid = c.gid
+left join `zao_category` d on a.cid = d.cid
+where 1 and a.is_del = '0' and a.tag like '%5%' order by a.ct
+desc  limit 0, 300(OK:0.012)
+[2016-01-25 19:04:23]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+  ),
+  'ct' => 1453719863,
+)
+
+-----------------------------------
+[2016-01-25 19:04:37] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getGoodsListByTag
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '5',
+)
+[2016-01-25 19:04:37]Info: E:\php\zao\web\main\model\ModGoods.php 69
+SQL: select a.*, b.nickname, b.portrait, c.is_fav, d.cat_one, d.cat_two from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+left join `zao_goods_fav` c on 2147483647 = c.uid and a.gid = c.gid
+left join `zao_category` d on a.cid = d.cid
+where 1 and a.is_del = '0' and a.tag like '%5%' order by a.ct
+desc  limit 0, 300(OK:0.029)
+[2016-01-25 19:04:37]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+  ),
+  'ct' => 1453719877,
+)
+
+-----------------------------------
+[2016-01-25 19:05:19] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getGoodsListByTag
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '仙',
+)
+[2016-01-25 19:05:19]Info: E:\php\zao\web\main\model\ModGoods.php 69
+SQL: select a.*, b.nickname, b.portrait, c.is_fav, d.cat_one, d.cat_two from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+left join `zao_goods_fav` c on 2147483647 = c.uid and a.gid = c.gid
+left join `zao_category` d on a.cid = d.cid
+where 1 and a.is_del = '0' and a.tag like '%仙%' order by a.ct
+desc  limit 0, 300(OK:0.012)
+[2016-01-25 19:05:19]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'gid' => '48',
+      'name' => '仙人跳',
+      'price' => '120.00',
+      'number' => '99999',
+      'type' => '1',
+      'detail' => '',
+      'cid' => '1',
+      'img' => 'http://zao.com/uploads/goods/1601/051019471442.png',
+      'ct' => '1451989249',
+      'uid' => '0',
+      'ishome' => '0',
+      'tag' => '仙人,有趣,可爱',
+      'fav_count' => '0',
+      'purchased_count' => '300',
+      'is_del' => '0',
+      'nickname' => '群主',
+      'portrait' => 'http://v1.qzone.cc/avatar/201405/01/01/40/53613582688bd260.jpg%21200x200.jpg',
+      'is_fav' => NULL,
+      'cat_one' => 'iPhone6s,iPhone6 Plus,iPhone6,iPhone4',
+      'cat_two' => '白色硅胶,透明巧克力',
+    ),
+    1 => 
+    array (
+      'gid' => '47',
+      'name' => '仙人掌',
+      'price' => '120.00',
+      'number' => '99999',
+      'type' => '1',
+      'detail' => '',
+      'cid' => '1',
+      'img' => 'http://zao.com/uploads/goods/1601/051024353721.png',
+      'ct' => '1451960678',
+      'uid' => '0',
+      'ishome' => '0',
+      'tag' => '仙人,有趣,可爱',
+      'fav_count' => '0',
+      'purchased_count' => '300',
+      'is_del' => '0',
+      'nickname' => '群主',
+      'portrait' => 'http://v1.qzone.cc/avatar/201405/01/01/40/53613582688bd260.jpg%21200x200.jpg',
+      'is_fav' => NULL,
+      'cat_one' => 'iPhone6s,iPhone6 Plus,iPhone6,iPhone4',
+      'cat_two' => '白色硅胶,透明巧克力',
+    ),
+    2 => 
+    array (
+      'gid' => '46',
+      'name' => '仙人掌',
+      'price' => '120.00',
+      'number' => '99999',
+      'type' => '1',
+      'detail' => '这是仙人掌',
+      'cid' => '1',
+      'img' => 'http://zao.com/uploads/goods/1512/201358298133.png',
+      'ct' => '1450591184',
+      'uid' => '0',
+      'ishome' => '1',
+      'tag' => '仙人,有趣,可爱',
+      'fav_count' => '0',
+      'purchased_count' => '300',
+      'is_del' => '0',
+      'nickname' => '群主',
+      'portrait' => 'http://v1.qzone.cc/avatar/201405/01/01/40/53613582688bd260.jpg%21200x200.jpg',
+      'is_fav' => NULL,
+      'cat_one' => 'iPhone6s,iPhone6 Plus,iPhone6,iPhone4',
+      'cat_two' => '白色硅胶,透明巧克力',
+    ),
+  ),
+  'ct' => 1453719919,
+)
+
+-----------------------------------
+[2016-01-25 19:05:29] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getGoodsListByTag
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '',
+)
+[2016-01-25 19:05:29]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+  ),
+  'ct' => 1453719929,
+)
+
+-----------------------------------
+[2016-01-25 19:52:53] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.get
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '仙',
+  'type' => '54',
+)
+[2016-01-25 19:52:53]Error: E:\php\zao\web\main\service\SrvApi.php 45
+Call to undefined method SrvGoodsApi::get()
+
+-----------------------------------
+[2016-01-25 19:53:10] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getGoodsList
+POST: array (
+  'gid' => '33',
+  'uid' => '15913159968',
+  'page' => '1',
+  'num' => '300',
+  'keyword' => '仙',
+  'type' => '54',
+)
+[2016-01-25 19:53:10]Info: E:\php\zao\web\main\model\ModGoods.php 48
+SQL: select a.*, b.nickname, b.portrait, c.is_fav, d.cat_one, d.cat_two from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+left join `zao_goods_fav` c on 2147483647 = c.uid and a.gid = c.gid
+left join `zao_category` d on a.cid = d.cid 
+where 1 and a.is_del = '0' and a.name like '%仙%' order by a.ct
+desc  limit 0, 300(OK:0.004)
+[2016-01-25 19:53:10]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'gid' => '48',
+      'name' => '仙人跳',
+      'price' => '120.00',
+      'number' => '99999',
+      'type' => '1',
+      'detail' => '',
+      'cid' => '1',
+      'img' => 'http://zao.com/uploads/goods/1601/051019471442.png',
+      'ct' => '1451989249',
+      'uid' => '0',
+      'ishome' => '0',
+      'tag' => '仙人,有趣,可爱',
+      'fav_count' => '0',
+      'purchased_count' => '300',
+      'is_del' => '0',
+      'nickname' => '群主',
+      'portrait' => 'http://v1.qzone.cc/avatar/201405/01/01/40/53613582688bd260.jpg%21200x200.jpg',
+      'is_fav' => NULL,
+      'cat_one' => 'iPhone6s,iPhone6 Plus,iPhone6,iPhone4',
+      'cat_two' => '白色硅胶,透明巧克力',
+    ),
+    1 => 
+    array (
+      'gid' => '47',
+      'name' => '仙人掌',
+      'price' => '120.00',
+      'number' => '99999',
+      'type' => '1',
+      'detail' => '',
+      'cid' => '1',
+      'img' => 'http://zao.com/uploads/goods/1601/051024353721.png',
+      'ct' => '1451960678',
+      'uid' => '0',
+      'ishome' => '0',
+      'tag' => '仙人,有趣,可爱',
+      'fav_count' => '0',
+      'purchased_count' => '300',
+      'is_del' => '0',
+      'nickname' => '群主',
+      'portrait' => 'http://v1.qzone.cc/avatar/201405/01/01/40/53613582688bd260.jpg%21200x200.jpg',
+      'is_fav' => NULL,
+      'cat_one' => 'iPhone6s,iPhone6 Plus,iPhone6,iPhone4',
+      'cat_two' => '白色硅胶,透明巧克力',
+    ),
+    2 => 
+    array (
+      'gid' => '46',
+      'name' => '仙人掌',
+      'price' => '120.00',
+      'number' => '99999',
+      'type' => '1',
+      'detail' => '这是仙人掌',
+      'cid' => '1',
+      'img' => 'http://zao.com/uploads/goods/1512/201358298133.png',
+      'ct' => '1450591184',
+      'uid' => '0',
+      'ishome' => '1',
+      'tag' => '仙人,有趣,可爱',
+      'fav_count' => '0',
+      'purchased_count' => '300',
+      'is_del' => '0',
+      'nickname' => '群主',
+      'portrait' => 'http://v1.qzone.cc/avatar/201405/01/01/40/53613582688bd260.jpg%21200x200.jpg',
+      'is_fav' => NULL,
+      'cat_one' => 'iPhone6s,iPhone6 Plus,iPhone6,iPhone4',
+      'cat_two' => '白色硅胶,透明巧克力',
+    ),
+  ),
+  'ct' => 1453722790,
+)

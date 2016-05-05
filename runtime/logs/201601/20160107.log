@@ -1,0 +1,626 @@
+
+-----------------------------------
+[2016-01-07 15:38:44] 127.0.0.1 http://zao.com/zao.php?ct=login&ac=login
+POST: array (
+  'name' => '114',
+  'password' => '114',
+)
+[2016-01-07 15:38:44]Info: E:\php\zao\web\zao\model\ModAuth.php 25
+SQL: select * from `zao_admin` where `phone` ='114' limit 1(OK:1.061)
+[2016-01-07 15:38:44]Info: E:\php\zao\web\zao\model\ModAuth.php 29
+SQL: update `zao_admin` set `lastLoginIP`='127.0.0.1',  `lastLoginTime`='1452152324' where `phone` = '114' (OK:0.197)
+
+-----------------------------------
+[2016-01-07 15:38:44] 127.0.0.1 http://zao.com/zao.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:44]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.174)
+[2016-01-07 15:38:45]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.151)
+[2016-01-07 15:38:45]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:47] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:47]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.078)
+[2016-01-07 15:38:47]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.002)
+[2016-01-07 15:38:47]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:48] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=message
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:48]Error: E:\php\zao\web\zao\model\ModUser.php 106
+SQL: select count(*) as c from `zao_message` where 1  and a.type=0 limit 1(error：Unknown column 'a.type' in 'where clause')
+[2016-01-07 15:38:48]Info: E:\php\zao\web\zao\model\ModUser.php 109
+SQL: select a.*, b.nickname, c.name,c.img from `zao_message` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1  and a.type=0
+order by `ct` desc  limit 0, 10(OK:0.002)
+
+-----------------------------------
+[2016-01-07 15:38:49] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=message
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:49]Error: E:\php\zao\web\zao\model\ModUser.php 106
+SQL: select count(*) as c from `zao_message` where 1  and a.type=0 limit 1(error：Unknown column 'a.type' in 'where clause')
+[2016-01-07 15:38:49]Info: E:\php\zao\web\zao\model\ModUser.php 109
+SQL: select a.*, b.nickname, c.name,c.img from `zao_message` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1  and a.type=0
+order by `ct` desc  limit 0, 10(OK:0.001)
+
+-----------------------------------
+[2016-01-07 15:38:50] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=message
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:50]Error: E:\php\zao\web\zao\model\ModUser.php 106
+SQL: select count(*) as c from `zao_message` where 1  and a.type=0 limit 1(error：Unknown column 'a.type' in 'where clause')
+[2016-01-07 15:38:50]Info: E:\php\zao\web\zao\model\ModUser.php 109
+SQL: select a.*, b.nickname, c.name,c.img from `zao_message` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1  and a.type=0
+order by `ct` desc  limit 0, 10(OK:0.002)
+
+-----------------------------------
+[2016-01-07 15:38:51] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=comment
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:51]Info: E:\php\zao\web\zao\model\ModUser.php 72
+SQL: select count(*) as c from `zao_comment` where 1 and is_del=0 limit 1(OK:0.134)
+[2016-01-07 15:38:51]Info: E:\php\zao\web\zao\model\ModUser.php 75
+SQL: select a.*, b.nickname, c.name,c.img from `zao_comment` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1 and a.is_del=0
+order by `ct` desc  limit 0, 10(OK:0.002)
+
+-----------------------------------
+[2016-01-07 15:38:52] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:52]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.012)
+[2016-01-07 15:38:52]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:38:52]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:53] 127.0.0.1 http://zao.com/zao.php?ct=trade
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:53]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' limit 1(OK:0.066)
+[2016-01-07 15:38:53]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' order by `ct` desc  limit 0, 5(OK:0.002)
+[2016-01-07 15:38:53]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:55] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=1
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:55]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='1' limit 1(OK:0.015)
+[2016-01-07 15:38:55]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='1' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-07 15:38:55]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:56] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=2
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:56]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='2' limit 1(OK:0.011)
+[2016-01-07 15:38:56]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='2' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-07 15:38:56]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:57] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=3
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:57]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='3' limit 1(OK:0.011)
+[2016-01-07 15:38:57]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='3' order by `ct` desc  limit 0, 5(OK:0.002)
+[2016-01-07 15:38:57]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:57] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=4
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:57]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='4' limit 1(OK:0.024)
+[2016-01-07 15:38:57]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' and `trade_state` ='4' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-07 15:38:57]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:38:58] 127.0.0.1 http://zao.com/zao.php?ct=set
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:38:58]Info: E:\php\zao\web\zao\model\ModSet.php 18
+SQL: select count(*) as c from zao_banner limit 1(OK:0.056)
+[2016-01-07 15:38:58]Info: E:\php\zao\web\zao\model\ModSet.php 20
+SQL: select * from zao_banner(OK:0.058)
+[2016-01-07 15:38:58]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:00] 127.0.0.1 http://zao.com/zao.php?index.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:00]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.014)
+[2016-01-07 15:39:00]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:39:00]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:00] 127.0.0.1 http://zao.com/zao.php?ct=trade
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:00]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' limit 1(OK:0.012)
+[2016-01-07 15:39:00]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-07 15:39:00]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:01] 127.0.0.1 http://zao.com/zao.php?ct=trade&ac=userBenefit
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:01]Info: E:\php\zao\web\zao\model\ModTrade.php 100
+SQL: select count(*) as c from `zao_user_benefit` a, `zao_user` b where 1 and a.uid_sell = b.uid limit 1(OK:0.064)
+[2016-01-07 15:39:01]Info: E:\php\zao\web\zao\model\ModTrade.php 102
+SQL: select a.*, b.nickname AS nickname_seller, c.nickname AS nickname_buyer, d.name from zao_user_benefit a
+left JOIN zao_user b on b.uid = a.uid_sell
+LEFT JOIN zao_user c on c.uid = a.uid_buy
+LEFT JOIN zao_goods d on d.gid = a.gid
+where 1 
+order by `ct`
+desc  limit 0, 10(OK:0.002)
+
+-----------------------------------
+[2016-01-07 15:39:02] 127.0.0.1 http://zao.com/zao.php?ct=trade&ac=benefitOutlays
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:02]Info: E:\php\zao\web\zao\model\ModTrade.php 124
+SQL: select count(*) as c from `zao_user_deal` a, `zao_user` b where 1 and a.uid = b.uid and type=1 limit 1(OK:0.063)
+[2016-01-07 15:39:02]Info: E:\php\zao\web\zao\model\ModTrade.php 126
+SQL: select a.*,b.nickname,b.phone from `zao_user_deal` a, `zao_user` b
+ WHERE b.uid=a.uid and type=1
+ order by `ct` desc  limit 0, 10(OK:0.001)
+
+-----------------------------------
+[2016-01-07 15:39:11] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:11]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.011)
+[2016-01-07 15:39:11]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.002)
+[2016-01-07 15:39:12]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:12] 127.0.0.1 http://zao.com/zao.php?index.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:12]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.012)
+[2016-01-07 15:39:12]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:39:12]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:13] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:13]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.014)
+[2016-01-07 15:39:13]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:39:13]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:14] 127.0.0.1 http://zao.com/zao.php?ct=trade
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:14]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' limit 1(OK:0.012)
+[2016-01-07 15:39:14]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-07 15:39:14]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:14] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:14]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.011)
+[2016-01-07 15:39:14]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.002)
+[2016-01-07 15:39:14]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:15] 127.0.0.1 http://zao.com/zao.php?index.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:15]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.011)
+[2016-01-07 15:39:15]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:39:15]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:21] 127.0.0.1 http://zao.com/zao.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:21]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.009)
+[2016-01-07 15:39:21]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:39:21]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:39:32] 127.0.0.1 http://zao.com/zao.php?ct=index&ac=addGoods
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:32]Info: E:\php\zao\web\zao\model\ModGoods.php 70
+SQL: select count(*) as c from `zao_category` where 1 limit 1(OK:0.033)
+[2016-01-07 15:39:32]Info: E:\php\zao\web\zao\model\ModGoods.php 74
+SQL: select * from `zao_category` where 1 order by `cid` asc(OK:0.001)
+[2016-01-07 15:39:32]Error: E:\php\zao\web\zao\model\ModGoods.php 41
+SQL: select * from `zao_goods` WHERE `gid`= limit 1(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 1' at line 1)
+
+-----------------------------------
+[2016-01-07 15:39:35] 127.0.0.1 http://zao.com/zao.php?ct=index&ac=addGoods&gid=50
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:39:35]Info: E:\php\zao\web\zao\model\ModGoods.php 70
+SQL: select count(*) as c from `zao_category` where 1 limit 1(OK:0.03)
+[2016-01-07 15:39:35]Info: E:\php\zao\web\zao\model\ModGoods.php 74
+SQL: select * from `zao_category` where 1 order by `cid` asc(OK:0.002)
+[2016-01-07 15:39:35]Info: E:\php\zao\web\zao\model\ModGoods.php 41
+SQL: select * from `zao_goods` WHERE `gid`=50 limit 1(OK:0.001)
+
+-----------------------------------
+[2016-01-07 15:40:10] 127.0.0.1 http://zao.com/zao.php?ct=index&ac=createGoods
+POST: array (
+  'data' => '{"gid":"50","name":"1231","type":1,"ishome":"0","cid":"1","price":"12.00","number":"3000","purchased_count":"200","detail":"","tag":"123,3213,32131,321","img":"http://zao.com/uploads/goods/1601/071539...[LONG TEXT]',
+)
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:10]Info: E:\php\zao\web\zao\model\ModGoods.php 89
+SQL: insert into `zao_goods` (`gid`, `name`, `type`, `ishome`, `cid`, `price`, `number`, `purchased_count`, `detail`, `tag`, `img`, `ct`) values ('50',  '1231',  '1',  '0',  '1',  '12.00',  '3000',  '200',  '',  '123,3213,32131,321',  'http://zao.com/uploads/goods/1601/071539431151.png',  '1452152410')  on duplicate key update `gid`='50',  `name`='1231',  `type`='1',  `ishome`='0',  `cid`='1',  `price`='12.00',  `number`='3000',  `purchased_count`='200',  `detail`='',  `tag`='123,3213,32131,321',  `img`='http://zao.com/uploads/goods/1601/071539431151.png',  `ct`='1452152410' (OK:0.116)
+
+-----------------------------------
+[2016-01-07 15:40:11] 127.0.0.1 http://zao.com/zao.php?ct=index
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:11]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.017)
+[2016-01-07 15:40:11]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.002)
+[2016-01-07 15:40:11]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:40:19] 127.0.0.1 http://zao.com/zao.php?ct=index&ac=typeList
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:19]Info: E:\php\zao\web\zao\model\ModGoods.php 70
+SQL: select count(*) as c from `zao_category` where 1 limit 1(OK:0.023)
+[2016-01-07 15:40:19]Info: E:\php\zao\web\zao\model\ModGoods.php 74
+SQL: select * from `zao_category` where 1 order by `cid` asc(OK:0.001)
+
+-----------------------------------
+[2016-01-07 15:40:20] 127.0.0.1 http://zao.com/zao.php?ct=index
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:20]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.027)
+[2016-01-07 15:40:20]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:40:20]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:40:21] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:21]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.014)
+[2016-01-07 15:40:21]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:40:21]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:40:22] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=comment
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:22]Info: E:\php\zao\web\zao\model\ModUser.php 72
+SQL: select count(*) as c from `zao_comment` where 1 and is_del=0 limit 1(OK:0.011)
+[2016-01-07 15:40:22]Info: E:\php\zao\web\zao\model\ModUser.php 75
+SQL: select a.*, b.nickname, c.name,c.img from `zao_comment` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1 and a.is_del=0
+order by `ct` desc  limit 0, 10(OK:0.001)
+
+-----------------------------------
+[2016-01-07 15:40:23] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=message
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:23]Error: E:\php\zao\web\zao\model\ModUser.php 106
+SQL: select count(*) as c from `zao_message` where 1  and a.type=0 limit 1(error：Unknown column 'a.type' in 'where clause')
+[2016-01-07 15:40:23]Info: E:\php\zao\web\zao\model\ModUser.php 109
+SQL: select a.*, b.nickname, c.name,c.img from `zao_message` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1  and a.type=0
+order by `ct` desc  limit 0, 10(OK:0.001)
+
+-----------------------------------
+[2016-01-07 15:40:24] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=message
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:24]Error: E:\php\zao\web\zao\model\ModUser.php 106
+SQL: select count(*) as c from `zao_message` where 1  and a.type=0 limit 1(error：Unknown column 'a.type' in 'where clause')
+[2016-01-07 15:40:24]Info: E:\php\zao\web\zao\model\ModUser.php 109
+SQL: select a.*, b.nickname, c.name,c.img from `zao_message` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1  and a.type=0
+order by `ct` desc  limit 0, 10(OK:0)
+
+-----------------------------------
+[2016-01-07 15:40:26] 127.0.0.1 http://zao.com/zao.php?ct=user&ac=message
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:26]Error: E:\php\zao\web\zao\model\ModUser.php 106
+SQL: select count(*) as c from `zao_message` where 1  and a.type=0 limit 1(error：Unknown column 'a.type' in 'where clause')
+[2016-01-07 15:40:26]Info: E:\php\zao\web\zao\model\ModUser.php 109
+SQL: select a.*, b.nickname, c.name,c.img from `zao_message` a
+left join `zao_user` b ON a.uid = b.uid
+left join `zao_goods` c ON a.gid = c.gid
+where 1  and a.type=0
+order by `ct` desc  limit 0, 10(OK:0.001)
+
+-----------------------------------
+[2016-01-07 15:40:27] 127.0.0.1 http://zao.com/zao.php?ct=trade
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:27]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' limit 1(OK:0.012)
+[2016-01-07 15:40:27]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-07 15:40:27]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:40:28] 127.0.0.1 http://zao.com/zao.php?ct=set
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:28]Info: E:\php\zao\web\zao\model\ModSet.php 18
+SQL: select count(*) as c from zao_banner limit 1(OK:0.004)
+[2016-01-07 15:40:28]Info: E:\php\zao\web\zao\model\ModSet.php 20
+SQL: select * from zao_banner(OK:0.002)
+[2016-01-07 15:40:28]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:40:29] 127.0.0.1 http://zao.com/zao.php?ct=trade
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:29]Info: E:\php\zao\web\zao\model\ModTrade.php 46
+SQL: select count(*) as c from `zao_order` where 1  and `is_del` = '0' limit 1(OK:0.001)
+[2016-01-07 15:40:29]Info: E:\php\zao\web\zao\model\ModTrade.php 49
+SQL: select * from `zao_order` where 1  and `is_del` = '0' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-07 15:40:29]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:40:30] 127.0.0.1 http://zao.com/zao.php?ct=user
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:40:30]Info: E:\php\zao\web\zao\model\ModUser.php 32
+SQL: select count(*) as c from `zao_user` where 1 limit 1(OK:0.012)
+[2016-01-07 15:40:30]Info: E:\php\zao\web\zao\model\ModUser.php 35
+SQL: select * from `zao_user`
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:40:30]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-07 15:41:08] 127.0.0.1 http://zao.com/zao.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => '3031b8300d2bfb7dc1d1b9be6f317f66',
+  'dm_open_time_zao' => '1452152324',
+)
+[2016-01-07 15:41:08]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.018)
+[2016-01-07 15:41:08]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-07 15:41:08]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac

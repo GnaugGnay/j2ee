@@ -1,0 +1,815 @@
+
+-----------------------------------
+[2016-05-04 08:46:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 08:46:48]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-04 08:48:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 08:48:15]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-04 08:48:16]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-04 08:48:16]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-04 08:48:16]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-04 08:48:16]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-04 08:48:16]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-04 08:48:16]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-04 08:53:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 08:53:12]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-04 08:53:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-04 08:53:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-04 08:53:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-04 08:53:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-04 08:53:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-04 08:53:12]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-04 08:58:54] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 08:58:54]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-04 08:59:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 08:59:13]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-04 08:59:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 08:59:19]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-04 08:59:19]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-04 08:59:19]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-04 08:59:19]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-04 08:59:19]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-04 08:59:19]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-04 08:59:19]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-04 08:59:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 08:59:32]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-04 08:59:32]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-04 08:59:32]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-04 08:59:32]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-04 08:59:32]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-04 08:59:32]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-04 08:59:32]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-04 09:15:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 09:15:56]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 09:15:56]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-04 09:15:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462324557,
+)
+
+-----------------------------------
+[2016-05-04 09:16:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:16:29]Error: E:\HowToMakeLove\J2EE\lib\DM.php 228
+自动加载SrvQuizApi时，文件E:\HowToMakeLove\J2EE\web\main/service/SrvQuizApi.php不存在
+
+-----------------------------------
+[2016-05-04 09:17:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:17:16]Error: E:\HowToMakeLove\J2EE\lib\DM.php 228
+自动加载SrvQuizApi时，文件E:\HowToMakeLove\J2EE\web\main/service/SrvQuizApi.php不存在
+
+-----------------------------------
+[2016-05-04 09:17:17] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:17:17]Error: E:\HowToMakeLove\J2EE\lib\DM.php 228
+自动加载SrvQuizApi时，文件E:\HowToMakeLove\J2EE\web\main/service/SrvQuizApi.php不存在
+
+-----------------------------------
+[2016-05-04 09:17:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:17:42]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 13
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-04 09:17:42]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462324662,
+)
+
+-----------------------------------
+[2016-05-04 09:17:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:17:50]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-04 09:17:50]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462324670,
+)
+
+-----------------------------------
+[2016-05-04 09:20:20] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 09:20:20]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 09:20:20]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-05-04 09:20:20]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462324820,
+)
+
+-----------------------------------
+[2016-05-04 09:20:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:20:35]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-04 09:20:35]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462324835,
+)
+
+-----------------------------------
+[2016-05-04 09:22:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:22:13]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-04 09:22:13]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462324933,
+)
+
+-----------------------------------
+[2016-05-04 09:22:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:22:47]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-04 09:22:47]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462324967,
+)
+
+-----------------------------------
+[2016-05-04 09:23:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:23:10]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-04 09:23:10]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462324990,
+)
+
+-----------------------------------
+[2016-05-04 09:24:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:24:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-04 09:24:04]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462325044,
+)
+
+-----------------------------------
+[2016-05-04 09:26:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:26:00]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-04 09:26:00]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462325160,
+)
+
+-----------------------------------
+[2016-05-04 09:26:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:26:52]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-04 09:26:52]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462325212,
+)
+
+-----------------------------------
+[2016-05-04 09:27:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:27:28]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-04 09:27:28]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462325248,
+)
+
+-----------------------------------
+[2016-05-04 09:28:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 09:28:18]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 09:28:18]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-04 09:28:18]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462325298,
+)
+
+-----------------------------------
+[2016-05-04 09:29:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012051337', '2012051337', '1');(OK:0.002)
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(OK:0.001)
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(OK:0.001)
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(OK:0.001)
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(OK:0.001)
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123461', '2012123461', '1');(OK:0.001)
+[2016-05-04 09:29:55]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-04 09:31:02] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 09:31:02]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-04 09:31:02]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462325462,
+)
+
+-----------------------------------
+[2016-05-04 10:18:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-04 10:18:10]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.303)
+[2016-05-04 10:18:10]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462328290,
+)
+
+-----------------------------------
+[2016-05-04 10:19:20] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 10:19:20]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.655)
+[2016-05-04 10:19:20]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462328360,
+)
+
+-----------------------------------
+[2016-05-04 10:29:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 10:29:09]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 10:29:09]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.05)
+[2016-05-04 10:29:09]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462328949,
+)
+
+-----------------------------------
+[2016-05-04 10:29:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-04 10:29:18]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-04 10:29:18]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462328958,
+)
+
+-----------------------------------
+[2016-05-04 10:41:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 10:41:49]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 10:41:49]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-04 10:41:49]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462329709,
+)
+
+-----------------------------------
+[2016-05-04 10:45:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 10:45:45]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 10:45:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-04 10:45:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462329945,
+)
+
+-----------------------------------
+[2016-05-04 11:09:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 11:09:44]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 11:09:44]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-04 11:09:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462331384,
+)
+
+-----------------------------------
+[2016-05-04 11:12:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-04 11:12:35]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-04 11:12:35]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-05-04 11:12:35]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462331555,
+)

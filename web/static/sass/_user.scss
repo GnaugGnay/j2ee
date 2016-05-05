@@ -1,0 +1,23 @@
+@charset "utf-8";
+.action-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s;
+    background-color: #FFF;
+    &:hover {
+        color: #fff;
+        background-color: #007aff;
+        border-color: #007aff;
+    }
+    &:active {
+        color: #fff;
+        background-color: #007aff;
+        border-color: #007aff;
+    }
+}
+.user-classify {
+}

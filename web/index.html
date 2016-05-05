@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="yes" />
+    <title>J2EE</title>
+    <base href="/">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/app.css">
+</head>
+
+<body ng-app="myApp" ng-controller="mainController">
+    <!-- 左侧导航栏 -->
+    <div id="sidebar_left" class="sidebar-left">
+        <p class="index clearfix">目录<i class="btn-close iconfont icon-close" ng-click="showClassify()"></i></p>
+        <ul class="index-list">
+            <li class="list-item clearfix js-list-item" ui-sref="home">
+                主页
+                <i class="iconfont icon-arrow"></i>
+            </li>
+            <li class="list-item clearfix js-list-item" ui-sref="introduce">
+                课程介绍
+                <i class="iconfont icon-arrow"></i>
+            </li>
+            <li class="list-item clearfix" ng-click="fdropDown(1)">
+                教学队伍
+                <i class="iconfont {{dorpDown_1? 'icon-zhedie' : 'icon-zhankai' }}"></i>
+                
+            </li>
+            <li class="list-item drop-list" ng-show="dorpDown_1">
+                <ul class="index-sublist">
+                    <li class="sublist-item clearfix js-list-item" ui-sref="teachTeam_1">
+                        课程负责人
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                    <li class="sublist-item clearfix js-list-item" ui-sref="teachTeam_2">
+                        课题组主要成员
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                    <li class="sublist-item clearfix js-list-item" ui-sref="teachTeam_3">
+                        教学改革与研究
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item clearfix" ng-click="fdropDown(2)">
+                教学内容
+                <i class="iconfont {{dorpDown_2? 'icon-zhedie' : 'icon-zhankai' }}"></i>
+            </li>
+            <li class="list-item drop-list" ng-show="dorpDown_2">
+                <ul class="index-sublist">
+                    <li class="sublist-item clearfix js-list-item" ui-sref="teachContent_1">
+                        教学大纲
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                    <li class="sublist-item clearfix js-list-item" ui-sref="teachContent_2">
+                        教学日历
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item clearfix" ng-click="fdropDown(3)">
+                教学资源
+                <i class="iconfont {{dorpDown_3? 'icon-zhedie' : 'icon-zhankai' }}"></i>
+            </li>
+            <li class="list-item drop-list" ng-show="dorpDown_3">
+                <ul class="index-sublist">
+                    <li class="sublist-item clearfix js-list-item" ui-sref="teachResource_1">
+                        教学课件
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                    <li class="sublist-item clearfix js-list-item" ui-sref="teachResource_2">
+                        实验指导
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item clearfix js-list-item" ui-sref="homework">
+                课程作业
+                <i class="iconfont icon-arrow"></i>
+            </li>
+            <li class="list-item clearfix js-list-item" ui-sref="forum">
+                课程论坛
+                <i class="iconfont icon-arrow"></i>
+            </li>
+            <li class="list-item clearfix" ng-click="fdropDown(4)">
+                扩展学习
+                <i class="iconfont {{dorpDown_4? 'icon-zhedie' : 'icon-zhankai' }}"></i>
+            </li>
+            <li class="list-item drop-list" ng-show="dorpDown_4">
+                <ul class="index-sublist">
+                    <li class="sublist-item clearfix js-list-item" ui-sref="extended_1">
+                        javaEE相关资源
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                    <li class="sublist-item clearfix js-list-item" ui-sref="extended_2">
+                        常见问题及解决
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                    <li class="sublist-item clearfix js-list-item" ui-sref="extended_3">
+                        最新技术展望
+                        <i class="iconfont icon-arrow"></i>
+                    </li>
+                </ul>
+            </li>
+            <li class="list-item clearfix js-list-item" ui-sref="onlineQuiz">
+                在线测试
+                <i class="iconfont icon-arrow"></i>
+            </li>
+        </ul>
+    </div>
+    <!-- 内容主体 -->
+    <div class="main has-left-bar">
+        <!-- 头部  -->
+        <div class="header">
+            <div class="left" ng-click="showClassify()">
+                <i class="iconfont icon-classify"></i>
+                菜单
+            </div>
+            <h1 class="title text-center">J2EE</h1>
+            <div class="right" ng-click="goUser()">
+                <i class="iconfont icon-user"></i>
+                <span>{{user || '用户'}}</span>
+            </div>
+        </div>
+        <!-- 正文部分 -->
+        <div class="content">
+            <div ui-view="" style="min-height: 100%;">
+                <!-- 加载中 -->
+                <div class="loading">
+                    <div class="loading-spinner">
+                        <i class="iconfont icon-loading"></i>
+                        疯狂加载中
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="footer row">
+            <div class="col-md-4 col-xs-4 footer-item" onclick="history.go(-1)">
+                <i class="iconfont icon-back"></i>
+                上一页BACK
+            </div>
+            <div class="col-md-4 col-xs-4 footer-item" ui-sref="home">
+                <i class="iconfont icon-home"></i>
+                主页HOME
+            </div>
+            <div class="col-md-4 col-xs-4 footer-item" ui-sref="forum">
+                <i class="iconfont icon-forum"></i>
+                论坛FORUM
+            </div>
+        </div>
+    </div>
+    
+    <script src="static/js/lib/angular.min.js"></script>
+    <script src="static/js/lib/angular-ui-router.min.js"></script>
+    <script src="static/js/util.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="static/js/controllers.js"></script>
+</body>
+
+</html>

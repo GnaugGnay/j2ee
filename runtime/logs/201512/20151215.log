@@ -1,0 +1,13 @@
+
+-----------------------------------
+[2015-12-15 09:42:48] 127.0.0.1 http://zao.com/main/index.php?ct=api&method=user.login
+POST: array (
+  'phone' => '15913159968',
+  'task' => 'reg',
+)
+[2015-12-15 09:42:48]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'state' => false,
+  'code' => '402',
+  'msg' => '密码不能为空',
+)

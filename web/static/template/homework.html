@@ -1,0 +1,18 @@
+<div class="text-section">
+    <h2 class="f-24"><b>作业下载</b></h2>
+</div>
+<div class="content-section">
+	<div class="homework-item" ng-repeat="v in homework">
+		<div class="item-head clearfix" data-id="{{ hw_no = v.hw_no }}">
+			<span class="doc-name" ng-click="showDetail()">{{ v.file_name }}</span><a href="{{v.file_path}}">下载</a>
+			<span class="deadline">提交日期:<b>{{v.deadline}}</b>
+				<i class="hw-delete iconfont icon-close" ng-click="deleteHw()" ng-hide="deleteBtn"></i>
+			</span>
+		</div>
+		<div class="item-detail" ng-show="detail">
+			<p>{{v.hw_content}}</p>
+		</div>
+	</div>
+	
+</div>
+

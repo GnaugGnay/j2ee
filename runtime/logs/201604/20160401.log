@@ -1,0 +1,58 @@
+
+-----------------------------------
+[2016-04-01 16:07:58] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+POST: array (
+  'department_id' => '2,4',
+  'title' => '国家级名中医',
+  'good_at' => '嚣张的晓龙',
+  'education_background' => '嚣张的晓龙',
+  'achievement' => '的晓龙',
+  'hospital' => 'sfd',
+  'token' => 'MTUwOGQ4NzU1NmNmZDBmNGM4ZGNkYWE4NGRjNzQ0MDc=',
+  'doctor_id' => '7',
+  'ts' => '1459497875504',
+  'app_version' => '1.0.0',
+  'platform' => '3',
+  'sign' => ' 44e0b0ffe0442267757ab3410a638f75',
+)
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-04-01 16:07:58]Info: E:\php\zao\web\main\model\ModGoods.php 31
+SQL: select * from `zao_chartlet` where `is_del`=0(OK:2.118)
+[2016-04-01 16:07:59]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => '系统发生未知异常',
+  'ct' => 1459498079,
+)
+
+-----------------------------------
+[2016-04-01 16:08:20] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+POST: array (
+  'department_id' => '2,4',
+  'title' => '国家级名中医',
+  'good_at' => '嚣张的晓龙',
+  'education_background' => '嚣张的晓龙',
+  'achievement' => '的晓龙',
+  'hospital' => 'sfd',
+  'token' => 'MTUwOGQ4NzU1NmNmZDBmNGM4ZGNkYWE4NGRjNzQ0MDc=',
+  'doctor_id' => '7',
+  'ts' => '1459497875504',
+  'app_version' => '1.0.0',
+  'platform' => '3',
+  'sign' => ' 44e0b0ffe0442267757ab3410a638f75',
+)
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-04-01 16:08:20]Info: E:\php\zao\web\main\model\ModGoods.php 31
+SQL: select * from `zao_chartlet` where `is_del`=0(OK:0.035)
+[2016-04-01 16:08:20]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => '系统发生未知异常',
+  'ct' => 1459498100,
+)

@@ -1,0 +1,126 @@
+
+-----------------------------------
+[2016-01-09 11:09:46] 127.0.0.1 http://zao.com/zao.php?ct=login&ac=login
+POST: array (
+  'name' => '114',
+  'password' => '114',
+)
+[2016-01-09 11:09:46]Info: E:\php\zao\web\zao\model\ModAuth.php 25
+SQL: select * from `zao_admin` where `phone` ='114' limit 1(OK:0.03)
+[2016-01-09 11:09:47]Info: E:\php\zao\web\zao\model\ModAuth.php 29
+SQL: update `zao_admin` set `lastLoginIP`='127.0.0.1',  `lastLoginTime`='1452308986' where `phone` = '114' (OK:0.193)
+
+-----------------------------------
+[2016-01-09 11:09:47] 127.0.0.1 http://zao.com/zao.php
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:47]Info: E:\php\zao\web\zao\model\ModGoods.php 31
+SQL: select count(*) as c from `zao_goods` where 1 limit 1(OK:0.001)
+[2016-01-09 11:09:47]Info: E:\php\zao\web\zao\model\ModGoods.php 34
+SQL: select a.*, b.nickname from `zao_goods` a
+left join `zao_user` b on a.uid = b.uid
+where 1 
+order by `ct` desc  limit 0, 10(OK:0.001)
+[2016-01-09 11:09:47]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-09 11:09:48] 127.0.0.1 http://zao.com/zao.php?ct=trade
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:48]Info: E:\php\zao\web\zao\model\ModTrade.php 41
+SQL: select count(*) as c from `zao_order` where 1 limit 1(OK:0.011)
+[2016-01-09 11:09:49]Info: E:\php\zao\web\zao\model\ModTrade.php 44
+SQL: select * from `zao_order` where 1  order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-09 11:09:49]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-09 11:09:50] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=1
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:50]Info: E:\php\zao\web\zao\model\ModTrade.php 41
+SQL: select count(*) as c from `zao_order` where 1  and `trade_state` ='1' limit 1(OK:0.011)
+[2016-01-09 11:09:50]Info: E:\php\zao\web\zao\model\ModTrade.php 44
+SQL: select * from `zao_order` where 1  and `trade_state` ='1' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-09 11:09:50]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-09 11:09:51] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=2
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:51]Info: E:\php\zao\web\zao\model\ModTrade.php 41
+SQL: select count(*) as c from `zao_order` where 1  and `trade_state` ='2' limit 1(OK:0.012)
+[2016-01-09 11:09:51]Info: E:\php\zao\web\zao\model\ModTrade.php 44
+SQL: select * from `zao_order` where 1  and `trade_state` ='2' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-09 11:09:51]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-09 11:09:53] 127.0.0.1 http://zao.com/zao.php?ct=trade
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:53]Info: E:\php\zao\web\zao\model\ModTrade.php 41
+SQL: select count(*) as c from `zao_order` where 1 limit 1(OK:0.015)
+[2016-01-09 11:09:53]Info: E:\php\zao\web\zao\model\ModTrade.php 44
+SQL: select * from `zao_order` where 1  order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-09 11:09:53]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-09 11:09:54] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=&keyword=&page=3
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:54]Info: E:\php\zao\web\zao\model\ModTrade.php 41
+SQL: select count(*) as c from `zao_order` where 1 limit 1(OK:0.004)
+[2016-01-09 11:09:54]Info: E:\php\zao\web\zao\model\ModTrade.php 44
+SQL: select * from `zao_order` where 1  order by `ct` desc  limit 10, 5(OK:0.001)
+[2016-01-09 11:09:54]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-09 11:09:58] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=3
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:58]Info: E:\php\zao\web\zao\model\ModTrade.php 41
+SQL: select count(*) as c from `zao_order` where 1  and `trade_state` ='3' limit 1(OK:0.011)
+[2016-01-09 11:09:58]Info: E:\php\zao\web\zao\model\ModTrade.php 44
+SQL: select * from `zao_order` where 1  and `trade_state` ='3' order by `ct` desc  limit 0, 5(OK:0.001)
+[2016-01-09 11:09:58]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac
+
+-----------------------------------
+[2016-01-09 11:09:58] 127.0.0.1 http://zao.com/zao.php?ct=trade&type=4
+COOKIE: array (
+  'dm_admin_name_zao' => '114',
+  'dm_admin_auth_zao' => 'a3238245889c45765b6f2860410b736b',
+  'dm_open_time_zao' => '1452308986',
+)
+[2016-01-09 11:09:58]Info: E:\php\zao\web\zao\model\ModTrade.php 41
+SQL: select count(*) as c from `zao_order` where 1  and `trade_state` ='4' limit 1(OK:0.011)
+[2016-01-09 11:09:58]Info: E:\php\zao\web\zao\model\ModTrade.php 44
+SQL: select * from `zao_order` where 1  and `trade_state` ='4' order by `ct` desc  limit 0, 5(OK:0.002)
+[2016-01-09 11:09:58]Error: E:\php\zao\web\zao\index.php 14
+Undefined index: ac

@@ -1,0 +1,33 @@
+
+//作业页面
+.homework-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    .item-head {
+        padding: 10px 10px;
+        font-size: 1.6rem;
+        .doc-name {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+                color: #007aff;
+            }
+        }
+        a {
+            margin-left: 10px;
+            color: #007aff;
+        }
+        .deadline {
+            float: right;
+        }
+    }
+    .item-detail {
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+}
+.hw-delete {
+    color: red;
+    padding-left: 5px;
+}

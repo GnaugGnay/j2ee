@@ -1,0 +1,179 @@
+<?php /* Smarty version 3.1.27, created on 2016-01-05 11:42:14
+         compiled from "E:\php\zao\web\zao\template\goods\goodsList.tpl" */ ?>
+<?php
+/*%%SmartyHeaderCode:12870568b3b961d6d33_75798217%%*/
+if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '19be45cfd48a973d392f34c20daea671ccef3072' => 
+    array (
+      0 => 'E:\\php\\zao\\web\\zao\\template\\goods\\goodsList.tpl',
+      1 => 1451964140,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '12870568b3b961d6d33_75798217',
+  'variables' => 
+  array (
+    'info_list' => 0,
+    'item' => 0,
+  ),
+  'has_nocache_code' => false,
+  'version' => '3.1.27',
+  'unifunc' => 'content_568b3b9632e982_16032989',
+),false);
+/*/%%SmartyHeaderCode%%*/
+if ($_valid && !is_callable('content_568b3b9632e982_16032989')) {
+function content_568b3b9632e982_16032989 ($_smarty_tpl) {
+if (!is_callable('smarty_modifier_date_format')) require_once 'E:\\php\\zao\\lib\\library\\smarty\\plugins\\modifier.date_format.php';
+
+$_smarty_tpl->properties['nocache_hash'] = '12870568b3b961d6d33_75798217';
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <link rel="dns-prefetch" href="">
+    <?php echo $_smarty_tpl->getSubTemplate ("../public/head.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
+</head>
+
+<body>
+<!-- header start -->
+<?php echo $_smarty_tpl->getSubTemplate ("../public/header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
+<!-- header end -->
+<!-- container start -->
+<div class="container">
+    <div class="main">
+        <div class="main-inner">
+                <div class="main-page">
+                    <div class="dm-page-head">
+                        <h2 class="title">商品列表</h2>
+                        <div class="right-item vercenter-wrap">
+                          <span class="dm-search-item vercenter">
+                            <span class="dm-input">
+                              <input class="form-control" type="text" name="keyword" placeholder="请输入商品名" value="">
+                            </span>
+                            <button class="btn-orange btn" id="search">搜索</button>
+                          </span>
+                        </div>
+                    </div>
+                    <table class="dm-table table">
+                        <thead>
+                            <tr>
+                                <th>商品</th>
+                                <th>库存量</th>
+                                <th>收藏次数</th>
+                                <th>购买人数</th>
+                                <th>标签</th>
+                                <th>添加时间</th>
+                                <th>创建人</th>
+                                <th style="padding-right:20px;">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+$_from = $_smarty_tpl->tpl_vars['info_list']->value['list'];
+if (!is_array($_from) && !is_object($_from)) {
+settype($_from, 'array');
+}
+$_smarty_tpl->tpl_vars['item'] = new Smarty_Variable;
+$_smarty_tpl->tpl_vars['item']->_loop = false;
+foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->_loop = true;
+$foreach_item_Sav = $_smarty_tpl->tpl_vars['item'];
+?>
+                            <tr>
+                                <td class="dm-col-align-left">
+                                    <div class="dm-pic-and-txt">
+                                        <div class="dm-thumbpic">
+                                            <img src="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['img'], ENT_QUOTES, 'UTF-8');?>
+" height="54" width="54" alt="商品图片">
+                                        </div>
+                                        <div class="txt">
+                                            <p class="txt-top"><a><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['name'], ENT_QUOTES, 'UTF-8');?>
+</a></p>
+                                            <p class="txt-foot"><span class="orange"><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['price'], ENT_QUOTES, 'UTF-8');?>
+</span></p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['number'], ENT_QUOTES, 'UTF-8');?>
+</td>
+                                <td><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['fav_count'], ENT_QUOTES, 'UTF-8');?>
+</td>
+                                <td><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['purchased_count'], ENT_QUOTES, 'UTF-8');?>
+</td>
+                                <td><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['tag'], ENT_QUOTES, 'UTF-8');?>
+</td>
+                                <td><?php echo htmlspecialchars(smarty_modifier_date_format($_smarty_tpl->tpl_vars['item']->value['ct'],"%Y-%m-%d %H:%M:%S"), ENT_QUOTES, 'UTF-8');?>
+</td>
+                                <td><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['nickname'], ENT_QUOTES, 'UTF-8');?>
+</td>
+                                <td style="padding-right:20px;">
+                                    <a data-id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['gid'], ENT_QUOTES, 'UTF-8');?>
+" data-del="0" class="js_type_change_detail">编辑</a> -
+                                    <?php if ($_smarty_tpl->tpl_vars['item']->value['is_del']) {?>
+                                        <a data-id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['gid'], ENT_QUOTES, 'UTF-8');?>
+" data-del="0" class="js_type_change_staus" style="color: darkred;">已下架</a>
+                                    <?php } else { ?>
+                                        <a data-id="<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['item']->value['gid'], ENT_QUOTES, 'UTF-8');?>
+" data-del="1" class="js_type_change_staus">在售</a>
+                                    <?php }?>
+                                </td>
+                            </tr>
+                        <?php
+$_smarty_tpl->tpl_vars['item'] = $foreach_item_Sav;
+}
+?>
+                        </tbody>
+                    </table>
+                    <!-- ##### -->
+                    <div class="dm-tfoot clearfix">
+                        <div class="item fr">
+                            <div class="page-cnt">共<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['info_list']->value['total'], ENT_QUOTES, 'UTF-8');?>
+条，每页<?php echo htmlspecialchars($_smarty_tpl->tpl_vars['info_list']->value['page_num'], ENT_QUOTES, 'UTF-8');?>
+条</div>
+                            <div class="dm-page dm-page-large dm-page-right">
+                                <?php echo $_smarty_tpl->tpl_vars['info_list']->value['page_html'];?>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <?php echo $_smarty_tpl->getSubTemplate ("../public/nav.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0);
+?>
+
+</div>
+
+<?php echo '<script'; ?>
+ src="<?php echo htmlspecialchars(@constant('SYS_ZAO_STATIC_URL'), ENT_QUOTES, 'UTF-8');?>
+/js/lib/sea.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="<?php echo htmlspecialchars(@constant('SYS_ZAO_STATIC_URL'), ENT_QUOTES, 'UTF-8');?>
+/js/lib/seajs_preload.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="<?php echo htmlspecialchars(@constant('SYS_ZAO_STATIC_URL'), ENT_QUOTES, 'UTF-8');?>
+/js/lib/seajs_config.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+>
+    seajs.use('page/goods/goodsList');
+<?php echo '</script'; ?>
+>
+</body>
+</html><?php }
+}
+?>

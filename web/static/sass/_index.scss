@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+//主页
+.home-item {
+    background-color: #FFF;
+    text-align: center;
+    color: #3394FF;
+    padding: 20px;
+    cursor: pointer;
+    min-height: 170px;
+    transition: background-color 0.3s;
+    .title {
+        font-size: 2.4rem;
+    } 
+    i {
+        display: block;
+        font-size: 7rem;
+    }
+    &:hover {
+        background-color: #ddd;
+    }
+    &:active {
+        background-color: #ddd;
+    }
+}
+@media (max-width: 992px) {
+    .home-item {
+        font-size: 10px;
+        .title {
+            font-size: 1.4rem;
+        }
+        i {
+            font-size: 5rem;
+        }
+    }
+}

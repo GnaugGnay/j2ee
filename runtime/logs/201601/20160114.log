@@ -1,0 +1,178 @@
+
+-----------------------------------
+[2016-01-14 10:45:19] 127.0.0.1 http://zao.com/main/?ct=api&method=person.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '35',
+)
+[2016-01-14 10:45:19]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.022)
+[2016-01-14 10:45:19]Error: E:\php\zao\web\main\service\SrvApi.php 45
+Call to undefined method SrvPersonApi::addcomment()
+
+-----------------------------------
+[2016-01-14 10:45:34] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '35',
+)
+[2016-01-14 10:45:34]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.002)
+[2016-01-14 10:45:34]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '101',
+  'd' => '缺少必要参数',
+  'ct' => 1452739534,
+)
+
+-----------------------------------
+[2016-01-14 10:45:56] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '35',
+  'content' => '来时减肥地爱抚放到',
+)
+[2016-01-14 10:45:56]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.001)
+[2016-01-14 10:45:56]Info: E:\php\zao\web\main\model\ModGoods.php 74
+SQL: select `nickname` from zao_user where `uid` = 195 limit 1(OK:0.001)
+[2016-01-14 10:45:56]Info: E:\php\zao\web\main\model\ModGoods.php 78
+SQL: select `uid` from zao_goods where `gid` = 35 limit 1(OK:0)
+[2016-01-14 10:45:56]Info: E:\php\zao\web\main\model\ModGoods.php 87
+SQL: insert into `zao_message` (`type`, `msg`, `uid`, `tid`, `gid`, `ct`) values ('2',  '晓龙的测试机 评论了你的设计：',  '195',  '',  '35',  '1452739556') (OK:0.235)
+[2016-01-14 10:45:56]Info: E:\php\zao\web\main\model\ModGoods.php 89
+SQL: insert into `zao_comment` (`uid`, `gid`, `content`, `ct`) values ('195',  '35',  '来时减肥地爱抚放到',  '1452739556') (OK:0.002)
+[2016-01-14 10:45:56]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => '评论成功',
+  'ct' => 1452739556,
+)
+
+-----------------------------------
+[2016-01-14 10:48:22] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '35',
+  'content' => '来时减肥地爱抚放到多多的',
+)
+[2016-01-14 10:48:22]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.012)
+[2016-01-14 10:48:22]Info: E:\php\zao\web\main\model\ModGoods.php 74
+SQL: select `nickname` from zao_user where `uid` = 195 limit 1(OK:0)
+[2016-01-14 10:48:22]Info: E:\php\zao\web\main\model\ModGoods.php 78
+SQL: select `uid` from zao_goods where `gid` = 35 limit 1(OK:0)
+[2016-01-14 10:48:22]Info: E:\php\zao\web\main\model\ModGoods.php 87
+SQL: insert into `zao_message` (`type`, `msg`, `uid`, `tid`, `gid`, `ct`) values ('2',  '晓龙的测试机 评论了你的设计：',  '195',  '',  '35',  '1452739702') (OK:0.23)
+[2016-01-14 10:48:22]Info: E:\php\zao\web\main\model\ModGoods.php 89
+SQL: insert into `zao_comment` (`uid`, `gid`, `content`, `ct`) values ('195',  '35',  '来时减肥地爱抚放到多多的',  '1452739702') (OK:0.001)
+[2016-01-14 10:48:22]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => '评论成功',
+  'ct' => 1452739702,
+)
+
+-----------------------------------
+[2016-01-14 10:48:58] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '35',
+  'content' => '来时减肥地爱抚放到多多的',
+)
+[2016-01-14 10:48:58]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.011)
+[2016-01-14 10:48:58]Info: E:\php\zao\web\main\model\ModGoods.php 74
+SQL: select `nickname` from zao_user where `uid` = 195 limit 1(OK:0.001)
+[2016-01-14 10:48:58]Info: E:\php\zao\web\main\model\ModGoods.php 78
+SQL: select `uid` from zao_goods where `gid` = 35 limit 1(OK:0)
+[2016-01-14 10:48:58]Info: E:\php\zao\web\main\model\ModGoods.php 87
+SQL: insert into `zao_message` (`type`, `msg`, `uid`, `tid`, `gid`, `ct`) values ('2',  '晓龙的测试机 评论了你的设计：来时减肥地爱抚放到多多的',  '195',  '',  '35',  '1452739738') (OK:0.059)
+[2016-01-14 10:48:58]Info: E:\php\zao\web\main\model\ModGoods.php 89
+SQL: insert into `zao_comment` (`uid`, `gid`, `content`, `ct`) values ('195',  '35',  '来时减肥地爱抚放到多多的',  '1452739738') (OK:0)
+[2016-01-14 10:48:58]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => '评论成功',
+  'ct' => 1452739738,
+)
+
+-----------------------------------
+[2016-01-14 10:49:24] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '35',
+  'content' => '来时减肥地爱抚放到多多的',
+)
+[2016-01-14 10:49:24]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.011)
+[2016-01-14 10:49:24]Info: E:\php\zao\web\main\model\ModGoods.php 74
+SQL: select `nickname` from zao_user where `uid` = 195 limit 1(OK:0)
+[2016-01-14 10:49:24]Info: E:\php\zao\web\main\model\ModGoods.php 78
+SQL: select `uid` from zao_goods where `gid` = 35 limit 1(OK:0.001)
+[2016-01-14 10:49:24]Info: E:\php\zao\web\main\model\ModGoods.php 87
+SQL: insert into `zao_message` (`type`, `msg`, `uid`, `tid`, `gid`, `ct`) values ('2',  '晓龙的测试机 评论了你的设计：来时减肥地爱抚放到多多的',  '195',  '0',  '35',  '1452739764') (OK:0.039)
+[2016-01-14 10:49:24]Info: E:\php\zao\web\main\model\ModGoods.php 89
+SQL: insert into `zao_comment` (`uid`, `gid`, `content`, `ct`) values ('195',  '35',  '来时减肥地爱抚放到多多的',  '1452739764') (OK:0.001)
+[2016-01-14 10:49:24]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => '评论成功',
+  'ct' => 1452739764,
+)
+
+-----------------------------------
+[2016-01-14 10:50:13] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '35',
+  'content' => '来时减肥地爱抚放到多多的',
+)
+[2016-01-14 10:50:13]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.012)
+[2016-01-14 10:50:13]Info: E:\php\zao\web\main\model\ModGoods.php 74
+SQL: select `nickname` from zao_user where `uid` = 195 limit 1(OK:0.001)
+[2016-01-14 10:50:13]Info: E:\php\zao\web\main\model\ModGoods.php 78
+SQL: select `uid` from zao_goods where `gid` = 35 limit 1(OK:0)
+[2016-01-14 10:50:13]Info: E:\php\zao\web\main\model\ModGoods.php 87
+SQL: insert into `zao_message` (`type`, `msg`, `uid`, `tid`, `gid`, `ct`) values ('2',  '晓龙的测试机 评论了你的设计：来时减肥地爱抚放到多多的',  '195',  '0',  '35',  '1452739813') (OK:0.037)
+[2016-01-14 10:50:13]Info: E:\php\zao\web\main\model\ModGoods.php 89
+SQL: insert into `zao_comment` (`uid`, `gid`, `content`, `ct`) values ('195',  '35',  '来时减肥地爱抚放到多多的',  '1452739813') (OK:0)
+[2016-01-14 10:50:13]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => '评论成功',
+  'ct' => 1452739813,
+)
+
+-----------------------------------
+[2016-01-14 10:50:44] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.addComment
+POST: array (
+  'uid' => '195',
+  'psw' => 'qqqqqq',
+  'gid' => '4',
+  'content' => '来时减肥地爱抚放到多多的',
+)
+[2016-01-14 10:50:44]Info: E:\php\zao\web\main\model\ModUser.php 39
+SQL: select `psw` from zao_user where `uid` = '195' limit 1(OK:0.002)
+[2016-01-14 10:50:44]Info: E:\php\zao\web\main\model\ModGoods.php 74
+SQL: select `nickname` from zao_user where `uid` = 195 limit 1(OK:0.001)
+[2016-01-14 10:50:44]Info: E:\php\zao\web\main\model\ModGoods.php 78
+SQL: select `uid` from zao_goods where `gid` = 4 limit 1(OK:0.001)
+[2016-01-14 10:50:44]Info: E:\php\zao\web\main\model\ModGoods.php 87
+SQL: insert into `zao_message` (`type`, `msg`, `uid`, `tid`, `gid`, `ct`) values ('2',  '晓龙的测试机 评论了你的设计：来时减肥地爱抚放到多多的',  '195',  '169',  '4',  '1452739844') (OK:0.068)
+[2016-01-14 10:50:44]Info: E:\php\zao\web\main\model\ModGoods.php 89
+SQL: insert into `zao_comment` (`uid`, `gid`, `content`, `ct`) values ('195',  '4',  '来时减肥地爱抚放到多多的',  '1452739844') (OK:0.001)
+[2016-01-14 10:50:44]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => '评论成功',
+  'ct' => 1452739844,
+)

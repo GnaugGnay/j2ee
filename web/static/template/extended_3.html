@@ -1,0 +1,33 @@
+<div class="text-section">
+    <h2 class="f-24"><b>最新技术展望</b></h2>
+</div>
+<div class="content-section all-p-section">
+    <p>JavaEE 体系结构非常膨大，从javaEE 5到现在的javaEE 7，新特性层出不穷。如果把一些偏门技术算进去，如一些基于JVM平台的Grails、Scala，主流SSH框架，谷歌的GWT，BPM工作流的 JBPM、Activiti，Vaadin，OSGI，Apache组织一大堆协议组件和库，各种开源模版技术，各种搜索引擎，各种规则引擎等等，没有你 想不到的，只有你不知道的。尽管如此，JavaEE足以解决企业开发的所有问题。 </p>
+    <p>JavaEE 7提供了一个完整、全面、集成的堆栈来帮助你构建企业和Web应用程序。</p>
+    <h3 class="f-24"><b>JavaEE容器</b></h3>
+    <p class="mt-20">主要就是JSF（JavaServer Faces）和EJB（Enterprise Java Bean）两大部分，JSF依赖于EJB，并且是重量级的，JSF使用了一大堆组件控制页面，跟Struts2的标签差不多；EJB目前做得不错，相比 Spring，EJB完全不需要作任何配置，内部包含JPA规范，可以和Hibernate无缝接入，但是学习曲线依然很大，并且对服务器有要求，用 tomcat做服务器还需要和JBoss搭配，新手学习可以使用Glassfish。</p>
+    <p><img alt="JavaEE 7技术一览" src="\static\images\extended_3_pic1.png"/></p>
+    <h3 class="f-24"><b>WEB容器</b></h3>
+    <p class="mt-20">这部分内容比较多，JavaEE 7新添加的为下图棕黄色的部分，即WebSocket、Concurrency Utilities、Batch、JSON-P，新添加部分主要是为HTML5提供更好的伸缩性，这些Spring都有，不知是否是借鉴Spring的部 分功能。技术虽然很多，其实都有JSR白皮书规约的，有些已经有最终定稿，有些还处于草案和不断修改阶段（其实也没有最终定稿，而是处于维护阶段）。</p>
+    <p><img alt="JavaEE 7技术一览" src="\static\images\extended_3_pic2.png" style="width: 80%" /></p>
+    <p>下面说说一些常见的概念术语：</p>
+    <p>JWS：即Java Web Service,指与webservice相关的JavaEE技术部分，webservice是一种基于XML的独立的、跨平台的、互操作的应用程 序，XML又包含XSD、DTD、XPath等相关技术，这个撇开不说。webservice平台元素主要有SOAP（简易对象访问协议）、UDDI（通 用描述、发现及整理）、WSDL（WS描述语言）。</p>
+    <p>JAX：即Java Xml，类似地JAXB（Java Xml Binding）</p>
+    <p>目前JWS主要有：</p>
+    <ol>
+        <li>JAX-WS 全称<b>JavaTM API forXML-Based Web Services </b>又叫JAX-RPC（远程调用），顾名思义就是基于Web Services</li>
+        <li>JAX-RS 全称<b>JavaTM API forRESTful Web Services</b> 即使用REST风格</li>
+        <li>JAXB</li>
+        <li>JAXR</li>
+        <li>SAAJ</li>
+        <li>STAX</li>
+    </ol>
+    <p>网上说关于JAX-WS与JAX-RS有这么说的： 两者是不同风格的SOA架构。前者以动词为中心，指定的是每次执行函数。而后者以名词为中心，每次执行的时候指的是资源。</p>
+    <p>感觉这个说法比较靠谱，JAX-WS是面向消息的，每次请求的时候指定了请求的方法。JAX-RS是面向资源的。后则将网络上的东西当做一种资源，每次请求都是对该资源进行操作，比如对资源的增删查改。</p>
+    <p>关于REST风格，在JAX-RS之前就已经出现，最早的出现的是Restlet、RestEasy框架，后来是Jersey，并且现在Oracle的 Glassfish使用的就是Jersey，相对来说Restlet功能齐全、组件膨大，页面和模版技术丰富，由于出现比较早，导致Restlet发展了 自己的一套MVC技术，Jersey也是一套JAX-RS产品，内部提供了好几套容器和服务器，大致有grizzly2、JDK-http、 simple-http、Jetty这几种。Jersey的MVC和Spring MVC有点类似（如其说是类似，简直就是一模一样），只是只有Jsp和Freemarker两种视图技术。</p>
+    <p>CDI：即Contexts Dependency Injection，和Spring的IOC差不多的东西，就是可以在组件中通过注解注入上下文、请求和响应等。</p>
+    <p>JTA：即Java Transaction API，使用过Hibernate和EJB的应该知道，就是事务处理，JTA依赖于所处的容器，如果不是分布式开发的话，我们一般使用本地事务，即是数据库本身的事务处理。</p>
+    <p>JPA：即Java Persistence API，就是最常用的持久化技术，原本属于EJB中的部分，EJB3.0之后分离出来，作为一个独立的规范。作为一种ORM技术，JPA提供了基本的统一 标准，现在JPA的草案处于维护阶段，对应的Hibernate框架的某些版本也处于Final版本。</p>
+    <p>JMS：即Java Message Service，和JDBC类似，提供了一个统一的API供其他厂商实现，主要用于客户机信息的交互，JMS主要有点到点和订阅/发布两种方式。</p>
+    <p>另外，像Java Mail、JSTL、JSP等这些再熟悉不过的就不说了。</p>
+</div>

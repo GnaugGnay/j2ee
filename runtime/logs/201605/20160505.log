@@ -1,0 +1,62 @@
+
+-----------------------------------
+[2016-05-05 09:29:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-05 09:29:57]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-05 09:29:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-05 09:29:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462411797,
+)
+
+-----------------------------------
+[2016-05-05 09:29:59] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-05 09:29:59]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.006)
+[2016-05-05 09:29:59]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462411799,
+)

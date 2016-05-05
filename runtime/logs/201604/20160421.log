@@ -1,0 +1,48 @@
+
+-----------------------------------
+[2016-04-21 15:43:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=goods.xxxx
+[2016-04-21 15:43:51]Info: E:\HowToMakeLove\J2EE\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.072)
+[2016-04-21 15:43:51]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1461224631,
+)
+
+-----------------------------------
+[2016-04-21 15:44:26] 127.0.0.1 http://j2ee.com/main/?ct=api&method=common.xxxx
+[2016-04-21 15:44:26]Error: E:\HowToMakeLove\J2EE\lib\DM.php 228
+自动加载SrvCommonApi时，文件E:\HowToMakeLove\J2EE\web\main/service/SrvCommonApi.php不存在
+
+-----------------------------------
+[2016-04-21 15:44:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=common.xxxx
+[2016-04-21 15:44:28]Error: E:\HowToMakeLove\J2EE\lib\DM.php 228
+自动加载SrvCommonApi时，文件E:\HowToMakeLove\J2EE\web\main/service/SrvCommonApi.php不存在
+
+-----------------------------------
+[2016-04-21 15:44:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=goods.xxxx
+[2016-04-21 15:44:38]Info: E:\HowToMakeLove\J2EE\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.003)
+[2016-04-21 15:44:38]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1461224678,
+)

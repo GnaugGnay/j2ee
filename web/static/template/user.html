@@ -1,0 +1,21 @@
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;修改密码</b></p>
+</div>
+<div class="text-section">
+    <div class="btn btn-primary" ui-sref="changePassword">点击此处修改密码</div>
+</div>
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;上传学生名单</b></p>
+</div>
+<div class="text-section">
+    <div class="">
+        <form action="/main/?ct=api&method=user.importUser" method="post" enctype="multipart/form-data" id="userForm" target="hideIframe">
+            <input id="userFormExcel" name="filename" type="file">
+            <button class="btn btn-primary mt-20" ng-click="userFormSubmit()">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+        </form>
+        <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
+    </div>
+</div>
+<div class="bot-button" ng-click="quitLogin()">
+    <span>退出登录</span>
+</div>

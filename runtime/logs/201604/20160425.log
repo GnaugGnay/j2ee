@@ -1,0 +1,1623 @@
+
+-----------------------------------
+[2016-04-25 16:34:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 16:34:13]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+)
+
+-----------------------------------
+[2016-04-25 16:36:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 16:36:08]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+)
+
+-----------------------------------
+[2016-04-25 16:36:15] 127.0.0.1 http://j2ee.com/api/?ct=api&method=main.deleteHomework
+[2016-04-25 16:36:15]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+)
+[2016-04-25 16:36:15]Error: E:\HowToMakeLove\J2EE\web\main\index.php 8
+Constant WEB_ROOT already defined
+
+-----------------------------------
+[2016-04-25 16:36:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '1',
+)
+[2016-04-25 16:36:35]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'hw_no' => '1',
+)
+
+-----------------------------------
+[2016-04-25 16:38:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+POST: array (
+  'hw_no' => '1',
+)
+[2016-04-25 16:38:45]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:38:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.324)
+[2016-04-25 16:38:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => '测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '4',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-11',
+    ),
+    2 => 
+    array (
+      'hw_no' => '3',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-23',
+    ),
+  ),
+  'ct' => 1461573525,
+)
+
+-----------------------------------
+[2016-04-25 16:38:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 16:38:52]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:38:52]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.004)
+[2016-04-25 16:38:52]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => '测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '4',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-11',
+    ),
+    2 => 
+    array (
+      'hw_no' => '3',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-23',
+    ),
+  ),
+  'ct' => 1461573532,
+)
+
+-----------------------------------
+[2016-04-25 16:39:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 16:39:11]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:39:11]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.004)
+[2016-04-25 16:39:11]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => '测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '4',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-11',
+    ),
+    2 => 
+    array (
+      'hw_no' => '3',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-23',
+    ),
+  ),
+  'ct' => 1461573551,
+)
+
+-----------------------------------
+[2016-04-25 16:40:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 16:40:25]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:40:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 16:40:25]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => '测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '4',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-11',
+    ),
+    2 => 
+    array (
+      'hw_no' => '3',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-23',
+    ),
+  ),
+  'ct' => 1461573625,
+)
+
+-----------------------------------
+[2016-04-25 16:40:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+POST: array (
+  'hw_no' => '1',
+)
+[2016-04-25 16:40:45]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:40:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.004)
+[2016-04-25 16:40:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => '测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '4',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-11',
+    ),
+    2 => 
+    array (
+      'hw_no' => '3',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-23',
+    ),
+  ),
+  'ct' => 1461573645,
+)
+
+-----------------------------------
+[2016-04-25 16:40:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 16:40:52]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+)
+
+-----------------------------------
+[2016-04-25 16:40:59] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '1',
+)
+[2016-04-25 16:40:59]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'hw_no' => '1',
+)
+
+-----------------------------------
+[2016-04-25 16:41:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '1',
+)
+[2016-04-25 16:41:36]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'hw_no' => '1',
+)
+
+-----------------------------------
+[2016-04-25 16:42:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '1',
+)
+[2016-04-25 16:42:07]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:42:07]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = ``(error：Unknown column '' in 'where clause')
+[2016-04-25 16:42:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '1',
+  ),
+  'ct' => 1461573727,
+)
+
+-----------------------------------
+[2016-04-25 16:42:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 16:42:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:42:12]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 16:42:12]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => '测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '4',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-11',
+    ),
+    2 => 
+    array (
+      'hw_no' => '3',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-23',
+    ),
+  ),
+  'ct' => 1461573732,
+)
+
+-----------------------------------
+[2016-04-25 16:42:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 16:42:14]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:42:14]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 16:42:14]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => '测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '4',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-11',
+    ),
+    2 => 
+    array (
+      'hw_no' => '3',
+      'hw_content' => '案发时发生的发生的飞洒发斯蒂芬',
+      'file_name' => 'adasdasdasd',
+      'file_path' => '1234134fasdfsdfsdfadf',
+      'deadline' => '2016-04-23',
+    ),
+  ),
+  'ct' => 1461573734,
+)
+
+-----------------------------------
+[2016-04-25 16:43:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:43:40]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:43:40]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = ``(error：Unknown column '' in 'where clause')
+[2016-04-25 16:43:40]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461573820,
+)
+
+-----------------------------------
+[2016-04-25 16:44:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:44:49]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:44:49]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` =(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1)
+[2016-04-25 16:44:49]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461573889,
+)
+
+-----------------------------------
+[2016-04-25 16:45:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:45:46]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:45:46]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` =(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1)
+[2016-04-25 16:45:46]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461573946,
+)
+
+-----------------------------------
+[2016-04-25 16:46:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:46:31]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:46:31]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` =(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1)
+[2016-04-25 16:46:31]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461573991,
+)
+
+-----------------------------------
+[2016-04-25 16:46:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:46:41]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:46:41]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` =(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1)
+[2016-04-25 16:46:41]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574001,
+)
+
+-----------------------------------
+[2016-04-25 16:47:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:47:31]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:47:31]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574051,
+)
+
+-----------------------------------
+[2016-04-25 16:47:33] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:47:33]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:47:33]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574053,
+)
+
+-----------------------------------
+[2016-04-25 16:47:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:47:36]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:47:36]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574056,
+)
+
+-----------------------------------
+[2016-04-25 16:47:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:47:41]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:47:41]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` =(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1)
+[2016-04-25 16:47:41]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574061,
+)
+
+-----------------------------------
+[2016-04-25 16:52:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:52:21]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:52:21]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574341,
+)
+
+-----------------------------------
+[2016-04-25 16:52:22] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:52:22]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:52:22]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574342,
+)
+
+-----------------------------------
+[2016-04-25 16:55:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:55:55]Error: E:\HowToMakeLove\J2EE\web\main\service\SrvMainApi.php 29
+syntax error, unexpected 'var_dump' (T_STRING)
+
+-----------------------------------
+[2016-04-25 16:56:05] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:56:05]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:56:05]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574565,
+)
+
+-----------------------------------
+[2016-04-25 16:56:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:56:18]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:56:18]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` =(error：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1)
+[2016-04-25 16:56:18]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574578,
+)
+
+-----------------------------------
+[2016-04-25 16:56:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:56:37]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:56:37]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` = 3(OK:0.002)
+[2016-04-25 16:56:37]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574597,
+)
+
+-----------------------------------
+[2016-04-25 16:56:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '3',
+)
+[2016-04-25 16:56:40]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:56:40]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` = 3(OK:0.003)
+[2016-04-25 16:56:40]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '3',
+  ),
+  'ct' => 1461574600,
+)
+
+-----------------------------------
+[2016-04-25 16:57:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '4',
+)
+[2016-04-25 16:57:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:57:12]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 4(OK:0.003)
+[2016-04-25 16:57:12]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '4',
+  ),
+  'ct' => 1461574632,
+)
+
+-----------------------------------
+[2016-04-25 16:57:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 16:57:39]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 16:57:39]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 16:57:39]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1461574659,
+)
+
+-----------------------------------
+[2016-04-25 17:00:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:00:35]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:00:35]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:00:35]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461574835,
+)
+
+-----------------------------------
+[2016-04-25 17:00:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:00:57]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:00:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:00:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461574857,
+)
+
+-----------------------------------
+[2016-04-25 17:01:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:01:14]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:01:14]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 0(OK:0.003)
+[2016-04-25 17:01:14]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1461574874,
+)
+
+-----------------------------------
+[2016-04-25 17:01:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:01:18]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:01:18]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:01:19]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461574879,
+)
+
+-----------------------------------
+[2016-04-25 17:01:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:01:57]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+
+-----------------------------------
+[2016-04-25 17:01:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:01:57]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:01:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 0(OK:0.002)
+[2016-04-25 17:01:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1461574917,
+)
+[2016-04-25 17:01:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 0(OK:0.003)
+[2016-04-25 17:01:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1461574917,
+)
+
+-----------------------------------
+[2016-04-25 17:01:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:01:58]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:01:58]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:01:58]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461574918,
+)
+
+-----------------------------------
+[2016-04-25 17:02:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:02:07]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:02:07]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 0(OK:0.003)
+[2016-04-25 17:02:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1461574927,
+)
+
+-----------------------------------
+[2016-04-25 17:02:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:02:38]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:02:38]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 0(OK:0.224)
+[2016-04-25 17:02:38]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1461574958,
+)
+
+-----------------------------------
+[2016-04-25 17:04:20] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:04:20]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:04:20]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:04:20]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575060,
+)
+
+-----------------------------------
+[2016-04-25 17:04:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:04:21]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:04:21]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1461575061,
+)
+
+-----------------------------------
+[2016-04-25 17:05:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:05:58]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:05:58]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:05:58]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575158,
+)
+
+-----------------------------------
+[2016-04-25 17:05:59] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:05:59]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+)
+
+-----------------------------------
+[2016-04-25 17:06:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+[2016-04-25 17:06:55]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+)
+
+-----------------------------------
+[2016-04-25 17:14:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:14:06]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:14:06]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:14:06]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575646,
+)
+
+-----------------------------------
+[2016-04-25 17:14:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '6',
+)
+[2016-04-25 17:14:08]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'hw_no' => '6',
+)
+
+-----------------------------------
+[2016-04-25 17:14:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:14:16]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:14:16]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:14:16]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575656,
+)
+
+-----------------------------------
+[2016-04-25 17:14:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '6',
+)
+[2016-04-25 17:14:24]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'hw_no' => '6',
+)
+
+-----------------------------------
+[2016-04-25 17:15:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:15:07]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:15:07]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:15:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575707,
+)
+
+-----------------------------------
+[2016-04-25 17:15:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '6',
+)
+[2016-04-25 17:15:08]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'hw_no' => '6',
+)
+
+-----------------------------------
+[2016-04-25 17:16:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:16:03]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:16:03]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:16:03]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575763,
+)
+
+-----------------------------------
+[2016-04-25 17:16:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '6',
+)
+[2016-04-25 17:16:04]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:16:04]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '6',
+  ),
+  'ct' => 1461575764,
+)
+
+-----------------------------------
+[2016-04-25 17:16:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:16:07]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:16:07]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:16:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575767,
+)
+
+-----------------------------------
+[2016-04-25 17:16:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '6',
+)
+[2016-04-25 17:16:09]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:16:09]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '6',
+  ),
+  'ct' => 1461575769,
+)
+
+-----------------------------------
+[2016-04-25 17:16:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:16:25]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:16:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:16:25]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '6',
+      'hw_content' => '12fsdfasdfasdfasdfadfas',
+      'file_name' => '',
+      'file_path' => '',
+      'deadline' => '2016-04-13',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575785,
+)
+
+-----------------------------------
+[2016-04-25 17:16:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '6',
+)
+[2016-04-25 17:16:28]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:16:28]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 25
+SQL: delete from `homework` where `hw_no` = 6(OK:0.002)
+[2016-04-25 17:16:28]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '6',
+  ),
+  'ct' => 1461575788,
+)
+
+-----------------------------------
+[2016-04-25 17:16:30] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:16:30]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:16:30]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:16:30]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575790,
+)
+
+-----------------------------------
+[2016-04-25 17:17:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:17:12]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:17:12]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:17:12]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575832,
+)
+
+-----------------------------------
+[2016-04-25 17:18:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:18:00]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:18:00]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:18:00]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '1',
+      'hw_content' => 'fasdfsdf3fgh56hhtfehdfh 345t egwegsgfdsgdfg',
+      'file_name' => '123123',
+      'file_path' => '1233',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575880,
+)
+
+-----------------------------------
+[2016-04-25 17:18:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '1',
+)
+[2016-04-25 17:18:07]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:18:07]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 1(OK:0.003)
+[2016-04-25 17:18:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'hw_no' => '1',
+  ),
+  'ct' => 1461575887,
+)
+
+-----------------------------------
+[2016-04-25 17:19:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:19:03]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:19:03]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:19:03]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575943,
+)
+
+-----------------------------------
+[2016-04-25 17:19:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:19:39]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:19:39]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:19:39]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '7',
+      'hw_content' => '253453452345234',
+      'file_name' => '252354234',
+      'file_path' => '23452345',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '8',
+      'hw_content' => '253453452345234',
+      'file_name' => '252354234',
+      'file_path' => '23452345',
+      'deadline' => '2016-04-30',
+    ),
+    2 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461575979,
+)
+
+-----------------------------------
+[2016-04-25 17:19:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '8',
+)
+[2016-04-25 17:19:45]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:19:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 8(OK:0.002)
+[2016-04-25 17:19:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1461575985,
+)
+
+-----------------------------------
+[2016-04-25 17:20:17] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:20:17]Error: E:\HowToMakeLove\J2EE\web\main\service\SrvMainApi.php 31
+syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+
+-----------------------------------
+[2016-04-25 17:20:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:20:19]Error: E:\HowToMakeLove\J2EE\web\main\service\SrvMainApi.php 31
+syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+
+-----------------------------------
+[2016-04-25 17:20:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:20:25]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:20:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:20:25]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '7',
+      'hw_content' => '253453452345234',
+      'file_name' => '252354234',
+      'file_path' => '23452345',
+      'deadline' => '2016-04-30',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461576025,
+)
+
+-----------------------------------
+[2016-04-25 17:20:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '7',
+)
+[2016-04-25 17:20:27]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:20:27]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 7(OK:0.003)
+[2016-04-25 17:20:27]Error: E:\HowToMakeLove\J2EE\web\main\service\SrvMainApi.php 31
+Call to undefined function getHomeworks()
+
+-----------------------------------
+[2016-04-25 17:20:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:20:41]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:20:41]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:20:41]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461576041,
+)
+
+-----------------------------------
+[2016-04-25 17:25:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:25:57]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:25:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-04-25 17:25:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461576357,
+)
+
+-----------------------------------
+[2016-04-25 17:27:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:27:03]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:27:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:27:04]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '10',
+      'hw_content' => '124234123453154鬼地方个梵蒂冈',
+      'file_name' => '231423',
+      'file_path' => '23141234',
+      'deadline' => '2016-04-21',
+    ),
+    1 => 
+    array (
+      'hw_no' => '9',
+      'hw_content' => '124234123453154鬼地方个梵蒂冈',
+      'file_name' => '231423',
+      'file_path' => '23141234',
+      'deadline' => '2016-04-21',
+    ),
+    2 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461576424,
+)
+
+-----------------------------------
+[2016-04-25 17:27:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '10',
+)
+[2016-04-25 17:27:19]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:27:19]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 10(OK:0.003)
+[2016-04-25 17:27:19]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.001)
+[2016-04-25 17:27:19]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '9',
+      'hw_content' => '124234123453154鬼地方个梵蒂冈',
+      'file_name' => '231423',
+      'file_path' => '23141234',
+      'deadline' => '2016-04-21',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461576439,
+)
+
+-----------------------------------
+[2016-04-25 17:27:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-04-25 17:27:49]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:27:49]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-04-25 17:27:49]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '9',
+      'hw_content' => '124234123453154鬼地方个梵蒂冈',
+      'file_name' => '231423',
+      'file_path' => '23141234',
+      'deadline' => '2016-04-21',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461576469,
+)
+
+-----------------------------------
+[2016-04-25 17:27:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '9',
+)
+[2016-04-25 17:27:50]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-04-25 17:27:50]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 9(OK:0.002)
+[2016-04-25 17:27:50]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.001)
+[2016-04-25 17:27:50]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1461576470,
+)

@@ -1,0 +1,194 @@
+
+-----------------------------------
+[2016-04-11 19:50:16] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 19:50:16]Error: E:\HowToMakeLove\mk\lib\DM.php 228
+自动加载SrvApi时，文件E:\HowToMakeLove\mk\web\main/service/SrvApi.php不存在
+
+-----------------------------------
+[2016-04-11 19:50:33] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 19:50:33]Error: E:\HowToMakeLove\mk\lib\DM.php 228
+自动加载SrvApi时，文件E:\HowToMakeLove\mk\web\main/service/SrvApi.php不存在
+
+-----------------------------------
+[2016-04-11 19:50:36] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 19:50:36]Error: E:\HowToMakeLove\mk\lib\DM.php 228
+自动加载SrvApi时，文件E:\HowToMakeLove\mk\web\main/service/SrvApi.php不存在
+
+-----------------------------------
+[2016-04-11 19:51:55] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 19:51:55]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+xxxxx
+
+-----------------------------------
+[2016-04-11 19:52:13] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 19:52:13]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => '系统发生未知异常',
+  'ct' => 1460375533,
+)
+
+-----------------------------------
+[2016-04-11 20:05:59] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:05:59]Error: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+数据库[mk]的配置不存在，请在E:\HowToMakeLove\mk/config/db.php配置
+[2016-04-11 20:05:59]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+  ),
+  'ct' => 1460376359,
+)
+
+-----------------------------------
+[2016-04-11 20:06:49] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:06:49]Info: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.012)
+[2016-04-11 20:06:49]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460376409,
+)
+
+-----------------------------------
+[2016-04-11 20:12:14] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:12:14]Info: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.006)
+[2016-04-11 20:12:14]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460376734,
+)
+
+-----------------------------------
+[2016-04-11 20:12:25] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:12:25]Info: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.003)
+[2016-04-11 20:12:25]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460376745,
+)
+
+-----------------------------------
+[2016-04-11 20:12:26] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:12:26]Info: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.013)
+[2016-04-11 20:12:26]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460376746,
+)
+
+-----------------------------------
+[2016-04-11 20:14:34] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:14:34]Info: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.012)
+[2016-04-11 20:14:34]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460376874,
+)
+
+-----------------------------------
+[2016-04-11 20:15:00] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:15:00]Info: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.002)
+[2016-04-11 20:15:00]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460376900,
+)
+
+-----------------------------------
+[2016-04-11 20:15:38] 127.0.0.1 http://mkapi.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:15:38]Info: E:\HowToMakeLove\mk\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.003)
+[2016-04-11 20:15:38]Info: E:\HowToMakeLove\mk\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460376938,
+)
+
+-----------------------------------
+[2016-04-11 20:19:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=goods.xxxx
+[2016-04-11 20:19:47]Info: E:\HowToMakeLove\J2EE\web\main\model\ModGoods.php 18
+SQL: select * from `user`(OK:0.003)
+[2016-04-11 20:19:47]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2',
+      'psw' => '3',
+    ),
+  ),
+  'ct' => 1460377187,
+)

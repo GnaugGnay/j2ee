@@ -1,0 +1,260 @@
+@charset "utf-8";
+@import "reset";
+@import "http://at.alicdn.com/t/font_1461223307_4571161.css";
+
+@import "index";         //主页
+@import "teachResource"; //教学资源
+@import "homework";      //作业页面
+@import "onlineQuiz";    //在线测试
+@import "user";          //用户界面
+
+
+html {
+    font-size: 10px;
+    overflow: hidden;
+}
+
+html,body {
+    height: 100%;
+}
+
+.row {
+    margin: 0;
+}
+
+.loading {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .loading-spinner {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+    }
+    i {
+        font-size: 4rem;
+        display: block;
+    }
+}
+
+.sidebar-left {
+	position: fixed;
+	z-index: 1000;
+	left:0;
+	top: 0;
+	width: 230px;
+	margin-left: -230px;
+	height: 100%;
+	background: #555;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+    transition: all 0.5s;
+	.index {
+		color: #fff;
+		font-size: 2.3rem;
+		padding: 20px 10px;
+		.btn-close {
+			font-size: 2.4rem;
+        	float: right;
+        }
+        .btn-close:active {
+        	color: #bbb;
+        }
+        @media (min-width: 992px) {
+        	.btn-close {
+				display: none;
+       		 }
+        }
+	}
+	.list-item {
+		height: 45px;
+		background-color: #FFF;
+        border-bottom: 1px solid #ccc;
+        line-height: 45px;
+        cursor: pointer;
+        padding: 0 15px;
+        color: #555;
+        font-size: 1.4rem;
+        i {
+        	font-size: 1.2rem;
+        	float: right;
+        }
+	}
+
+	.drop-list {
+		height: auto;
+		line-height: initial;
+		border: none;
+		cursor: default;
+	}
+	.index-sublist {
+		padding: 10px 0;
+	}
+	.sublist-item {
+		height: 45px;
+		background-color: #FFF;
+        border-bottom: 1px solid #ccc;
+        line-height: 45px;
+        cursor: pointer;
+        padding: 0 10px;
+        color: #555;
+        font-size: 1.4rem;
+        i {
+        	font-size: 1.2rem;
+        	float: right;
+        }
+	}
+	.list-item:active {
+    	opacity: .6;
+	}
+	.drop-list:active {
+		opacity: 1;
+	}
+	.sublist-item:active {
+		opacity: .6;
+	}
+	.active {
+		color: #FFF;
+		background-color: #428bca;
+		border-color: #428bca;
+	} 
+}
+.open {
+	margin-left: 0;
+}
+@media (min-width: 992px) {
+    .has-left-bar {
+        margin-left: 320px;
+    }
+    .sidebar-left {
+		width: 320px;
+		margin-left: 0;
+    }
+}
+.main {
+    position: relative;
+    height: 100%;
+    .header {
+        z-index: 999;
+        height: 50px;
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+        background: #f7f7f7;
+        color: #007aff;
+        position: absolute;
+        top: 0;
+        i {
+            font-size: 1.4rem;
+        }
+        .title {
+            height: 100%;
+            line-height: 50px;
+            font-size: 1.8rem;
+        }
+        .right {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            height: 100%;
+            line-height: 50px;
+            cursor: pointer;
+        }
+        .left {
+            @extend .right;
+            right: initial;
+            left: 10px;
+        }
+        @media (min-width: 992px) {
+            .left {
+                display: none;
+            }
+        }
+    }
+    .content {
+        padding: 50px 0;
+        overflow: auto;
+   		height: 100%;
+        background-color: #777;
+        position: relative;
+    }
+    .footer {
+        z-index: 999;
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        border-top: 1px solid #ccc;
+        background: #f7f7f7;
+        color: #007aff;
+        position: absolute;
+        bottom: 0;
+        .footer-item {
+            height: 100%;
+            text-align: center;
+            cursor: pointer;
+        }
+        i {
+            font-size: 1.4rem;
+        }
+    }
+}
+//段落容器
+.text-section {
+	border-bottom: 1px solid #ccc;
+	padding: 20px;
+    background-color: #FFF;
+}
+.content-section {
+    padding: 20px;
+    background-color: #FFF;
+}
+.all-p-section {
+    p {
+        margin-bottom: 10px;
+    }
+}
+.sub-text-section {
+	padding: 20px;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+.mt-10 {
+	margin-top: 10px;
+}
+.f-36 {
+	font-size: 3.6rem;
+}
+.f-24 {
+	font-size: 2.4rem;
+}
+.bot-button {
+    position: absolute;
+    bottom: 50px;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background-color: #007aff;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+        background-color: darken(#007aff,10%);
+    }
+    &:active {
+        background-color: darken(#007aff,20%);
+    }
+}
+//教学队伍表格
+.team-table {
+    td,th {
+        padding: 5px 0 5px 5px;
+    }
+}

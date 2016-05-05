@@ -1,0 +1,2806 @@
+
+-----------------------------------
+[2016-05-02 15:12:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-02 15:12:25]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.156)
+[2016-05-02 15:12:25]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462173145,
+)
+
+-----------------------------------
+[2016-05-02 15:12:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:12:40]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:12:40]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.021)
+[2016-05-02 15:12:40]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173160,
+)
+
+-----------------------------------
+[2016-05-02 15:17:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:17:38]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:17:38]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 15:17:38]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173458,
+)
+
+-----------------------------------
+[2016-05-02 15:20:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:20:28]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:20:28]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0)
+[2016-05-02 15:20:28]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173628,
+)
+
+-----------------------------------
+[2016-05-02 15:21:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:21:32]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:21:32]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 15:21:32]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173692,
+)
+
+-----------------------------------
+[2016-05-02 15:21:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:21:34]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:21:34]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 15:21:34]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173694,
+)
+
+-----------------------------------
+[2016-05-02 15:21:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:21:50]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:21:50]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.004)
+[2016-05-02 15:21:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173710,
+)
+
+-----------------------------------
+[2016-05-02 15:21:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:21:51]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:21:51]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.004)
+[2016-05-02 15:21:51]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173711,
+)
+
+-----------------------------------
+[2016-05-02 15:24:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:24:49]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:24:49]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-05-02 15:24:49]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173889,
+)
+
+-----------------------------------
+[2016-05-02 15:24:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:24:50]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:24:50]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.001)
+[2016-05-02 15:24:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173890,
+)
+
+-----------------------------------
+[2016-05-02 15:25:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => '2012051337',
+  'password' => '2012051337',
+)
+[2016-05-02 15:25:34]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '2012051337' and `password` = '2012051337'(OK:0.011)
+[2016-05-02 15:25:34]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2012051337',
+      'password' => '2012051337',
+      'usertype' => '1',
+    ),
+  ),
+  'ct' => 1462173934,
+)
+
+-----------------------------------
+[2016-05-02 15:25:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:25:36]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:25:36]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0)
+[2016-05-02 15:25:36]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173936,
+)
+
+-----------------------------------
+[2016-05-02 15:26:01] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:26:01]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:26:01]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.016)
+[2016-05-02 15:26:01]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173961,
+)
+
+-----------------------------------
+[2016-05-02 15:26:02] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:26:02]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:26:02]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.012)
+[2016-05-02 15:26:02]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173962,
+)
+
+-----------------------------------
+[2016-05-02 15:26:33] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:26:33]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:26:33]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.012)
+[2016-05-02 15:26:33]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173993,
+)
+
+-----------------------------------
+[2016-05-02 15:26:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:26:37]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:26:37]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.001)
+[2016-05-02 15:26:37]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462173997,
+)
+
+-----------------------------------
+[2016-05-02 15:27:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:27:08]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:27:08]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 15:27:08]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462174028,
+)
+
+-----------------------------------
+[2016-05-02 15:27:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:27:10]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:27:10]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 15:27:10]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462174030,
+)
+
+-----------------------------------
+[2016-05-02 15:30:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:30:42]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:30:42]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.011)
+[2016-05-02 15:30:42]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462174242,
+)
+
+-----------------------------------
+[2016-05-02 15:30:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:30:58]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:30:58]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 15:30:58]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462174258,
+)
+
+-----------------------------------
+[2016-05-02 15:31:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'adimn',
+)
+[2016-05-02 15:31:06]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'adimn'(OK:0)
+[2016-05-02 15:31:06]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462174266,
+)
+
+-----------------------------------
+[2016-05-02 15:31:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-02 15:31:09]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.016)
+[2016-05-02 15:31:09]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462174269,
+)
+
+-----------------------------------
+[2016-05-02 15:31:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:31:13]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:31:13]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0)
+[2016-05-02 15:31:13]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462174273,
+)
+
+-----------------------------------
+[2016-05-02 15:43:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:43:41]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:43:41]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0)
+[2016-05-02 15:43:41]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462175021,
+)
+
+-----------------------------------
+[2016-05-02 15:45:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:45:39]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:45:39]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.011)
+[2016-05-02 15:45:39]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462175139,
+)
+
+-----------------------------------
+[2016-05-02 15:45:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => '2012051337',
+  'password' => '2012051337',
+)
+[2016-05-02 15:45:49]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '2012051337' and `password` = '2012051337'(OK:0.016)
+[2016-05-02 15:45:49]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '1',
+      'username' => '2012051337',
+      'password' => '2012051337',
+      'usertype' => '1',
+    ),
+  ),
+  'ct' => 1462175149,
+)
+
+-----------------------------------
+[2016-05-02 15:45:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:45:50]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:45:50]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.016)
+[2016-05-02 15:45:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462175150,
+)
+
+-----------------------------------
+[2016-05-02 15:51:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 15:51:48]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 15:51:48]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 15:51:48]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462175508,
+)
+
+-----------------------------------
+[2016-05-02 16:12:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:12:53]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:12:53]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.005)
+[2016-05-02 16:12:53]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462176773,
+)
+
+-----------------------------------
+[2016-05-02 16:12:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:12:56]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:12:56]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.01)
+[2016-05-02 16:12:56]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462176776,
+)
+
+-----------------------------------
+[2016-05-02 16:15:59] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:15:59]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:15:59]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.017)
+[2016-05-02 16:15:59]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462176959,
+)
+
+-----------------------------------
+[2016-05-02 16:16:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:16:47]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:16:47]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.011)
+[2016-05-02 16:16:47]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177007,
+)
+
+-----------------------------------
+[2016-05-02 16:24:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:24:53]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:24:53]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 16:24:53]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177493,
+)
+
+-----------------------------------
+[2016-05-02 16:25:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-02 16:25:03]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.016)
+[2016-05-02 16:25:03]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462177503,
+)
+
+-----------------------------------
+[2016-05-02 16:25:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:25:04]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:25:04]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.001)
+[2016-05-02 16:25:04]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177504,
+)
+
+-----------------------------------
+[2016-05-02 16:26:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:26:21]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:26:21]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.001)
+[2016-05-02 16:26:21]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '12',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    2 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177581,
+)
+
+-----------------------------------
+[2016-05-02 16:26:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.deleteHomework
+POST: array (
+  'hw_no' => '12',
+)
+[2016-05-02 16:26:25]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:26:25]Info: E:\J2EE\web\main\model\ModHomework.php 24
+SQL: delete from `homework` where `hw_no` = 12(OK:0)
+[2016-05-02 16:26:25]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0)
+[2016-05-02 16:26:25]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177585,
+)
+
+-----------------------------------
+[2016-05-02 16:27:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:27:50]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:27:50]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.001)
+[2016-05-02 16:27:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177670,
+)
+
+-----------------------------------
+[2016-05-02 16:29:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:29:29]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:29:29]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.016)
+[2016-05-02 16:29:29]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177769,
+)
+
+-----------------------------------
+[2016-05-02 16:29:30] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:29:30]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:29:30]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-05-02 16:29:30]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462177770,
+)
+
+-----------------------------------
+[2016-05-02 16:33:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-02 16:33:23]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.016)
+[2016-05-02 16:33:23]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462178003,
+)
+
+-----------------------------------
+[2016-05-02 16:42:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:42:34]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:42:34]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-05-02 16:42:34]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462178554,
+)
+
+-----------------------------------
+[2016-05-02 16:51:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:51:35]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:51:35]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-05-02 16:51:35]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462179095,
+)
+
+-----------------------------------
+[2016-05-02 16:52:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:52:35]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:52:35]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.004)
+[2016-05-02 16:52:35]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462179155,
+)
+
+-----------------------------------
+[2016-05-02 16:52:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-02 16:52:36]Error: E:\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-02 16:52:36]Info: E:\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-02 16:52:36]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462179156,
+)
+
+-----------------------------------
+[2016-05-02 17:32:02] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:32:02]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = ''(OK:0.012)
+[2016-05-02 17:32:02]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462181522,
+)
+
+-----------------------------------
+[2016-05-02 17:32:17] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:32:17]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0)
+[2016-05-02 17:32:17]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462181537,
+)
+
+-----------------------------------
+[2016-05-02 17:33:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:33:19]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.013)
+[2016-05-02 17:33:19]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462181599,
+)
+
+-----------------------------------
+[2016-05-02 17:33:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:33:38]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.004)
+[2016-05-02 17:33:38]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462181618,
+)
+
+-----------------------------------
+[2016-05-02 17:33:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:33:53]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.001)
+[2016-05-02 17:33:53]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462181633,
+)
+
+-----------------------------------
+[2016-05-02 17:34:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:34:47]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0)
+[2016-05-02 17:34:47]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462181687,
+)
+
+-----------------------------------
+[2016-05-02 17:34:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:34:48]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.012)
+[2016-05-02 17:34:48]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'uid' => '4',
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462181688,
+)
+
+-----------------------------------
+[2016-05-02 17:34:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:34:58]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.012)
+[2016-05-02 17:34:58]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462181698,
+)
+
+-----------------------------------
+[2016-05-02 17:50:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:50:27]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.002)
+[2016-05-02 17:50:27]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462182627,
+)
+
+-----------------------------------
+[2016-05-02 17:51:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:51:35]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.012)
+[2016-05-02 17:51:35]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462182695,
+)
+
+-----------------------------------
+[2016-05-02 17:51:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:51:49]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.001)
+[2016-05-02 17:51:49]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462182709,
+)
+
+-----------------------------------
+[2016-05-02 17:52:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'ad122',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:52:04]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'ad122'(OK:0.002)
+[2016-05-02 17:52:04]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462182724,
+)
+
+-----------------------------------
+[2016-05-02 17:53:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'ad122',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:53:35]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'ad122'(OK:0.011)
+[2016-05-02 17:53:36]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462182816,
+)
+
+-----------------------------------
+[2016-05-02 17:54:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:54:32]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.001)
+[2016-05-02 17:54:32]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '12312' where `username` = 'admin'(OK:0)
+[2016-05-02 17:54:32]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462182872,
+)
+
+-----------------------------------
+[2016-05-02 17:54:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12312',
+)
+[2016-05-02 17:54:51]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.003)
+[2016-05-02 17:54:51]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462182891,
+)
+
+-----------------------------------
+[2016-05-02 17:55:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '12312',
+  'newPassword' => 'admin',
+)
+[2016-05-02 17:55:03]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '12312'(OK:0.002)
+[2016-05-02 17:55:03]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = 'admin' where `username` = 'admin'(OK:0.001)
+[2016-05-02 17:55:03]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462182903,
+)
+
+-----------------------------------
+[2016-05-02 17:55:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '123123',
+)
+[2016-05-02 17:55:24]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.003)
+[2016-05-02 17:55:24]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '123123' where `username` = 'admin'(OK:0.001)
+[2016-05-02 17:55:24]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462182924,
+)
+
+-----------------------------------
+[2016-05-02 17:55:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '123123',
+)
+[2016-05-02 17:55:49]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.002)
+[2016-05-02 17:55:49]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462182949,
+)
+
+-----------------------------------
+[2016-05-02 17:55:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123123',
+  'newPassword' => 'admin',
+)
+[2016-05-02 17:55:55]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123123'(OK:0.011)
+[2016-05-02 17:55:55]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = 'admin' where `username` = 'admin'(OK:0.001)
+[2016-05-02 17:55:55]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462182955,
+)
+
+-----------------------------------
+[2016-05-02 17:58:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+[2016-05-02 17:58:52]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '' and `password` = ''(OK:0.003)
+[2016-05-02 17:58:52]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183132,
+)
+
+-----------------------------------
+[2016-05-02 17:59:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '123123',
+)
+[2016-05-02 17:59:25]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.012)
+[2016-05-02 17:59:25]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '123123' where `username` = 'admin'(OK:0.001)
+[2016-05-02 17:59:25]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462183165,
+)
+
+-----------------------------------
+[2016-05-02 17:59:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '123123',
+)
+[2016-05-02 17:59:52]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.004)
+[2016-05-02 17:59:52]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183192,
+)
+
+-----------------------------------
+[2016-05-02 18:00:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123123',
+  'newPassword' => 'admin',
+)
+[2016-05-02 18:00:03]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123123'(OK:0.004)
+[2016-05-02 18:00:03]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = 'admin' where `username` = 'admin'(OK:0.002)
+[2016-05-02 18:00:03]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462183203,
+)
+
+-----------------------------------
+[2016-05-02 18:00:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123123',
+  'newPassword' => 'admin',
+)
+[2016-05-02 18:00:07]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123123'(OK:0.012)
+[2016-05-02 18:00:07]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183207,
+)
+
+-----------------------------------
+[2016-05-02 18:02:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123123',
+  'newPassword' => '1234',
+)
+[2016-05-02 18:02:48]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123123'(OK:0.004)
+[2016-05-02 18:02:48]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183368,
+)
+
+-----------------------------------
+[2016-05-02 18:03:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '12341234',
+)
+[2016-05-02 18:03:28]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.012)
+[2016-05-02 18:03:28]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '12341234' where `username` = 'admin'(OK:0.001)
+[2016-05-02 18:03:28]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462183408,
+)
+
+-----------------------------------
+[2016-05-02 18:04:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '123',
+)
+[2016-05-02 18:04:48]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.004)
+[2016-05-02 18:04:48]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183488,
+)
+
+-----------------------------------
+[2016-05-02 18:05:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '12341234',
+  'newPassword' => '1234',
+)
+[2016-05-02 18:05:46]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '12341234'(OK:0.012)
+[2016-05-02 18:05:46]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '1234' where `username` = 'admin'(OK:0.001)
+[2016-05-02 18:05:46]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462183546,
+)
+
+-----------------------------------
+[2016-05-02 18:05:59] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '12341234',
+  'newPassword' => '1234',
+)
+[2016-05-02 18:05:59]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '12341234'(OK:0.005)
+[2016-05-02 18:05:59]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183559,
+)
+
+-----------------------------------
+[2016-05-02 18:06:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123fsdfsdf',
+  'newPassword' => '12345',
+)
+[2016-05-02 18:06:35]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123fsdfsdf'(OK:0.003)
+[2016-05-02 18:06:35]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183595,
+)
+
+-----------------------------------
+[2016-05-02 18:07:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'ffsdffasfasdf',
+  'newPassword' => '123',
+)
+[2016-05-02 18:07:50]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'ffsdffasfasdf'(OK:0.011)
+[2016-05-02 18:07:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183670,
+)
+
+-----------------------------------
+[2016-05-02 18:08:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'fsdfsdfasd',
+  'newPassword' => '1234',
+)
+[2016-05-02 18:08:06]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'fsdfsdfasd'(OK:0.011)
+[2016-05-02 18:08:06]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183686,
+)
+
+-----------------------------------
+[2016-05-02 18:08:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '1234',
+  'newPassword' => 'admin',
+)
+[2016-05-02 18:08:44]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '1234'(OK:0.012)
+[2016-05-02 18:08:44]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = 'admin' where `username` = 'admin'(OK:0.001)
+[2016-05-02 18:08:44]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462183724,
+)
+
+-----------------------------------
+[2016-05-02 18:10:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '1234',
+  'newPassword' => 'admin',
+)
+[2016-05-02 18:10:24]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '1234'(OK:0.012)
+[2016-05-02 18:10:24]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183824,
+)
+
+-----------------------------------
+[2016-05-02 18:11:22] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '1234',
+  'newPassword' => '12345',
+)
+[2016-05-02 18:11:22]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '1234'(OK:0.003)
+[2016-05-02 18:11:22]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183882,
+)
+
+-----------------------------------
+[2016-05-02 18:11:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '1234',
+  'newPassword' => '12345',
+)
+[2016-05-02 18:11:39]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '1234'(OK:0.012)
+[2016-05-02 18:11:39]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183899,
+)
+
+-----------------------------------
+[2016-05-02 18:12:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '1234',
+)
+[2016-05-02 18:12:49]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.004)
+[2016-05-02 18:12:49]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '1234' where `username` = 'admin'(OK:0.001)
+[2016-05-02 18:12:49]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462183969,
+)
+
+-----------------------------------
+[2016-05-02 18:13:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123456432634',
+  'newPassword' => 'asd',
+)
+[2016-05-02 18:13:07]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123456432634'(OK:0.012)
+[2016-05-02 18:13:07]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462183987,
+)
+
+-----------------------------------
+[2016-05-02 18:14:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123123123',
+  'newPassword' => '123',
+)
+[2016-05-02 18:14:06]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123123123'(OK:0.012)
+[2016-05-02 18:14:06]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462184046,
+)
+
+-----------------------------------
+[2016-05-02 18:14:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '1234',
+  'newPassword' => '123',
+)
+[2016-05-02 18:14:27]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '1234'(OK:0.011)
+[2016-05-02 18:14:27]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '123' where `username` = 'admin'(OK:0.001)
+[2016-05-02 18:14:27]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462184067,
+)
+
+-----------------------------------
+[2016-05-02 18:14:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123',
+  'newPassword' => '1234',
+)
+[2016-05-02 18:14:50]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123'(OK:0.001)
+[2016-05-02 18:14:50]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '1234' where `username` = 'admin'(OK:0)
+[2016-05-02 18:14:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462184090,
+)
+
+-----------------------------------
+[2016-05-02 18:15:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '1234',
+  'newPassword' => '123',
+)
+[2016-05-02 18:15:19]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '1234'(OK:0.012)
+[2016-05-02 18:15:19]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '123' where `username` = 'admin'(OK:0.001)
+[2016-05-02 18:15:19]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462184119,
+)
+
+-----------------------------------
+[2016-05-02 18:15:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '123',
+  'newPassword' => '1234',
+)
+[2016-05-02 18:15:34]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '123'(OK:0.012)
+[2016-05-02 18:15:34]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = '1234' where `username` = 'admin'(OK:0.001)
+[2016-05-02 18:15:34]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462184134,
+)
+
+-----------------------------------
+[2016-05-02 18:15:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => 'admin',
+  'newPassword' => '1231',
+)
+[2016-05-02 18:15:53]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.012)
+[2016-05-02 18:15:53]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462184153,
+)
+
+-----------------------------------
+[2016-05-02 18:16:01] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.changePassword
+POST: array (
+  'username' => 'admin',
+  'oldPassword' => '1234',
+  'newPassword' => 'admin',
+)
+[2016-05-02 18:16:01]Info: E:\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = '1234'(OK:0.011)
+[2016-05-02 18:16:01]Info: E:\J2EE\web\main\model\ModUser.php 18
+SQL: update `user` set `password` = 'admin' where `username` = 'admin'(OK:0)
+[2016-05-02 18:16:01]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1462184161,
+)
+
+-----------------------------------
+[2016-05-02 19:20:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:20:32]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => NULL,
+)
+
+-----------------------------------
+[2016-05-02 19:22:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:22:10]Error: E:\J2EE\web\main\service\SrvUserApi.php 43
+syntax error, unexpected 'if' (T_IF)
+
+-----------------------------------
+[2016-05-02 19:22:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:22:48]Error: E:\J2EE\web\main\service\SrvUserApi.php 43
+syntax error, unexpected 'if' (T_IF)
+
+
+
+
+-----------------------------------
+[2016-05-02 19:23:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:23:37]Error: E:\J2EE\web\main\service\SrvUserApi.php 43
+syntax error, unexpected 'if' (T_IF)
+
+-----------------------------------
+[2016-05-02 19:24:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:24:46]Error: E:\J2EE\web\main\service\SrvUserApi.php 43
+syntax error, unexpected 'if' (T_IF)
+
+-----------------------------------
+[2016-05-02 19:25:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:25:15]Error: E:\J2EE\web\main\service\SrvUserApi.php 79
+syntax error, unexpected '}'
+
+
+
+-----------------------------------
+[2016-05-02 19:25:30] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:25:30]Info: E:\J2EE\web\main\service\SrvUserApi.php 40
+
+[2016-05-02 19:25:30]Info: E:\J2EE\web\main\service\SrvUserApi.php 41
+------****----
+[2016-05-02 19:25:30]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188330,
+)
+
+-----------------------------------
+[2016-05-02 19:25:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:25:51]Info: E:\J2EE\web\main\service\SrvUserApi.php 40
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR',
+)
+[2016-05-02 19:25:51]Info: E:\J2EE\web\main\service\SrvUserApi.php 41
+------****----
+[2016-05-02 19:25:51]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188351,
+)
+
+-----------------------------------
+[2016-05-02 19:26:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:26:42]Info: E:\J2EE\web\main\service\SrvUserApi.php 40
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR',
+)
+[2016-05-02 19:26:42]Info: E:\J2EE\web\main\service\SrvUserApi.php 41
+------****----
+[2016-05-02 19:26:42]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188402,
+)
+
+-----------------------------------
+[2016-05-02 19:27:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:27:09]Info: E:\J2EE\web\main\service\SrvUserApi.php 40
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+[2016-05-02 19:27:09]Info: E:\J2EE\web\main\service\SrvUserApi.php 41
+------****----
+[2016-05-02 19:27:09]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188429,
+)
+
+-----------------------------------
+[2016-05-02 19:27:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:27:36]Info: E:\J2EE\lib\library\LibFile.php 76
+
+[2016-05-02 19:27:36]Info: E:\J2EE\web\main\service\SrvUserApi.php 40
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+[2016-05-02 19:27:36]Info: E:\J2EE\web\main\service\SrvUserApi.php 41
+------****----
+[2016-05-02 19:27:36]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188456,
+)
+
+-----------------------------------
+[2016-05-02 19:27:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:27:55]Info: E:\J2EE\lib\library\LibFile.php 76
+
+[2016-05-02 19:27:55]Info: E:\J2EE\lib\library\LibFile.php 77
+xxxx
+[2016-05-02 19:27:55]Info: E:\J2EE\web\main\service\SrvUserApi.php 40
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+[2016-05-02 19:27:55]Info: E:\J2EE\web\main\service\SrvUserApi.php 41
+------****----
+[2016-05-02 19:27:55]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188475,
+)
+
+-----------------------------------
+[2016-05-02 19:28:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:28:38]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'test' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\phpB2FA.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:28:38]Info: E:\J2EE\lib\library\LibFile.php 76
+
+[2016-05-02 19:28:38]Info: E:\J2EE\lib\library\LibFile.php 77
+xxxx
+[2016-05-02 19:28:38]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+[2016-05-02 19:28:38]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:28:38]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188518,
+)
+
+-----------------------------------
+[2016-05-02 19:29:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:29:56]Info: E:\J2EE\web\main\service\SrvUserApi.php 41
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+[2016-05-02 19:29:56]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+------****----
+[2016-05-02 19:29:56]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188596,
+)
+
+-----------------------------------
+[2016-05-02 19:30:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:30:28]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'test' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\php61E1.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:30:28]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+array (
+  'state' => false,
+  'url' => '',
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+[2016-05-02 19:30:28]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:30:28]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188628,
+)
+
+-----------------------------------
+[2016-05-02 19:31:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:31:10]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'filename' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\php81F.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:31:10]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+array (
+  'msg' => '格式错误',
+  'state' => false,
+)
+[2016-05-02 19:31:10]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:31:10]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188670,
+)
+
+-----------------------------------
+[2016-05-02 19:31:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:31:50]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'filename' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\phpA384.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:31:50]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:31:50]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+array (
+  'msg' => '格式错误',
+  'state' => false,
+)
+[2016-05-02 19:31:50]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:31:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188710,
+)
+
+-----------------------------------
+[2016-05-02 19:32:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:32:12]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'filename' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\phpF6B3.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:32:12]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:32:12]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+array (
+  'state' => true,
+  'url' => '0/1605/021932126279.xlsx',
+  'file' => '0/1605/021932126279.xlsx',
+  'ext' => '.xlsx',
+  'msg' => 'UPLOAD_SUCCESS',
+)
+[2016-05-02 19:32:12]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:32:12]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188732,
+)
+
+-----------------------------------
+[2016-05-02 19:34:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:34:13]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'filename' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\phpD12A.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:34:13]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:34:13]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+0
+[2016-05-02 19:34:13]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:34:13]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188853,
+)
+
+-----------------------------------
+[2016-05-02 19:35:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:35:23]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'filename' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\phpE2A9.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:35:23]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:35:23]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+E:\J2EE\web
+[2016-05-02 19:35:23]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:35:23]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188923,
+)
+
+-----------------------------------
+[2016-05-02 19:36:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:36:11]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'filename' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\php9DBE.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:36:11]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:36:11]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+E:\J2EE\web
+[2016-05-02 19:36:11]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:36:11]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462188971,
+)
+
+-----------------------------------
+[2016-05-02 19:37:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:37:27]Info: E:\J2EE\web\main\service\SrvUserApi.php 36
+array (
+  'filename' => 
+  array (
+    'name' => 'test.xlsx',
+    'type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    'tmp_name' => 'F:\\Program Files\\EasyPHP-DevServer-14.1VC9\\binaries\\tmp\\phpC6A3.tmp',
+    'error' => 0,
+    'size' => 10050,
+  ),
+)
+[2016-05-02 19:37:27]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:37:27]Info: E:\J2EE\web\main\service\SrvUserApi.php 42
+E:\J2EE\web
+[2016-05-02 19:37:27]Info: E:\J2EE\web\main\service\SrvUserApi.php 43
+------****----
+[2016-05-02 19:37:27]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462189047,
+)
+
+-----------------------------------
+[2016-05-02 19:38:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:38:13]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:38:13]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462189093,
+)
+
+-----------------------------------
+[2016-05-02 19:38:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:38:49]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:38:49]Warn: E:\J2EE\web\main\service\SrvUserApi.php 42
+require(E:\J2EE/liblibrary/excel/PHPExcel.php): failed to open stream: No such file or directory
+[2016-05-02 19:38:49]Error: E:\J2EE\web\main\service\SrvUserApi.php 42
+require(): Failed opening required 'E:\J2EE/liblibrary/excel/PHPExcel.php' (include_path='.;C:\php\pear')
+
+-----------------------------------
+[2016-05-02 19:39:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:39:50]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:39:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  1 => 
+  array (
+    'A' => NULL,
+  ),
+)
+
+-----------------------------------
+[2016-05-02 19:40:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:40:37]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:40:37]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  1 => 
+  array (
+    'A' => '啊大大',
+    'B' => '打算打打',
+    'C' => '爱的十大',
+  ),
+  2 => 
+  array (
+    'A' => '安大厦',
+    'B' => '阿萨德阿叔',
+    'C' => NULL,
+  ),
+)
+
+-----------------------------------
+[2016-05-02 19:52:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:52:55]Error: E:\J2EE\web\main\service\SrvUserApi.php 51
+syntax error, unexpected '}'
+
+-----------------------------------
+[2016-05-02 19:53:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:53:04]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:53:04]Info: E:\J2EE\web\main\service\SrvUserApi.php 50
+2012123456
+[2016-05-02 19:53:04]Info: E:\J2EE\web\main\service\SrvUserApi.php 50
+2012123457
+[2016-05-02 19:53:04]Info: E:\J2EE\web\main\service\SrvUserApi.php 50
+2012123458
+[2016-05-02 19:53:04]Info: E:\J2EE\web\main\service\SrvUserApi.php 50
+2012123459
+[2016-05-02 19:53:04]Info: E:\J2EE\web\main\service\SrvUserApi.php 50
+2012123460
+[2016-05-02 19:53:04]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462189984,
+)
+
+-----------------------------------
+[2016-05-02 19:53:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:53:14]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:53:14]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462189994,
+)
+
+-----------------------------------
+[2016-05-02 19:54:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:54:27]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 19:54:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:54:38]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:54:38]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '305',
+  'data' => '接口不存在',
+  'ct' => 1462190078,
+)
+
+-----------------------------------
+[2016-05-02 19:55:20] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:55:20]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:55:20]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  1 => 
+  array (
+    'A' => '学号',
+    'B' => '姓名',
+  ),
+  2 => 
+  array (
+    'A' => 2012123456,
+    'B' => '哈哈哈',
+  ),
+  3 => 
+  array (
+    'A' => 2012123457,
+    'B' => '啊打',
+  ),
+  4 => 
+  array (
+    'A' => 2012123458,
+    'B' => '达到',
+  ),
+  5 => 
+  array (
+    'A' => 2012123459,
+    'B' => '啊打',
+  ),
+  6 => 
+  array (
+    'A' => 2012123460,
+    'B' => '阿萨德撒',
+  ),
+)
+
+-----------------------------------
+[2016-05-02 19:55:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:55:48]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:55:49]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  1 => 
+  array (
+    'A' => '学号',
+    'B' => '姓名',
+  ),
+  2 => 
+  array (
+    'A' => 2012123456,
+    'B' => '哈哈哈',
+  ),
+  3 => 
+  array (
+    'A' => 2012123457,
+    'B' => '啊打',
+  ),
+  4 => 
+  array (
+    'A' => 2012123458,
+    'B' => '达到',
+  ),
+  5 => 
+  array (
+    'A' => 2012123459,
+    'B' => '啊打',
+  ),
+  6 => 
+  array (
+    'A' => 2012123460,
+    'B' => '阿萨德撒',
+  ),
+)
+
+-----------------------------------
+[2016-05-02 19:56:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:56:38]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:56:38]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  1 => 
+  array (
+    'A' => '学号',
+    'B' => '姓名',
+  ),
+  2 => 
+  array (
+    'A' => 2012123456,
+    'B' => '哈哈哈',
+  ),
+  3 => 
+  array (
+    'A' => 2012123457,
+    'B' => '啊打',
+  ),
+  4 => 
+  array (
+    'A' => 2012123458,
+    'B' => '达到',
+  ),
+  5 => 
+  array (
+    'A' => 2012123459,
+    'B' => '啊打',
+  ),
+  6 => 
+  array (
+    'A' => 2012123460,
+    'B' => '阿萨德撒',
+  ),
+)
+
+-----------------------------------
+[2016-05-02 19:59:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 19:59:12]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 19:59:12]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-02 19:59:12]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(OK:0)
+[2016-05-02 19:59:12]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(OK:0)
+[2016-05-02 19:59:12]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(OK:0)
+[2016-05-02 19:59:12]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(OK:0)
+[2016-05-02 19:59:12]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-02 20:40:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'filename' => 'C:\\fakepath\\test.xlsx',
+)
+[2016-05-02 20:40:44]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 20:52:26] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'filename' => 'C:\\fakepath\\test.xlsx',
+)
+[2016-05-02 20:52:26]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 20:52:26] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 20:52:26]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 20:56:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'filename' => 'C:\\fakepath\\test.xlsx',
+)
+[2016-05-02 20:56:57]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 20:57:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 20:57:19]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 20:57:19]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-02 20:57:19]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-02 20:57:19]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-02 20:57:19]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-02 20:57:19]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-02 20:57:19]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-02 21:09:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 21:09:48]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:10:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 21:10:13]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:10:59] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 21:10:59]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:14:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'filename' => 'C:\\fakepath\\test.xlsx',
+)
+[2016-05-02 21:14:36]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:19:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 21:19:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:19:54] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 21:19:54]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 21:19:54]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-02 21:19:54]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-02 21:19:54]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-02 21:19:54]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-02 21:19:54]Error: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-02 21:19:54]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-02 21:20:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 21:20:24]Info: E:\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-02 21:20:24]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(OK:0.001)
+[2016-05-02 21:20:24]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(OK:0.001)
+[2016-05-02 21:20:24]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(OK:0)
+[2016-05-02 21:20:24]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(OK:0)
+[2016-05-02 21:20:24]Info: E:\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(OK:0.001)
+[2016-05-02 21:20:24]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-02 21:21:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-02 21:21:11]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:23:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'filename' => 'C:\\fakepath\\test.xlsx',
+)
+[2016-05-02 21:23:42]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:25:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'filename' => 'E:/test.xlsx',
+)
+[2016-05-02 21:25:50]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:27:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'filename' => 'E:/test.xlsx',
+)
+[2016-05-02 21:27:03]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-02 21:34:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'upload' => 'C:\\fakepath\\test.xlsx',
+)
+[2016-05-02 21:34:07]Info: E:\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)

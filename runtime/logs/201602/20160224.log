@@ -1,0 +1,141 @@
+
+-----------------------------------
+[2016-02-24 17:12:23] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.reportMsg
+POST: array (
+  'uid' => '169',
+  'psw' => 'qqqqqq',
+  'msg' => '他妈的，又fsdfd来3213',
+  'gid' => '39',
+)
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:12:23]Error: E:\php\zao\lib\DM.php 228
+自动加载CtlApi时，文件E:\php\zao\web\main/controller/CtlApi.php不存在
+
+-----------------------------------
+[2016-02-24 17:12:34] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+POST: array (
+  'uid' => '169',
+  'psw' => 'qqqqqq',
+  'msg' => '他妈的，又fsdfd来3213',
+  'gid' => '39',
+)
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:12:34]Error: E:\php\zao\lib\DM.php 228
+自动加载CtlApi时，文件E:\php\zao\web\main/controller/CtlApi.php不存在
+
+-----------------------------------
+[2016-02-24 17:12:39] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:12:39]Error: E:\php\zao\lib\DM.php 228
+自动加载CtlApi时，文件E:\php\zao\web\main/controller/CtlApi.php不存在
+
+-----------------------------------
+[2016-02-24 17:12:59] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:12:59]Error: E:\php\zao\lib\DM.php 228
+自动加载CtlApi时，文件E:\php\zao\web\main/controller/CtlApi.php不存在
+
+-----------------------------------
+[2016-02-24 17:13:50] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:13:50]Error: E:\php\zao\lib\DM.php 228
+自动加载CtlApi时，文件E:\php\zao\web\main/controller/CtlApi.php不存在
+
+-----------------------------------
+[2016-02-24 17:18:46] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:18:46]Info: E:\php\zao\web\main\model\ModGoods.php 31
+SQL: select * from `zao_chartlet`(OK:0.047)
+[2016-02-24 17:18:46]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'id' => '1',
+      'name' => '123',
+      'num' => '12',
+      'img' => '2313',
+      'tag' => '123',
+      'file' => '123',
+      'is_del' => '0',
+    ),
+  ),
+  'ct' => 1456305526,
+)
+
+-----------------------------------
+[2016-02-24 17:19:19] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:19:19]Info: E:\php\zao\web\main\model\ModGoods.php 31
+SQL: select * from `zao_chartlet` where `is_del`=0(OK:0.003)
+[2016-02-24 17:19:19]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '0',
+  'd' => 
+  array (
+    0 => 
+    array (
+      'id' => '1',
+      'name' => '123',
+      'num' => '12',
+      'img' => '2313',
+      'tag' => '123',
+      'file' => '123',
+      'is_del' => '0',
+    ),
+  ),
+  'ct' => 1456305559,
+)
+
+-----------------------------------
+[2016-02-24 17:19:28] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:19:28]Info: E:\php\zao\web\main\model\ModGoods.php 31
+SQL: select * from `zao_chartlet` where `is_del`=0(OK:0.017)
+[2016-02-24 17:19:28]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => '系统发生未知异常',
+  'ct' => 1456305568,
+)
+
+-----------------------------------
+[2016-02-24 17:19:28] 127.0.0.1 http://zao.com/main/?ct=api&method=goods.getChartlet
+COOKIE: array (
+  '_mkto_trk' => 'id:535-DFM-955&token:_mch-zao.com-1455689600341-76134',
+  'mp_12cbd7cc15c452e6a0963252270224d1_mixpanel' => '{"distinct_id": "152eddc9a8989-0a46d58b4-35455a62-1fa400-152eddc9a8af9","$initial_referrer": "$direct","$initial_referring_domain": "$direct"}',
+)
+[2016-02-24 17:19:28]Info: E:\php\zao\web\main\model\ModGoods.php 31
+SQL: select * from `zao_chartlet` where `is_del`=0(OK:0.011)
+[2016-02-24 17:19:28]Info: E:\php\zao\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'd' => '系统发生未知异常',
+  'ct' => 1456305568,
+)

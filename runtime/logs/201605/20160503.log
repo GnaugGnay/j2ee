@@ -1,0 +1,432 @@
+
+-----------------------------------
+[2016-05-03 00:18:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => '2012051337',
+  'password' => '201205137',
+)
+[2016-05-03 00:18:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '2012051337' and `password` = '201205137'(OK:0.006)
+[2016-05-03 00:18:25]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1462205905,
+)
+
+-----------------------------------
+[2016-05-03 00:18:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => '2012051337',
+  'password' => '2012051337',
+)
+[2016-05-03 00:18:31]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '2012051337' and `password` = '2012051337'(OK:0.004)
+[2016-05-03 00:18:31]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => '2012051337',
+      'password' => '2012051337',
+      'usertype' => '1',
+    ),
+  ),
+  'ct' => 1462205911,
+)
+
+-----------------------------------
+[2016-05-03 00:18:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-03 00:18:38]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-03 00:18:38]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.005)
+[2016-05-03 00:18:38]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462205918,
+)
+
+-----------------------------------
+[2016-05-03 16:45:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-03 16:45:52]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.248)
+[2016-05-03 16:45:52]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462265152,
+)
+
+-----------------------------------
+[2016-05-03 16:47:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 16:47:35]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-03 16:47:36]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-03 16:47:36]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-03 16:47:36]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-03 16:47:36]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-03 16:47:36]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-03 16:47:36]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 16:53:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 16:53:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 16:55:54] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 16:55:54]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 16:57:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 16:57:32]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 16:57:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 16:57:47]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 16:58:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 16:58:46]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 16:59:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 16:59:16]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 16:59:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+POST: array (
+  'adas' => 'asdasd',
+)
+[2016-05-03 16:59:27]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:00:26] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:00:26]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:03:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:03:38]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:04:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:04:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:04:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:04:56]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:05:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:05:31]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:05:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:05:58]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:06:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:06:47]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:09:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:09:23]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:09:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:09:38]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:09:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:09:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:10:01] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:10:01]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:15:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:15:37]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:20:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:20:18]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:20:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:20:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:22:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:22:00]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-03 17:22:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:22:53]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-03 17:22:53]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-03 17:22:53]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-03 17:22:53]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-03 17:22:53]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-03 17:22:53]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-03 17:22:53]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:24:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:24:04]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-03 17:24:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(OK:0.002)
+[2016-05-03 17:24:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(OK:0.001)
+[2016-05-03 17:24:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(OK:0.001)
+[2016-05-03 17:24:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(OK:0.001)
+[2016-05-03 17:24:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(OK:0.001)
+[2016-05-03 17:24:04]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:25:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:25:35]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-03 17:25:35]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-03 17:25:35]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-03 17:25:35]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-03 17:25:35]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-03 17:25:35]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-03 17:25:35]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:31:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:31:37]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-03 17:31:37]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-03 17:31:37]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-03 17:31:37]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-03 17:31:37]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-03 17:31:37]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-03 17:31:37]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 17:35:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 17:35:58]Info: E:\HowToMakeLove\J2EE\lib\library\LibFile.php 89
+.xlsx
+[2016-05-03 17:35:59]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123456', '2012123456', '1');(error：Duplicate entry '2012123456' for key 'PRIMARY')
+[2016-05-03 17:35:59]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123457', '2012123457', '1');(error：Duplicate entry '2012123457' for key 'PRIMARY')
+[2016-05-03 17:35:59]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123458', '2012123458', '1');(error：Duplicate entry '2012123458' for key 'PRIMARY')
+[2016-05-03 17:35:59]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123459', '2012123459', '1');(error：Duplicate entry '2012123459' for key 'PRIMARY')
+[2016-05-03 17:35:59]Error: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 24
+SQL: insert INTO `j2ee`.`user` (`username`, `password`, `usertype`) VALUES ('2012123460', '2012123460', '1');(error：Duplicate entry '2012123460' for key 'PRIMARY')
+[2016-05-03 17:35:59]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 1,
+  'msg' => '插入成功',
+)
+
+-----------------------------------
+[2016-05-03 20:05:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.importUser
+[2016-05-03 20:05:49]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'state' => 0,
+  'msg' => 'UPLOAD_ERROR_FILE',
+)
+
+-----------------------------------
+[2016-05-03 20:11:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=main.getHomeworks
+[2016-05-03 20:11:51]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-03 20:11:51]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.105)
+[2016-05-03 20:11:51]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462277511,
+)
