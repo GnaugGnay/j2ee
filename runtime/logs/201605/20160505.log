@@ -60,3 +60,57 @@ array (
   ),
   'ct' => 1462411799,
 )
+
+-----------------------------------
+[2016-05-05 09:56:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-05 09:56:58]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.004)
+[2016-05-05 09:56:58]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question' => '测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测测测测测',
+      'B' => '测测测测啊实打实大师',
+      'C' => '按时打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '2',
+    ),
+    1 => 
+    array (
+      'question' => '测试测试测试是对爱打打分好大事离开后测试测试测试是对话框哈好大了好大事离开后测试测试测试是对话框哈好大了好大事离开后',
+      'A' => '测测测测大发大发发测测测测',
+      'B' => '测测测测啊实打实阿迪发动大师',
+      'C' => '按时是打发第三方打算前往12',
+      'D' => '去阿萨是对方34他所发生的',
+      'answer' => '1',
+    ),
+  ),
+  'ct' => 1462413418,
+)
+
+-----------------------------------
+[2016-05-05 09:57:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-05 09:57:44]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.004)
+[2016-05-05 09:57:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => 'admin',
+      'password' => 'admin',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1462413464,
+)
