@@ -1462,3 +1462,820 @@ array (
   ),
   'ct' => 1462519963,
 )
+
+-----------------------------------
+[2016-05-06 19:06:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-06 19:06:13]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 31
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.003)
+[2016-05-06 19:06:13]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '1',
+      'username' => '2012051337',
+      'quiz_id' => '1',
+      'quiz_time' => '2016-05-05',
+      'score' => '88',
+    ),
+    1 => 
+    array (
+      'score_id' => '2',
+      'username' => '2012051337',
+      'quiz_id' => '2',
+      'quiz_time' => '2016-05-06',
+      'score' => '90',
+    ),
+  ),
+  'ct' => 1462532773,
+)
+
+-----------------------------------
+[2016-05-06 19:07:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:07:58]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-06 19:07:58]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462532878,
+)
+
+-----------------------------------
+[2016-05-06 19:09:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-06 19:09:31]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-06 19:09:31]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.004)
+[2016-05-06 19:09:31]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1462532971,
+)
+
+-----------------------------------
+[2016-05-06 19:09:33] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:09:33]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-06 19:09:33]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462532973,
+)
+
+-----------------------------------
+[2016-05-06 19:11:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:11:35]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.01)
+[2016-05-06 19:11:35]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533095,
+)
+
+-----------------------------------
+[2016-05-06 19:15:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:15:50]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.014)
+[2016-05-06 19:15:50]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533350,
+)
+
+-----------------------------------
+[2016-05-06 19:15:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:15:53]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.001)
+[2016-05-06 19:15:53]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533353,
+)
+
+-----------------------------------
+[2016-05-06 19:16:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:16:21]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.001)
+[2016-05-06 19:16:21]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533381,
+)
+
+-----------------------------------
+[2016-05-06 19:16:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:16:24]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.01)
+[2016-05-06 19:16:24]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533384,
+)
+
+-----------------------------------
+[2016-05-06 19:16:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:16:31]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-06 19:16:31]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533391,
+)
+
+-----------------------------------
+[2016-05-06 19:16:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:16:40]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.001)
+[2016-05-06 19:16:40]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533400,
+)
+
+-----------------------------------
+[2016-05-06 19:16:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:16:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-06 19:16:43]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533403,
+)
+
+-----------------------------------
+[2016-05-06 19:16:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:16:44]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-06 19:16:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533404,
+)
+
+-----------------------------------
+[2016-05-06 19:16:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:16:46]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-06 19:16:46]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533406,
+)
+
+-----------------------------------
+[2016-05-06 19:17:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:17:09]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-06 19:17:09]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533429,
+)
+
+-----------------------------------
+[2016-05-06 19:17:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:17:28]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-06 19:17:28]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533448,
+)
+
+-----------------------------------
+[2016-05-06 19:17:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-06 19:17:36]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 31
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.001)
+[2016-05-06 19:17:36]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '1',
+      'username' => '2012051337',
+      'quiz_id' => '1',
+      'quiz_time' => '2016-05-05',
+      'score' => '88',
+    ),
+    1 => 
+    array (
+      'score_id' => '2',
+      'username' => '2012051337',
+      'quiz_id' => '2',
+      'quiz_time' => '2016-05-06',
+      'score' => '90',
+    ),
+  ),
+  'ct' => 1462533456,
+)
+
+-----------------------------------
+[2016-05-06 19:17:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-06 19:17:52]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 31
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.011)
+[2016-05-06 19:17:52]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '1',
+      'username' => '2012051337',
+      'quiz_id' => '1',
+      'quiz_time' => '2016-05-05',
+      'score' => '88',
+    ),
+    1 => 
+    array (
+      'score_id' => '2',
+      'username' => '2012051337',
+      'quiz_id' => '2',
+      'quiz_time' => '2016-05-06',
+      'score' => '90',
+    ),
+  ),
+  'ct' => 1462533472,
+)
+
+-----------------------------------
+[2016-05-06 19:19:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-06 19:19:44]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 12
+SQL: select * from `onlinequiz`(OK:0.012)
+[2016-05-06 19:19:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'question_type' => '1',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的125',
+      'D' => '发夫妻为父亲为父亲外出的12532韶关',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'question_type' => '2',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'question_type' => '3',
+      'question' => '大事发生地方vsdfsdfgsdfgf',
+      'A' => '发夫妻为父亲为父亲外出的',
+      'B' => '发夫妻为父亲为父亲外出的12',
+      'C' => '发夫妻为父亲为父亲外出的gbsdfgf',
+      'D' => '发夫妻为父亲为父亲外出的344hfegbsdf',
+      'answer' => 'A,B',
+    ),
+  ),
+  'ct' => 1462533584,
+)
