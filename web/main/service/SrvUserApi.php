@@ -29,7 +29,7 @@ class SrvUserApi{
             return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
         }
     }
-
+    //导入EXCEL到user表，学期开始时操作
     public function importUser(){
         ini_set('memory_limit','256M');
 
@@ -47,10 +47,18 @@ class SrvUserApi{
         foreach($sheetData as $key => $data) {
             if ($key == 1) continue;
             $username = $data['A'];
-            $mod->addUser($username);
+            $fullName = $data['B'];
+            $mod->addUser($username, $fullName);
         }
 
         return array('state'=>1,'msg'=>'插入成功');
+    }
+    //查询成绩
+    public function pastScore($data) {
+        $mod = new ModUser();
+        $username = $data['username'];
+        $re = $mod->getScore($username);
+        return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 
 }

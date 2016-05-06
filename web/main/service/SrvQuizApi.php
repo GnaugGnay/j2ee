@@ -15,4 +15,9 @@ class SrvQuizApi{
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 
+    //functionTest
+    public function test($data) {
+    	return $data['scoreList'];
+    }
+
 }

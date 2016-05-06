@@ -16,6 +16,26 @@
         <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
     </div>
 </div>
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;往期小测成绩</b></p>
+</div>
+<div class="text-section">
+    <!-- <p>暂无成绩</p> -->
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th><b>时间</b></th> 
+                <th><b>得分</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="v in score">
+                <td>{{v.quiz_time}}</td>
+                <td>{{v.score}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 <div class="bot-button" ng-click="quitLogin()">
     <span>退出登录</span>
 </div>

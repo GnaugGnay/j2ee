@@ -6,23 +6,23 @@
 		<p class="question">{{$index+1}}.{{v.question}}</p>
 		<ul class="answer-list" data-answer="{{answer = v.answer}}">
 			<li class="answer">
-				<input ng-if="v.quiz_type!=3" type="radio" name="question_{{$index+1}}">
-				<input ng-if="v.quiz_type==3" type="checkbox" name="question_{{$index+1}}">
+				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
 				<span>A.{{v.A}}</span>
 			</li>
 			<li class="answer">
-				<input ng-if="v.quiz_type!=3" type="radio" name="question_{{$index+1}}">
-				<input ng-if="v.quiz_type==3" type="checkbox" name="question_{{$index+1}}">
+				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
 				<span>B.{{v.B}}</span>
 			</li>
-			<li class="answer" ng-if="v.quiz_type!=2">
-				<input ng-if="v.quiz_type!=3" type="radio" name="question_{{$index+1}}">
-				<input ng-if="v.quiz_type==3" type="checkbox" name="question_{{$index+1}}">
+			<li class="answer" ng-if="v.question_type!=2">
+				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
 				<span>C.{{v.C}}</span>
 			</li>
-			<li class="answer" ng-if="v.quiz_type!=2">
-				<input ng-if="v.quiz_type!=3" type="radio" name="question_{{$index+1}}">
-				<input ng-if="v.quiz_type==3" type="checkbox" name="question_{{$index+1}}">
+			<li class="answer" ng-if="v.question_type!=2">
+				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
 				<span>D.{{v.D}}</span>
 			</li>
 		</ul>

@@ -4,6 +4,7 @@ class ModUser extends Model{
     public function __construct(){
         $this->conn = 'j2ee';
         $this->table_user = 'user';
+        $this->table_userscore = 'userscore';
     }
 
     // 查看是否存在此用户
@@ -19,8 +20,14 @@ class ModUser extends Model{
     }
 
     //添加用户
-    public function addUser($username) {
-    	$sql = "insert INTO `{$this->conn}`.`{$this->table_user}` (`username`, `password`, `usertype`) VALUES ('{$username}', '{$username}', '1');";
+    public function addUser($username, $fullName) {
+    	$sql = "insert INTO `{$this->conn}`.`{$this->table_user}` (`username`, `password`, `usertype`, `fullname`) VALUES ('{$username}', '{$username}', '1', '{$fullName}')";
+        return $this->query($sql);
+    }
+
+    //查询历史成绩
+    public function getScore($username){
+        $sql = "select * from `userscore` where `username` = '{$username}'";
         return $this->query($sql);
     }
 

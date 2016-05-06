@@ -27,6 +27,7 @@ angular.module('myApp')
                         window.localStorage.setItem('j2ee_uid', data[0].uid);
                         window.localStorage.setItem('j2ee_usertype', data[0].usertype);
                         window.localStorage.setItem('j2ee_isLogin', true);
+                        window.localStorage.setItem('j2ee_fullname', data[0].fullname);
                         $state.go('user');
                     } else {
                         alert("用户名或密码错误");
@@ -49,6 +50,14 @@ angular.module('myApp')
     })
     //用户页面
     .controller('userController', function($scope, $http, $state) {
+        //如果用户是学生，就显示往期的小测结果
+        if (Util.getUserType() == 1) {
+            var username = Util.getUsername();
+            var postData = { username: username };
+            $http.post('/main/?ct=api&method=user.pastScore',postData).success(function (response) {
+                $scope.score = response.data;
+            });
+        }
         //退出登录
         $scope.quitLogin = function() {
             if (confirm("确认退出登录？")) {
@@ -56,11 +65,12 @@ angular.module('myApp')
                 window.localStorage.removeItem('j2ee_username');
                 window.localStorage.removeItem('j2ee_uid');
                 window.localStorage.removeItem('j2ee_usertype');
+                window.localStorage.removeItem('j2ee_fullname');
                 window.location.href = '/';
             }
         };
         //导入学生名单
-        $scope.userFormSubmit = function () {
+        $scope.userFormSubmit = function() {
             var excel = document.getElementById('userFormExcel').value;
             var form = document.getElementById('userForm');
             if (excel == "") {
@@ -71,7 +81,7 @@ angular.module('myApp')
                 form.submit();
                 alert("提交成功");
             }
-            
+
         };
         //修改密码
         $scope.changePassword = function() {
@@ -160,17 +170,66 @@ angular.module('myApp')
             }
         };
     })
+    //在线测试
     .controller('onlineQuizController', function($scope, $http) {
         $http.post('/main/?ct=api&method=quiz.getQuiz').success(function(response) {
             $scope.quiz = response.data;
         });
         $scope.submit = function() {
-            var quiz = $scope.quiz;
-            console.log(quiz[0]);
-            if (confirm("确认提交？")) {
-                for (data in quiz) {
-                    console.log(data);
+            var quizList = $scope.quiz;
+            // if (confirm("确认提交？")) {
+            //     for (data in quiz) {
+            //         console.log(data);
+            //     }
+            // }
+            var quizsLength = quizList.length;
+            var scoreList = [];
+            for (var i = 0; i < quizsLength; i++) {
+                var name = 'question_' + i;
+                var answerList = document.getElementsByName(name);
+                var myAnswer = [];
+                var correctAnswer = quizList[i].answer;
+                var isMulti = correctAnswer.length == 1 ? false : true;
+                for (var j = 0, len = answerList.length; j < len; j++) {
+                    if (answerList[j].checked) {
+                        myAnswer.push(answerFormat(j));
+                        if (!isMulti) {
+                            break;
+                        }
+                    }
+                }
+                if (myAnswer.join(',') == correctAnswer) {
+                    scoreList.push(1);
+                } else {
+                    scoreList.push(0);
                 }
             }
+            var postData = {
+                scoreList: scoreList
+            };
+            console.log(postData);
+            $http.post('/main/?ct=api&method=quiz.test', postData).success(function(response) {
+                console.log(response);
+            });
         };
+
+        function answerFormat(number) {
+            switch (number) {
+                case 0:
+                    return 'A';
+                    break;
+                case 1:
+                    return 'B';
+                    break;
+                case 2:
+                    return 'C';
+                    break;
+                case 3:
+                    return 'D';
+                    break;
+                default:
+                    return 'A';
+                    break;
+            }
+        }
     });
