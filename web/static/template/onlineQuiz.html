@@ -1,10 +1,10 @@
 <div class="text-section">
     <h2 class="f-24"><b>在线测试</b></h2>
 </div>
-<div class="text-section">
+<div class="text-section" data-quizid="{{quiz_id}}">
 	<div class="quiz-item" ng-repeat="v in quiz">	
-		<p class="question">{{$index+1}}.{{v.question}}</p>
-		<ul class="answer-list" data-answer="{{answer = v.answer}}">
+		<p class="question">{{$index+1}}.{{v.question}} <span class="c-red" ng-show="rightAnswer">正确答案:{{answer = v.answer}}</span></p>
+		<ul class="answer-list" >
 			<li class="answer">
 				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
 				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">

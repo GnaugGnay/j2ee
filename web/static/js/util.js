@@ -13,5 +13,12 @@ var Util = {
     },
     getUsername: function() { //返回用户名
         return window.localStorage.getItem('j2ee_username');
+    },
+    getTotalScore: function (array) {
+        var sum = 0;
+        for (var i = 0,len = array.length;i < len;i++) {
+            sum += Number(array[i]);
+        }
+        return sum;
     }
 }

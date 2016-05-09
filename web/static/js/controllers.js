@@ -54,7 +54,7 @@ angular.module('myApp')
         if (Util.getUserType() == 1) {
             var username = Util.getUsername();
             var postData = { username: username };
-            $http.post('/main/?ct=api&method=user.pastScore',postData).success(function (response) {
+            $http.post('/main/?ct=api&method=user.pastScore', postData).success(function(response) {
                 $scope.score = response.data;
             });
         }
@@ -174,43 +174,53 @@ angular.module('myApp')
     .controller('onlineQuizController', function($scope, $http) {
         $http.post('/main/?ct=api&method=quiz.getQuiz').success(function(response) {
             $scope.quiz = response.data;
+            $scope.quiz_id = response.data[0].quiz_id;
         });
         $scope.submit = function() {
             var quizList = $scope.quiz;
-            // if (confirm("确认提交？")) {
-            //     for (data in quiz) {
-            //         console.log(data);
-            //     }
-            // }
-            var quizsLength = quizList.length;
-            var scoreList = [];
-            for (var i = 0; i < quizsLength; i++) {
-                var name = 'question_' + i;
-                var answerList = document.getElementsByName(name);
-                var myAnswer = [];
-                var correctAnswer = quizList[i].answer;
-                var isMulti = correctAnswer.length == 1 ? false : true;
-                for (var j = 0, len = answerList.length; j < len; j++) {
-                    if (answerList[j].checked) {
-                        myAnswer.push(answerFormat(j));
-                        if (!isMulti) {
-                            break;
+            if (confirm("请确保您的每一道题都已填写，确认提交？")) {
+                var quizsLength = quizList.length;
+                var scoreList = [];
+                for (var i = 0; i < quizsLength; i++) {
+                    var name = 'question_' + i;
+                    var answerList = document.getElementsByName(name);
+                    var myAnswer = [];
+                    var correctAnswer = quizList[i].answer;
+                    var isMulti = correctAnswer.length == 1 ? false : true;
+                    for (var j = 0, len = answerList.length; j < len; j++) {
+                        if (answerList[j].checked) {
+                            myAnswer.push(answerFormat(j));
+                            if (!isMulti) {
+                                break;
+                            }
                         }
                     }
+                    if (myAnswer.join(',') == correctAnswer) {
+                        scoreList.push(1);
+                    } else {
+                        scoreList.push(0);
+                    }
                 }
-                if (myAnswer.join(',') == correctAnswer) {
-                    scoreList.push(1);
-                } else {
-                    scoreList.push(0);
-                }
+                var totalScore = Util.getTotalScore(scoreList);
+                var username = Util.getUsername();
+                var quiz_id = $scope.quiz_id;
+                var date = (new Date()).toLocaleDateString();
+
+                var postData = {
+                    scoreList: scoreList,
+                    totalScore: totalScore,
+                    username: username,
+                    quiz_id: quiz_id
+                };
+                console.log(postData);
+                $http.post('/main/?ct=api&method=quiz.insertScore', postData).success(function(response) {
+                    if (response.data == true) {
+                        alert("提交成功！本次测试您的得分为" + totalScore);
+                        $scope.rightAnswer = true;
+                    }
+                });
             }
-            var postData = {
-                scoreList: scoreList
-            };
-            console.log(postData);
-            $http.post('/main/?ct=api&method=quiz.test', postData).success(function(response) {
-                console.log(response);
-            });
+
         };
 
         function answerFormat(number) {
