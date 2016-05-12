@@ -170,6 +170,32 @@ angular.module('myApp')
             }
         };
     })
+    //试题库(章节目录)
+    .controller('questionController',function ($scope, $http, $state) {
+        $http.post('/main/?ct=api&method=question.getSections').success(function(response) {
+            $scope.sections = response.data;
+        });
+        $scope.jump = function () {
+            $state.go('questionBankSub',{section_id:this.sectionId});
+        }
+    })
+    //试题库(根据具体章节显示题目)
+    .controller('questionSubController',function ($scope, $http, $stateParams) {
+        var sectionId = $stateParams.section_id;
+        $scope.section_id = sectionId;
+        var postData = {
+            section_id : sectionId
+        }
+        $http.post('/main/?ct=api&method=question.getQuestions',  postData).success(function(response) {
+            $scope.questions = response.data;
+        });
+        $scope.showAnswer = function () {
+            $scope.rightAnswer = true;
+        }
+        // $scope.jump = function () {
+        //     console.log(this.sectionId);
+        // }
+    })
     //在线测试
     .controller('onlineQuizController', function($scope, $http) {
         $http.post('/main/?ct=api&method=quiz.getQuiz').success(function(response) {

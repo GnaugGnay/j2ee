@@ -1,0 +1,3823 @@
+
+-----------------------------------
+[2016-05-12 09:39:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.test
+POST: array (
+  'question_ids' => '1,2,3,4,5,6,7',
+  'date' => '2016-05-10',
+)
+[2016-05-12 09:39:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 32
+SQL: insert INTO `pastquiz`(`question_ids`, `quiz_time`) VALUES ('1,2,3,4,5,6,7', '2016-05-10')(OK:0.016)
+[2016-05-12 09:39:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 34
+SQL: select @@IDENTITY(OK:0)
+[2016-05-12 09:39:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 40
+SQL: insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in (1,2,3,4,5,6,7)(OK:0)
+[2016-05-12 09:39:29]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+1
+
+-----------------------------------
+[2016-05-12 09:39:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-12 09:39:48]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.012)
+[2016-05-12 09:39:49]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '0',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '0',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    2 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '0',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '1',
+      'quiz_id' => '0',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    4 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '0',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    5 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '0',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    6 => 
+    array (
+      'question_id' => '7',
+      'quiz_id' => '0',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+  ),
+  'ct' => 1463017189,
+)
+
+-----------------------------------
+[2016-05-12 09:45:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.test
+POST: array (
+  'question_ids' => '1,2,3,4,5,6,7',
+  'date' => '2016-05-10',
+)
+[2016-05-12 09:45:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 32
+SQL: insert INTO `pastquiz`(`question_ids`, `quiz_time`) VALUES ('1,2,3,4,5,6,7', '2016-05-10')(OK:0.011)
+[2016-05-12 09:45:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 34
+SQL: select @@IDENTITY(OK:0.001)
+[2016-05-12 09:45:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 40
+SQL: insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in (1,2,3,4,5,6,7)(OK:0.001)
+[2016-05-12 09:45:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 42
+SQL: update `onlinequiz` SET `quiz_id`= 14 WHERE 1(OK:0)
+[2016-05-12 09:45:43]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463017543,
+)
+
+-----------------------------------
+[2016-05-12 09:46:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-12 09:46:51]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.011)
+[2016-05-12 09:46:51]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '14',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+    1 => 
+    array (
+      'question_id' => '7',
+      'quiz_id' => '14',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '1',
+      'quiz_id' => '14',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '14',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '14',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    5 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '14',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    6 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '14',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463017611,
+)
+
+-----------------------------------
+[2016-05-12 09:47:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.insertScore
+POST: array (
+  'scoreList' => '0,1,0,0,1,0,0',
+  'totalScore' => '2',
+  'username' => '2012051337',
+  'quiz_id' => '14',
+)
+[2016-05-12 09:47:37]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051337', '14', '2016-05-12', '0,1,0,0,1,0,0', '2')(OK:0.016)
+[2016-05-12 09:47:37]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463017657,
+)
+
+-----------------------------------
+[2016-05-12 09:49:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-12 09:49:29]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-12 09:49:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.011)
+[2016-05-12 09:49:29]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463017769,
+)
+
+-----------------------------------
+[2016-05-12 09:52:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-12 09:52:06]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.011)
+[2016-05-12 09:52:06]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '14',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+    1 => 
+    array (
+      'question_id' => '7',
+      'quiz_id' => '14',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '1',
+      'quiz_id' => '14',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '14',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '14',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    5 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '14',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    6 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '14',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463017926,
+)
+
+-----------------------------------
+[2016-05-12 09:52:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.insertScore
+POST: array (
+  'scoreList' => '0,0,0,0,0,0,0',
+  'totalScore' => '0',
+  'username' => '2012051337',
+  'quiz_id' => '14',
+)
+[2016-05-12 09:52:44]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051337', '14', '2016-05-12', '0,0,0,0,0,0,0', '0')(OK:0.011)
+[2016-05-12 09:52:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463017964,
+)
+
+-----------------------------------
+[2016-05-12 10:43:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.releaseQuiz
+POST: array (
+  'question_ids' => '1,2,3,4,5,6,7',
+  'date' => '2016-05-10',
+)
+[2016-05-12 10:43:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 32
+SQL: insert INTO `pastquiz`(`question_ids`, `quiz_time`) VALUES ('1,2,3,4,5,6,7', '2016-05-10')(OK:0.003)
+[2016-05-12 10:43:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 34
+SQL: select @@IDENTITY(OK:0.001)
+[2016-05-12 10:43:04]Error: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 40
+SQL: insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in (1,2,3,4,5,6,7)(error：Duplicate entry '1' for key 'PRIMARY')
+[2016-05-12 10:43:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 42
+SQL: update `onlinequiz` SET `quiz_id`= 15 WHERE 1(OK:0)
+[2016-05-12 10:43:04]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463020984,
+)
+
+-----------------------------------
+[2016-05-12 11:08:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+POST: array (
+  'question_ids' => '1,2,3,4,5,6,7',
+  'date' => '2016-05-10',
+)
+[2016-05-12 11:08:44]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 11:08:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463022524,
+)
+
+-----------------------------------
+[2016-05-12 11:09:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:09:08]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.003)
+[2016-05-12 11:09:08]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463022548,
+)
+
+-----------------------------------
+[2016-05-12 11:32:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:32:23]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 11:32:23]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463023943,
+)
+
+-----------------------------------
+[2016-05-12 11:33:22] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:33:22]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 11:33:22]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463024002,
+)
+
+-----------------------------------
+[2016-05-12 11:34:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:34:16]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.004)
+[2016-05-12 11:34:16]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463024056,
+)
+
+-----------------------------------
+[2016-05-12 11:40:17] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 11:40:17]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.011)
+[2016-05-12 11:40:17]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463024417,
+)
+
+-----------------------------------
+[2016-05-12 11:55:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:55:11]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.003)
+[2016-05-12 11:55:11]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025311,
+)
+
+-----------------------------------
+[2016-05-12 11:55:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:55:34]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 11:55:34]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025334,
+)
+
+-----------------------------------
+[2016-05-12 11:55:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:55:36]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 11:55:36]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025336,
+)
+
+-----------------------------------
+[2016-05-12 11:55:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:55:56]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 11:55:56]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025356,
+)
+
+-----------------------------------
+[2016-05-12 11:55:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:55:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 11:55:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025357,
+)
+
+-----------------------------------
+[2016-05-12 11:59:05] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:59:05]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 11:59:05]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025545,
+)
+
+-----------------------------------
+[2016-05-12 11:59:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:59:27]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 11:59:27]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025567,
+)
+
+-----------------------------------
+[2016-05-12 11:59:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 11:59:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.005)
+[2016-05-12 11:59:29]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463025569,
+)
+
+-----------------------------------
+[2016-05-12 11:59:33] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:59:33]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.005)
+[2016-05-12 11:59:33]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025573,
+)
+
+-----------------------------------
+[2016-05-12 11:59:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '2',
+)
+[2016-05-12 11:59:34]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 2(OK:0.002)
+[2016-05-12 11:59:34]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '7',
+      'section_id' => '2',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '8',
+      'section_id' => '2',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+      'A' => '法FFAFAFAS1341234DF',
+      'B' => '法1412341234',
+      'C' => '23444',
+      'D' => '134',
+      'answer' => 'D',
+    ),
+    2 => 
+    array (
+      'question_id' => '9',
+      'section_id' => '2',
+      'question_type' => '2',
+      'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+      'A' => '12345撒旦',
+      'B' => '法师打134发斯蒂1234芬',
+      'C' => '发散的2412341234',
+      'D' => '发1432452654',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '10',
+      'section_id' => '2',
+      'question_type' => '3',
+      'question' => '挂机dfsaf45345154厉害撒打开后福利',
+      'A' => '法F撒fafas',
+      'B' => '法F师打发3542345斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,C,D',
+    ),
+  ),
+  'ct' => 1463025574,
+)
+
+-----------------------------------
+[2016-05-12 11:59:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:59:36]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 11:59:36]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025576,
+)
+
+-----------------------------------
+[2016-05-12 11:59:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 11:59:36]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3(OK:0.003)
+[2016-05-12 11:59:36]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '1',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463025576,
+)
+
+-----------------------------------
+[2016-05-12 11:59:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 11:59:40]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.003)
+[2016-05-12 11:59:40]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025580,
+)
+
+-----------------------------------
+[2016-05-12 11:59:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 11:59:40]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.002)
+[2016-05-12 11:59:40]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463025580,
+)
+
+-----------------------------------
+[2016-05-12 12:01:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:01:49]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 12:01:49]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025709,
+)
+
+-----------------------------------
+[2016-05-12 12:01:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:01:50]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 12:01:50]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025710,
+)
+
+-----------------------------------
+[2016-05-12 12:01:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:01:56]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.004)
+[2016-05-12 12:01:56]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025716,
+)
+
+-----------------------------------
+[2016-05-12 12:02:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:02:04]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 12:02:04]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025724,
+)
+
+-----------------------------------
+[2016-05-12 12:03:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:03:52]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 12:03:52]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025832,
+)
+
+-----------------------------------
+[2016-05-12 12:03:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:03:53]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 12:03:53]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025833,
+)
+
+-----------------------------------
+[2016-05-12 12:04:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:04:28]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 12:04:28]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025868,
+)
+
+-----------------------------------
+[2016-05-12 12:04:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:04:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 12:04:29]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463025869,
+)
+
+-----------------------------------
+[2016-05-12 12:04:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 12:04:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.001)
+[2016-05-12 12:04:29]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463025869,
+)
+
+-----------------------------------
+[2016-05-12 12:36:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:36:29]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.004)
+[2016-05-12 12:36:29]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027789,
+)
+
+-----------------------------------
+[2016-05-12 12:36:30] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '2',
+)
+[2016-05-12 12:36:30]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 2(OK:0.002)
+[2016-05-12 12:36:30]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '7',
+      'section_id' => '2',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '8',
+      'section_id' => '2',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+      'A' => '法FFAFAFAS1341234DF',
+      'B' => '法1412341234',
+      'C' => '23444',
+      'D' => '134',
+      'answer' => 'D',
+    ),
+    2 => 
+    array (
+      'question_id' => '9',
+      'section_id' => '2',
+      'question_type' => '2',
+      'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+      'A' => '12345撒旦',
+      'B' => '法师打134发斯蒂1234芬',
+      'C' => '发散的2412341234',
+      'D' => '发1432452654',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '10',
+      'section_id' => '2',
+      'question_type' => '3',
+      'question' => '挂机dfsaf45345154厉害撒打开后福利',
+      'A' => '法F撒fafas',
+      'B' => '法F师打发3542345斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,C,D',
+    ),
+  ),
+  'ct' => 1463027790,
+)
+
+-----------------------------------
+[2016-05-12 12:36:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:36:31]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 12:36:31]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027791,
+)
+
+-----------------------------------
+[2016-05-12 12:36:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 12:36:32]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3(OK:0.017)
+[2016-05-12 12:36:32]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '1',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463027792,
+)
+
+-----------------------------------
+[2016-05-12 12:36:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:36:39]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.004)
+[2016-05-12 12:36:39]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027799,
+)
+
+-----------------------------------
+[2016-05-12 12:36:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 12:36:40]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3(OK:0.002)
+[2016-05-12 12:36:40]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '1',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463027800,
+)
+
+-----------------------------------
+[2016-05-12 12:36:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:36:41]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 12:36:41]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027801,
+)
+
+-----------------------------------
+[2016-05-12 12:36:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '2',
+)
+[2016-05-12 12:36:42]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 2(OK:0.011)
+[2016-05-12 12:36:42]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '7',
+      'section_id' => '2',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '8',
+      'section_id' => '2',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+      'A' => '法FFAFAFAS1341234DF',
+      'B' => '法1412341234',
+      'C' => '23444',
+      'D' => '134',
+      'answer' => 'D',
+    ),
+    2 => 
+    array (
+      'question_id' => '9',
+      'section_id' => '2',
+      'question_type' => '2',
+      'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+      'A' => '12345撒旦',
+      'B' => '法师打134发斯蒂1234芬',
+      'C' => '发散的2412341234',
+      'D' => '发1432452654',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '10',
+      'section_id' => '2',
+      'question_type' => '3',
+      'question' => '挂机dfsaf45345154厉害撒打开后福利',
+      'A' => '法F撒fafas',
+      'B' => '法F师打发3542345斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,C,D',
+    ),
+  ),
+  'ct' => 1463027802,
+)
+
+-----------------------------------
+[2016-05-12 12:36:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:36:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 12:36:43]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027803,
+)
+
+-----------------------------------
+[2016-05-12 12:36:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 12:36:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.003)
+[2016-05-12 12:36:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463027805,
+)
+
+-----------------------------------
+[2016-05-12 12:36:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:36:46]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 12:36:46]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027806,
+)
+
+-----------------------------------
+[2016-05-12 12:36:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 12:36:48]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3(OK:0.002)
+[2016-05-12 12:36:48]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '1',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463027808,
+)
+
+-----------------------------------
+[2016-05-12 12:38:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => 'null',
+)
+[2016-05-12 12:38:53]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = null(OK:0.011)
+[2016-05-12 12:38:53]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463027933,
+)
+
+-----------------------------------
+[2016-05-12 12:38:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-12 12:38:57]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-12 12:38:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.011)
+[2016-05-12 12:38:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463027937,
+)
+
+-----------------------------------
+[2016-05-12 12:39:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:39:00]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.003)
+[2016-05-12 12:39:00]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027940,
+)
+
+-----------------------------------
+[2016-05-12 12:39:01] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 12:39:01]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3(OK:0.003)
+[2016-05-12 12:39:01]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '1',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463027941,
+)
+
+-----------------------------------
+[2016-05-12 12:39:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:39:09]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 12:39:09]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463027949,
+)
+
+-----------------------------------
+[2016-05-12 12:39:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 12:39:10]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.002)
+[2016-05-12 12:39:10]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463027950,
+)
+
+-----------------------------------
+[2016-05-12 12:40:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => 'null',
+)
+[2016-05-12 12:40:07]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = null(OK:0.011)
+[2016-05-12 12:40:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463028007,
+)
+
+-----------------------------------
+[2016-05-12 12:40:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-12 12:40:09]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-12 12:40:09]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.003)
+[2016-05-12 12:40:09]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463028009,
+)
+
+-----------------------------------
+[2016-05-12 12:40:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:40:11]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.003)
+[2016-05-12 12:40:11]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463028011,
+)
+
+-----------------------------------
+[2016-05-12 12:40:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 12:40:12]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3(OK:0.012)
+[2016-05-12 12:40:12]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '1',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463028012,
+)
+
+-----------------------------------
+[2016-05-12 12:40:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:40:15]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 12:40:15]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463028015,
+)
+
+-----------------------------------
+[2016-05-12 12:40:17] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-12 12:40:17]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.011)
+[2016-05-12 12:40:17]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '15',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+    1 => 
+    array (
+      'question_id' => '7',
+      'quiz_id' => '15',
+      'question_type' => '1',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '1',
+      'quiz_id' => '15',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '15',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '15',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    5 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '15',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    6 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '15',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463028017,
+)
+
+-----------------------------------
+[2016-05-12 12:40:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 12:40:21]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 12:40:21]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463028021,
+)
+
+-----------------------------------
+[2016-05-12 12:40:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 12:40:23]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.01)
+[2016-05-12 12:40:23]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '法撒旦法撒旦',
+      'B' => '法师打发斯蒂芬',
+      'C' => '发散的撒旦饭撒旦饭',
+      'D' => '发起无法区分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '发散的旦饭撒旦饭',
+      'D' => '发起无245法区分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463028023,
+)
+
+-----------------------------------
+[2016-05-12 13:55:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:55:03]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.013)
+[2016-05-12 13:55:03]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032503,
+)
+
+-----------------------------------
+[2016-05-12 13:55:05] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:55:05]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 13:55:05]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032505,
+)
+
+-----------------------------------
+[2016-05-12 13:55:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 13:55:06]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1(OK:0.011)
+[2016-05-12 13:55:06]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463032506,
+)
+
+-----------------------------------
+[2016-05-12 13:55:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:55:15]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 13:55:15]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032515,
+)
+
+-----------------------------------
+[2016-05-12 13:55:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '2',
+)
+[2016-05-12 13:55:16]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 2(OK:0.012)
+[2016-05-12 13:55:16]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '7',
+      'section_id' => '2',
+      'question_type' => '2',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '8',
+      'section_id' => '2',
+      'question_type' => '2',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+      'A' => '法FFAFAFAS1341234DF',
+      'B' => '法1412341234',
+      'C' => '23444',
+      'D' => '134',
+      'answer' => 'D',
+    ),
+    2 => 
+    array (
+      'question_id' => '9',
+      'section_id' => '2',
+      'question_type' => '2',
+      'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+      'A' => '12345撒旦',
+      'B' => '法师打134发斯蒂1234芬',
+      'C' => '发散的2412341234',
+      'D' => '发1432452654',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '10',
+      'section_id' => '2',
+      'question_type' => '3',
+      'question' => '挂机dfsaf45345154厉害撒打开后福利',
+      'A' => '法F撒fafas',
+      'B' => '法F师打发3542345斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,C,D',
+    ),
+  ),
+  'ct' => 1463032516,
+)
+
+-----------------------------------
+[2016-05-12 13:55:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:55:18]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 13:55:18]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032518,
+)
+
+-----------------------------------
+[2016-05-12 13:55:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 13:55:19]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3(OK:0.011)
+[2016-05-12 13:55:19]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463032519,
+)
+
+-----------------------------------
+[2016-05-12 13:56:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => 'null',
+)
+[2016-05-12 13:56:46]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = null order by `question_type`(OK:0.002)
+[2016-05-12 13:56:46]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463032606,
+)
+
+-----------------------------------
+[2016-05-12 13:56:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-12 13:56:48]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-12 13:56:48]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-12 13:56:48]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463032608,
+)
+
+-----------------------------------
+[2016-05-12 13:56:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:56:50]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.013)
+[2016-05-12 13:56:50]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032610,
+)
+
+-----------------------------------
+[2016-05-12 13:56:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 13:56:53]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.003)
+[2016-05-12 13:56:53]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463032613,
+)
+
+-----------------------------------
+[2016-05-12 13:58:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:58:44]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 13:58:44]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032724,
+)
+
+-----------------------------------
+[2016-05-12 13:58:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:58:47]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 13:58:47]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032727,
+)
+
+-----------------------------------
+[2016-05-12 13:58:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 13:58:48]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3 order by `question_type`(OK:0.012)
+[2016-05-12 13:58:48]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463032728,
+)
+
+-----------------------------------
+[2016-05-12 13:58:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:58:50]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 13:58:50]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032730,
+)
+
+-----------------------------------
+[2016-05-12 13:58:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 13:58:51]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.005)
+[2016-05-12 13:58:51]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463032731,
+)
+
+-----------------------------------
+[2016-05-12 13:59:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:59:06]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 13:59:06]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032746,
+)
+
+-----------------------------------
+[2016-05-12 13:59:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:59:07]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 13:59:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032747,
+)
+
+-----------------------------------
+[2016-05-12 13:59:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 13:59:07]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.011)
+[2016-05-12 13:59:07]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463032747,
+)
+
+-----------------------------------
+[2016-05-12 13:59:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:59:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 13:59:43]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032783,
+)
+
+-----------------------------------
+[2016-05-12 13:59:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:59:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.001)
+[2016-05-12 13:59:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032785,
+)
+
+-----------------------------------
+[2016-05-12 13:59:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 13:59:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3 order by `question_type`(OK:0.003)
+[2016-05-12 13:59:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463032785,
+)
+
+-----------------------------------
+[2016-05-12 13:59:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 13:59:46]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 13:59:46]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032786,
+)
+
+-----------------------------------
+[2016-05-12 13:59:47] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 13:59:47]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.011)
+[2016-05-12 13:59:47]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463032787,
+)
+
+-----------------------------------
+[2016-05-12 14:00:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 14:00:15]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 14:00:15]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032815,
+)
+
+-----------------------------------
+[2016-05-12 14:00:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 14:00:16]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.011)
+[2016-05-12 14:00:16]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032816,
+)
+
+-----------------------------------
+[2016-05-12 14:00:17] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 14:00:17]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.011)
+[2016-05-12 14:00:17]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463032817,
+)
+
+-----------------------------------
+[2016-05-12 14:02:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => 'null',
+)
+[2016-05-12 14:02:09]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = null order by `question_type`(OK:0.012)
+[2016-05-12 14:02:09]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463032929,
+)
+
+-----------------------------------
+[2016-05-12 14:02:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-12 14:02:10]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-12 14:02:10]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.012)
+[2016-05-12 14:02:10]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463032930,
+)
+
+-----------------------------------
+[2016-05-12 14:02:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 14:02:12]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-12 14:02:12]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032932,
+)
+
+-----------------------------------
+[2016-05-12 14:02:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 14:02:13]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3 order by `question_type`(OK:0.003)
+[2016-05-12 14:02:13]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463032933,
+)
+
+-----------------------------------
+[2016-05-12 14:02:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 14:02:15]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 14:02:15]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032935,
+)
+
+-----------------------------------
+[2016-05-12 14:02:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-12 14:02:16]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.012)
+[2016-05-12 14:02:16]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463032936,
+)
+
+-----------------------------------
+[2016-05-12 14:02:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 14:02:42]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 14:02:42]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032962,
+)
+
+-----------------------------------
+[2016-05-12 14:02:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-12 14:02:43]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 3 order by `question_type`(OK:0.013)
+[2016-05-12 14:02:43]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => 'fai测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试',
+      'A' => '法FFAFAFAS32521341234DF',
+      'B' => '法1412341234534',
+      'C' => '23444254',
+      'D' => '1343452',
+      'answer' => 'D',
+    ),
+  ),
+  'ct' => 1463032963,
+)
+
+-----------------------------------
+[2016-05-12 14:02:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-12 14:02:45]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.012)
+[2016-05-12 14:02:45]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463032965,
+)

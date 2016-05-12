@@ -33,4 +33,12 @@ class ModQuiz extends Model{
         $sql = "select @@IDENTITY";
         return $this->query($sql);
     }
+
+    //将question_ids插入onlinequiz表中并将quiz_id改为相应的，供学生测试用
+    public function insertOnlineQuiz($question_ids, $quiz_id) {
+        $sql = "insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in ({$question_ids})";
+        $this->query($sql);
+        $sql = "update `onlinequiz` SET `quiz_id`= {$quiz_id} WHERE 1";
+        return $this->query($sql);
+    }
 }

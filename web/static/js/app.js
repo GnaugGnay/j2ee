@@ -61,6 +61,17 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: "/teachResource_2",
             templateUrl: "./static/template/teachResource_2.html"
         })
+        .state("questionBank", { //试题库(章节目录)
+            url: "/questionBank",
+            templateUrl: "./static/template/questionBank.html",
+            controller: 'questionController'
+        })
+        .state("questionBankSub", { //试题库(根据具体章节显示题目)
+            url: "/questionBankSub",
+            templateUrl: "./static/template/questionBankSub.html",
+            controller: 'questionSubController',
+            params: {'section_id': null}
+        })
         .state("homework", { //实验指导
             url: "/homework",
             templateUrl: "./static/template/homework.html",

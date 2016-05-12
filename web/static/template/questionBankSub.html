@@ -1,8 +1,8 @@
 <div class="text-section">
-    <h2 class="f-24"><b>在线测试</b></h2>
+    <h2 class="f-24"><b>第{{section_id}}章</b></h2>
 </div>
-<div class="text-section" data-quizid="{{quiz_id}}">
-	<div class="quiz-item" ng-repeat="v in quiz">	
+<div class="text-section">
+	<div class="quiz-item" ng-repeat="v in questions">	
 		<p class="question">{{$index+1}}.<span ng-if="v.question_type==3">(多选)</span>{{v.question}}<span class="c-red" ng-show="rightAnswer">正确答案:{{answer = v.answer}}</span></p>
 		<ul class="answer-list" >
 			<li class="answer">
@@ -29,6 +29,6 @@
 	</div>
 </div>
 <div style="margin-bottom: 40px;"></div>
-<div class="bot-button" ng-click="submit()">
-    <span>提交</span>
+<div class="bot-button" ng-click="showAnswer()">
+    <span>查看答案</span>
 </div>
