@@ -234,6 +234,9 @@ html,body {
 .f-24 {
 	font-size: 2.4rem;
 }
+.f-18 {
+    font-size: 1.8rem;
+}
 .bot-button {
     position: absolute;
     bottom: 50px;
@@ -255,5 +258,68 @@ html,body {
 .team-table {
     td,th {
         padding: 5px 0 5px 5px;
+    }
+}
+.add-question {
+    cursor: pointer;
+    color: #007aff;
+}
+
+.dm-checkbox {
+    position: relative;
+    cursor: pointer;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;    
+    margin-top: 0 !important;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        border-radius: size(0);
+        font-weight: bold;
+        border: 1px solid #cdd0d0;
+    }
+    &:before {
+        border: 1px solid #cdd0d0;
+    }
+    &:checked:after,
+    &.checked:after {
+        content: "\2714";
+        border: 1px solid #cdd0d0;
+        color: #13cbd6;
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.pop-up {
+    position: absolute;
+    width: 300px;
+    min-height: 100px;
+    background-color: #FFF;
+    top: 33%;
+    left: 50%;
+    margin-left: -150px;
+    border-radius: 5px;
+    overflow: hidden;
+    .title {
+        background-color: #555;
+        color: #fff;
+        padding: 5px 10px;
+    }
+    .main {
+        padding: 10px;
+
+    }
+    .btn-wrap {
+            margin: 20px 0;
     }
 }

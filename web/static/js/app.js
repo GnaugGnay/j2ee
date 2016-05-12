@@ -179,6 +179,13 @@ app.config(function($httpProvider) {
 });
 
 app.controller('mainController', function($scope, $state) {
+    if (Util.getUserType() == 0) {
+        $scope.teacher = true;
+        $scope.student = false;
+    } else {
+        $scope.teacher = false;
+        $scope.student = true;
+    }
     // 左侧边栏的原生对象
     var leftBar = document.getElementById('sidebar_left');
     //依据url来初始化侧边栏

@@ -50,6 +50,7 @@ angular.module('myApp')
     })
     //用户页面
     .controller('userController', function($scope, $http, $state) {
+
         //如果用户是学生，就显示往期的小测结果
         if (Util.getUserType() == 1) {
             var username = Util.getUsername();
@@ -138,12 +139,12 @@ angular.module('myApp')
             $scope.homework = homework;
         });
 
-        // 判断是否是管理员账号控制作业删除按钮
-        if (Util.getUserType() == 0) {
-            $scope.deleteBtn = false;
-        } else {
-            $scope.deleteBtn = true;
-        }
+        // // 判断是否是管理员账号控制作业删除按钮
+        // if (Util.getUserType() == 0) {
+        //     $scope.deleteBtn = false;
+        // } else {
+        //     $scope.deleteBtn = true;
+        // }
         // var homework = [
         //  {
         //      test:'作业1'
@@ -171,30 +172,53 @@ angular.module('myApp')
         };
     })
     //试题库(章节目录)
-    .controller('questionController',function ($scope, $http, $state) {
+    .controller('questionController', function($scope, $http, $state) {
         $http.post('/main/?ct=api&method=question.getSections').success(function(response) {
             $scope.sections = response.data;
         });
-        $scope.jump = function () {
-            $state.go('questionBankSub',{section_id:this.sectionId});
+        $scope.jump = function() {
+            $state.go('questionBankSub', { section_id: this.sectionId });
         }
     })
     //试题库(根据具体章节显示题目)
-    .controller('questionSubController',function ($scope, $http, $stateParams) {
+    .controller('questionSubController', function($scope, $http, $stateParams) {
         var sectionId = $stateParams.section_id;
         $scope.section_id = sectionId;
         var postData = {
-            section_id : sectionId
+            section_id: sectionId
         }
-        $http.post('/main/?ct=api&method=question.getQuestions',  postData).success(function(response) {
-            $scope.questions = response.data;
+        var questionIds = [];
+        $http.post('/main/?ct=api&method=question.getQuestions', postData).success(function(response) {
+            var questions = response.data;
+            $scope.questions = questions;
+            for (var i = 0, len = questions.length; i < len; i++) {
+                questionIds.push(questions[i].question_id);
+            }
         });
-        $scope.showAnswer = function () {
+        $scope.addPastQuiz = function() {
+            var targetQuesIds = [];
+            var checkboxs = document.getElementsByName('choose_ques');
+            for (var i = 0, len = checkboxs.length; i < len; i++) {
+                if (checkboxs[i].checked) {
+                    targetQuesIds.push(questionIds[i]);
+                }
+            }
+            if (targetQuesIds.length < 1) {
+                alert("请选择至少一个题目");
+                return;
+            }
+            var postData = {
+                question_ids: targetQuesIds.join(',')
+            }
+            $http.post('/main/?ct=api&method=quiz.addToPastQuiz', postData).success(function(response) {
+                if (response.data) {
+                    alert("success!");
+                }
+            });
+        }
+        $scope.showAnswer = function() {
             $scope.rightAnswer = true;
         }
-        // $scope.jump = function () {
-        //     console.log(this.sectionId);
-        // }
     })
     //在线测试
     .controller('onlineQuizController', function($scope, $http) {

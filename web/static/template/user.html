@@ -16,27 +16,41 @@
         <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
     </div>
 </div>
-<div class="text-section">
-    <p class="user-classify"><b>&gt;&nbsp;往期小测成绩</b></p>
-</div>
-<div class="text-section">
-    <!-- <p>暂无成绩</p> -->
-    <table class="table table-hover">
-        <thead>
-            <tr>
-                <th><b>时间</b></th> 
-                <th><b>得分</b></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="v in score">
-                <td>{{v.quiz_time}}</td>
-                <td>{{v.totalscore}}</td>
-            </tr>
-        </tbody>
-    </table>
+<div ng-show="student">
+    <div class="text-section">
+        <p class="user-classify"><b>&gt;&nbsp;往期小测成绩</b></p>
+    </div>
+    <div class="text-section">
+        <!-- <p>暂无成绩</p> -->
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th><b>时间</b></th>
+                    <th><b>得分</b></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="v in score">
+                    <td>{{v.quiz_time}}</td>
+                    <td>{{v.totalscore}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 <div style="margin-bottom: 40px;"></div>
-<div class="bot-button" ng-click="quitLogin()">
+<!-- <div class="bot-button" ng-click="quitLogin()">
     <span>退出登录</span>
 </div>
+<div class="pop-up">
+    <p class="title">
+        发布在线测试
+    </p>
+    <div class="main">
+        请选择日期：<input id="date" type="date" ng-model="date">
+    </div>
+    <div class="btn-wrap text-center">
+        <button class="btn btn-primary" ng-click="confirm()" style="width: 30%;">确认</button>
+        <button class="btn btn-default" style="width: 30%;margin-left: 20px;">取消</button>
+    </div>
+</div> -->

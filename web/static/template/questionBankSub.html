@@ -1,32 +1,30 @@
 <div class="text-section">
-    <h2 class="f-24"><b>第{{section_id}}章</b></h2>
+    <h2 class="f-24 clearfix"><b>第{{section_id}}章</b>
+        <span class="fr f-18 add-question" ng-click="addPastQuiz()">添加到在线测试库</span>
+    </h2>
 </div>
 <div class="text-section">
-	<div class="quiz-item" ng-repeat="v in questions">	
-		<p class="question">{{$index+1}}.<span ng-if="v.question_type==3">(多选)</span>{{v.question}}<span class="c-red" ng-show="rightAnswer">正确答案:{{answer = v.answer}}</span></p>
-		<ul class="answer-list" >
-			<li class="answer">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>A.{{v.A}}</span>
-			</li>
-			<li class="answer">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>B.{{v.B}}</span>
-			</li>
-			<li class="answer" ng-if="v.question_type!=1">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>C.{{v.C}}</span>
-			</li>
-			<li class="answer" ng-if="v.question_type!=1">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>D.{{v.D}}</span>
-			</li>
-		</ul>
-	</div>
+    <div class="quiz-item" ng-repeat="v in questions">
+        <p class="question">
+            <input type="checkbox" ng-show="teacher" name="choose_ques"> {{$index+1}}.
+            <span ng-if="v.question_type==3">(多选)</span>{{v.question}}
+            <span class="c-red" ng-show="rightAnswer">正确答案:{{answer = v.answer}}</span>
+        </p>
+        <ul class="answer-list">
+            <li class="answer">
+                <span>A.{{v.A}}</span>
+            </li>
+            <li class="answer">
+                <span>B.{{v.B}}</span>
+            </li>
+            <li class="answer" ng-if="v.question_type!=1">
+                <span>C.{{v.C}}</span>
+            </li>
+            <li class="answer" ng-if="v.question_type!=1">
+                <span>D.{{v.D}}</span>
+            </li>
+        </ul>
+    </div>
 </div>
 <div style="margin-bottom: 40px;"></div>
 <div class="bot-button" ng-click="showAnswer()">

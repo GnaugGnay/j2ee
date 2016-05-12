@@ -26,11 +26,15 @@ class ModQuiz extends Model{
         return $this->query($sql);
     }
 
-    //将question_ids插入pastquiz表中，记录以往的成绩
-    public function insertPastQuiz($question_ids, $date) {
-        $sql = "insert INTO `pastquiz`(`question_ids`, `quiz_time`) VALUES ('{$question_ids}', '{$date}')";
-        $this->query($sql);
-        $sql = "select @@IDENTITY";
+    //将question_ids插入pastquiz表中，记录以往的测试
+    // public function insertPastQuiz($question_ids, $date) {
+    //     $sql = "insert INTO `pastquiz`(`question_ids`, `quiz_time`) VALUES ('{$question_ids}', '{$date}')";
+    //     $this->query($sql);
+    //     $sql = "select @@IDENTITY";
+    //     return $this->query($sql);
+    // }
+    public function insertPastQuiz($question_ids) {
+        $sql = "insert INTO `pastquiz`(`question_ids`) VALUES ('{$question_ids}')";
         return $this->query($sql);
     }
 

@@ -6,7 +6,7 @@
 		<div class="item-head clearfix" data-id="{{ hw_no = v.hw_no }}">
 			<span class="doc-name" ng-click="showDetail()">{{ v.file_name }}</span><a href="{{v.file_path}}">下载</a>
 			<span class="deadline">提交日期:<b>{{v.deadline}}</b>
-				<i class="hw-delete iconfont icon-close" ng-click="deleteHw()" ng-hide="deleteBtn"></i>
+				<i class="hw-delete iconfont icon-close" ng-click="deleteHw()" ng-show="teacher"></i>
 			</span>
 		</div>
 		<div class="item-detail" ng-show="detail">

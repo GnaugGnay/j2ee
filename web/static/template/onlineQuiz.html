@@ -2,31 +2,33 @@
     <h2 class="f-24"><b>在线测试</b></h2>
 </div>
 <div class="text-section" data-quizid="{{quiz_id}}">
-	<div class="quiz-item" ng-repeat="v in quiz">	
-		<p class="question">{{$index+1}}.<span ng-if="v.question_type==3">(多选)</span>{{v.question}}<span class="c-red" ng-show="rightAnswer">正确答案:{{answer = v.answer}}</span></p>
-		<ul class="answer-list" >
-			<li class="answer">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>A.{{v.A}}</span>
-			</li>
-			<li class="answer">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>B.{{v.B}}</span>
-			</li>
-			<li class="answer" ng-if="v.question_type!=1">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>C.{{v.C}}</span>
-			</li>
-			<li class="answer" ng-if="v.question_type!=1">
-				<input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
-				<input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
-				<span>D.{{v.D}}</span>
-			</li>
-		</ul>
-	</div>
+    <div class="quiz-item" ng-repeat="v in quiz">
+        <p class="question">{{$index+1}}.<span ng-if="v.question_type==3">(多选)</span>{{v.question}}
+            <span class="c-red" ng-show="rightAnswer">正确答案:{{answer = v.answer}}</span>
+        </p>
+        <ul class="answer-list">
+            <li class="answer">
+                <input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+                <input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
+                <span>A.{{v.A}}</span>
+            </li>
+            <li class="answer">
+                <input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+                <input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
+                <span>B.{{v.B}}</span>
+            </li>
+            <li class="answer" ng-if="v.question_type!=1">
+                <input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+                <input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
+                <span>C.{{v.C}}</span>
+            </li>
+            <li class="answer" ng-if="v.question_type!=1">
+                <input ng-if="v.question_type!=3" type="radio" name="question_{{$index}}">
+                <input ng-if="v.question_type==3" type="checkbox" name="question_{{$index}}">
+                <span>D.{{v.D}}</span>
+            </li>
+        </ul>
+    </div>
 </div>
 <div style="margin-bottom: 40px;"></div>
 <div class="bot-button" ng-click="submit()">

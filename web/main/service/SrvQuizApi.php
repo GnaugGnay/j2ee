@@ -27,15 +27,22 @@ class SrvQuizApi{
     	return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 
-    //发布在线测试
-    public function releaseQuiz($data) {
+    //添加试题到pastQuiz
+    public function addToPastQuiz($data) {
         $question_ids = $data['question_ids'];
-        $date = $data['date'];
         $mod = new ModQuiz();
-        $re = $mod->insertPastQuiz($question_ids,$date);
-        $quiz_id = $re[0]['@@IDENTITY'];
-        $re = $mod->insertOnlineQuiz($question_ids,$quiz_id);
+        $re = $mod->insertPastQuiz($question_ids);
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
+    //发布在线测试
+    // public function releaseQuiz($data) {
+    //     $question_ids = $data['question_ids'];
+    //     $date = $data['date'];
+    //     $mod = new ModQuiz();
+    //     $re = $mod->insertPastQuiz($question_ids,$date);
+    //     $quiz_id = $re[0]['@@IDENTITY'];
+    //     $re = $mod->insertOnlineQuiz($question_ids,$quiz_id);
+    //     return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
+    // }
 
 }
