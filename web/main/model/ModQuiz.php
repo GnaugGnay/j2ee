@@ -20,6 +20,11 @@ class ModQuiz extends Model{
         return $this->query($sql);
     }
 
+    // 提交答案
+    public function submitAnswer($username, $quiz_id,$scores, $totalscore) {
+        $sql = "update `userscore` SET `scores`='{$scores}',`totalscore`='{$totalscore}' WHERE `username`='{$username}' and `quiz_id`='{$quiz_id}'";
+        return $this->query($sql);
+    }
     //查找questions中若干条题目
     public function searchQuestions($question_ids) {
         $sql = "select * from `{$this->table_questions}` WHERE `question_id` in ({$question_ids})";

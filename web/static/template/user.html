@@ -1,8 +1,10 @@
 <div class="text-section">
-    <p class="user-classify"><b>&gt;&nbsp;修改密码</b></p>
+    <p class="user-classify"><b>&gt;&nbsp;功能列表</b></p>
 </div>
-<div class="text-section">
-    <div class="btn btn-primary" ui-sref="changePassword">点击此处修改密码</div>
+<div class="text-section"> 
+    <button class="btn btn-primary mr-10 mt-10" ui-sref="changePassword">修改密码</button>
+    <button class="btn btn-primary mr-10 mt-10" ui-sref="studentList" ng-show="teacher">查看学生名单</button>
+    <button class="btn btn-primary mr-10 mt-10" ui-sref="courseDesignGroup" >课程设计分组</button>
 </div>
 <div ng-show="teacher">
     <div class="text-section">

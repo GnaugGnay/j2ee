@@ -1,0 +1,47 @@
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;课程设计说明</b></p>
+</div>
+<div class="text-section">
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请同学们将提交的文件命名为相应的任务名+学号or小组号测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+</div>
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;相关下载</b></p>
+</div>
+<div class="text-section">
+    <div class="homework-item" ng-repeat="v in homework">
+        <div class="item-head clearfix" data-id="{{ hw_no = v.hw_no }}">
+            <span class="doc-name" ng-click="showDetail()">{{ v.file_name }}</span><a href="{{v.file_path}}">下载</a>
+            <span class="deadline">提交日期:<b>{{v.deadline}}</b>
+    			<i class="hw-delete iconfont icon-close" ng-click="deleteHw()" ng-show="teacher"></i>
+    		</span>
+        </div>
+        <div class="item-detail" ng-show="detail">
+            <p>{{v.hw_content}}</p>
+        </div>
+    </div>
+</div>
+<div ng-show="teacher">
+    <div class="text-section">
+        <p class="user-classify"><b>&gt;&nbsp;上传作业文件(老师)</b></p>
+    </div>
+    <div class="text-section">
+        <div class="">
+            <form action="/main/?ct=api&method=homework.importHomeworkTea" method="post" enctype="multipart/form-data" id="homeworkForm" target="hideIframe">   
+                <div class="form-group">
+                    <input id="homeworkDoc" name="filename" type="file">
+                </div>
+                <div class="form-group form-inline">
+                    <label>文件描述：</label>
+                    <input type="text" name="textDesc" class="form-control">
+                </div>
+                <div class="form-group form-inline">
+                    <label>截止日期：</label>
+                    <input id="deadline" type="date" name="deadline" class="form-control">
+                </div>
+                <button class="btn btn-primary mt-20" ng-click="homeworkDocSubmit($event)">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+            </form>
+            <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
+        </div>
+    </div>
+</div>
+

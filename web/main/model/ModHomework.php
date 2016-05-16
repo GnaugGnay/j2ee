@@ -24,5 +24,10 @@ class ModHomework extends Model{
     	return $this->query($sql);
     }
 
+    //上传作业
+    public function insert ($hw_content, $file_name, $file_path, $deadline) {
+        $sql = "insert INTO `homework`(`hw_content`, `file_name`, `file_path`, `deadline`) VALUES ('{$hw_content}','{$file_name}','{$file_path}','{$deadline}')";
+        return $this->query($sql);
+    }
 
 }

@@ -36,7 +36,7 @@ class SrvUserApi{
         $name = $_FILES['filename']['name'];
         $tmp_name = $_FILES['filename']['tmp_name'];
         $size = $_FILES['filename']['size'];
-        $upload = LibFile::uploadByFile($name, $tmp_name,$size, WEB_ROOT.'/uploads/user', WEB_ROOT.'/uploads/user', 2048, array('.xls','.xlsx'));
+        $upload = LibFile::uploadByFile($name, $tmp_name,$size, WEB_ROOT.'/uploads/user', WEB_ROOT.'/uploads/user', 2048, array('.xls','.xlsx'),$name);
 
         if(!$upload['state']) return array('state'=>0,'msg'=>$upload['msg']);
         require LIB.'/library/excel/PHPExcel.php';

@@ -15,20 +15,19 @@ class SrvQuizApi{
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 
-    //插入成绩
-    public function insertScore($data) {
+    //提交答案
+    public function submitAnswer($data) {
         $mod = new ModQuiz();
         $re = $mod->getAll();
-        if ($re.length == 0) {
+        if (count($re) == 0) {
             return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, false);
         }
     	$username = $data['username'];
         $quiz_id = $data['quiz_id'];
-        $date = date("Y-m-d");
         $scores = $data['scoreList'];
         $totalscore = $data['totalScore'];
-        $re = $mod->insertScore($username, $quiz_id, $date, $scores, $totalscore);
-    	return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
+        $re = $mod->submitAnswer($username, $quiz_id, $scores, $totalscore);
+    	return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, 1);
     }
 
     //查找以往的测试
@@ -58,6 +57,11 @@ class SrvQuizApi{
         $re = $mod->updateDate($date,$quiz_id);
         $question_ids = $re[0]['question_ids'];
         $re = $mod->insertOnlineQuiz($question_ids,$quiz_id);
+        $modUser = new ModUser();
+        $students = $modUser->getStudents();
+        foreach ($students as $key => $value) {
+            $mod->insertScore($value['username'],$quiz_id,$date,'',0);
+        }
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 

@@ -1,0 +1,23 @@
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;学生名单及小测成绩</b></p>
+</div>
+<div class="text-section">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th><b>#</b></th>
+                <th ng-repeat="v in quiz_times"><b>{{v}}</b></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in listData">
+                <th><b>{{item.fullname}}</b></th>
+                <td ng-repeat="score in item.totalscore track by $index">
+                    {{score}}
+                </td>
+                <!-- <td>{{v.totalscore}}</td>
+                <td>{{v.totalscore}}</td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -24,4 +24,10 @@ class ModUser extends Model{
         return $this->query($sql);
     }
 
+    //查询所有学生
+    public function getStudents() {
+        $sql = "select `username`, `fullname` FROM `user` WHERE `usertype` = 1 order by `username`";
+        return $this->query($sql);
+    }
+
 }

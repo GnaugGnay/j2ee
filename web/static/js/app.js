@@ -22,6 +22,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "./static/template/changePassword.html",
             controller: 'userController'
         })
+        .state("studentList", { //学生名单
+            url: "/studentList",
+            templateUrl: "./static/template/studentList.html",
+            controller: 'studentListController'
+        })
         .state("home", { //主页
             url: "/",
             templateUrl: "./static/template/home.html",
@@ -72,10 +77,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
             controller: 'questionSubController',
             params: {'section_id': null}
         })
-        .state("homework", { //实验指导
-            url: "/homework",
-            templateUrl: "./static/template/homework.html",
-            controller: 'homeworkController'
+        .state("courseDesign", { //课程设计
+            url: "/courseDesign",
+            templateUrl: "./static/template/courseDesign.html",
+            controller: 'courseDesignController'
+        })
+        .state("courseDesignGroup", { //课程设计分组
+            url: "/courseDesignGroup",
+            templateUrl: "./static/template/courseDesignGroup.html",
+            controller: 'courseDesignGroupController'
         })
         .state("forum", { //课程论坛
             url: "/forum",
