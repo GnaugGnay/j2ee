@@ -53,12 +53,91 @@ angular.module('myApp')
 
         //如果用户是学生，就显示往期的小测结果
         if (Util.getUserType() == 1) {
+            $scope.teacher = false;
+            $scope.student = true;
             var username = Util.getUsername();
             var postData = { username: username };
             $http.post('/main/?ct=api&method=user.pastScore', postData).success(function(response) {
+                if (response.data.length == 0) {
+                    $scope.noPastScore = true;
+                    return;
+                }
                 $scope.score = response.data;
             });
+        } else {
+            $scope.teacher = true;
+            $scope.student = false;
+            //往期测试
+            $http.post('/main/?ct=api&method=quiz.getPastQuiz').success(function(response) {
+                if (response.data.length == 0) {
+                    $scope.noPastQuiz = true;
+                    return;
+                }
+                $scope.pastQuiz = response.data;
+
+            });
+            $scope.showDetail = function() {
+                this.detail = !this.detail;
+            };
+            //发布在线测试
+            $scope.releaseQuiz = function() {
+                if (confirm("确认发布这些试题?")) {
+                    var quiz_id = this.quiz_id;
+                    var postData = {
+                        quiz_id: quiz_id
+                    };
+                    $http.post('/main/?ct=api&method=quiz.releaseQuiz', postData).success(function(response) {
+                        if (response.data) {
+                            alert("发布成功");
+                            $state.go('onlineQuiz');
+                        }
+                    });
+                }
+            };
+            //结束当前测试 
+            $scope.closeOnlineQuiz = function () {
+                if(confirm("确认结束当前在线测试？")) {
+                    $http.post('/main/?ct=api&method=user.closeOnlineQuiz').success(function(response) {
+                        if (response.data) {
+                            alert("在线测试已结束，可查看相关数据");
+                        }
+                    });
+                }
+            };
+            //统计正确率 
+            $scope.countCorrectRate = function() {
+                var _self = this;
+                var quiz_id = _self.quiz_id;
+                var postData = {
+                    quiz_id: quiz_id
+                };
+                $http.post('/main/?ct=api&method=user.countCorrect', postData).success(function(response) {
+                    var data = response.data.correctRate;
+                    var number = response.data.scoreNum;
+                    var str = "";
+                    for (var i = 0,len = data.length; i < len; i++) {
+                        str += (i+1) + '. ' + data[i] + ' | ';
+                    }
+                    str += '   已有' +　number　+ '人提交了测试.'
+                    _self.correctRate = str;
+                });
+            };
+            //导入学生名单
+            $scope.userFormSubmit = function() {
+                var excel = document.getElementById('userFormExcel').value;
+                var form = document.getElementById('userForm');
+                if (excel == "") {
+                    alert("请先选择文件");
+                    return;
+                }
+                if (confirm("确认提交？")) {
+                    form.submit();
+                    alert("提交成功");
+                }
+
+            };
         }
+
         //退出登录
         $scope.quitLogin = function() {
             if (confirm("确认退出登录？")) {
@@ -70,20 +149,7 @@ angular.module('myApp')
                 window.location.href = '/';
             }
         };
-        //导入学生名单
-        $scope.userFormSubmit = function() {
-            var excel = document.getElementById('userFormExcel').value;
-            var form = document.getElementById('userForm');
-            if (excel == "") {
-                alert("请先选择文件");
-                return;
-            }
-            if (confirm("确认提交？")) {
-                form.submit();
-                alert("提交成功");
-            }
 
-        };
         //修改密码
         $scope.changePassword = function() {
 
@@ -223,6 +289,10 @@ angular.module('myApp')
     //在线测试
     .controller('onlineQuizController', function($scope, $http) {
         $http.post('/main/?ct=api&method=quiz.getQuiz').success(function(response) {
+            if (response.data.length == 0) {
+                $scope.noOnlineQuiz = true;
+                return;
+            }
             $scope.quiz = response.data;
             $scope.quiz_id = response.data[0].quiz_id;
         });
@@ -267,6 +337,8 @@ angular.module('myApp')
                     if (response.data == true) {
                         alert("提交成功！本次测试您的得分为" + totalScore);
                         $scope.rightAnswer = true;
+                    } else {
+                        alert("本次测试已经结束");
                     }
                 });
             }

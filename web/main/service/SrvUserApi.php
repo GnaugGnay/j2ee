@@ -55,10 +55,45 @@ class SrvUserApi{
     }
     //查询成绩
     public function pastScore($data) {
-        $mod = new ModUser();
         $username = $data['username'];
+        $mod = new ModUserscore();
         $re = $mod->getScore($username);
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 
+    //统计每道题的正确率
+    public function countCorrect($data) {
+        $quiz_id = $data['quiz_id'];
+        $mod = new ModUserscore();
+        $re = $mod->getScoresOfQuiz($quiz_id);
+        $scoreNum = $re['scoreNum'];
+        $scoresTemp = array();
+        foreach ($re['scores'] as $key => $value) {
+            $value['scores'] = explode(',',$value['scores']);
+            array_push($scoresTemp, $value['scores']);
+        }
+        function add($a ,$b) {
+            return $a + $b;
+        }
+        function init() {
+            return 0;
+        }
+        $correctRate = array_map('init', $scoresTemp[0]);
+        foreach ($scoresTemp as $key => $value) {
+            $correctRate = array_map('add', $correctRate ,$value);
+        }
+        foreach ($correctRate as $key => $value) {
+            $correctRate[$key] = (round($value / $scoreNum , 4)*100)."%";
+        }
+        $result['correctRate'] = $correctRate;
+        $result['scoreNum'] = $scoreNum;
+        return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $result);
+    }
+         
+    //结束当前的在线测试
+    public function closeOnlineQuiz() {
+        $mod = new ModQuiz();
+        $re = $mod->deleteOnlineQuiz();
+        return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
+    }
 }

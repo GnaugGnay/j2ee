@@ -4,16 +4,38 @@
 <div class="text-section">
     <div class="btn btn-primary" ui-sref="changePassword">点击此处修改密码</div>
 </div>
-<div class="text-section">
-    <p class="user-classify"><b>&gt;&nbsp;上传学生名单</b></p>
-</div>
-<div class="text-section">
-    <div class="">
-        <form action="/main/?ct=api&method=user.importUser" method="post" enctype="multipart/form-data" id="userForm" target="hideIframe">
-            <input id="userFormExcel" name="filename" type="file">
-            <button class="btn btn-primary mt-20" ng-click="userFormSubmit()">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
-        </form>
-        <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
+<div ng-show="teacher">
+    <div class="text-section">
+        <p class="user-classify"><b>&gt;&nbsp;上传学生名单</b></p>
+    </div>
+    <div class="text-section">
+        <div class="">
+            <form action="/main/?ct=api&method=user.importUser" method="post" enctype="multipart/form-data" id="userForm" target="hideIframe">
+                <input id="userFormExcel" name="filename" type="file">
+                <button class="btn btn-primary mt-20" ng-click="userFormSubmit()">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+            </form>
+            <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
+        </div>
+    </div>
+    <div class="text-section">
+        <p class="user-classify"><b>&gt;&nbsp;往期测试</b></p>
+    </div>
+    <div class="text-section">
+        <p ng-if="noPastQuiz">暂无往期测试，请到试题库添加</p>
+        <button class="btn btn-danger" ng-if="!noPastQuiz" ng-click="closeOnlineQuiz()">结束当前在线测试</button>
+        <div class="mt-10"></div>
+        <div class="homework-item" ng-repeat="v in pastQuiz">
+            <div class="item-head clearfix">
+                <span class="doc-name"  ng-click="showDetail()">{{v.quiz_time}}</span>
+                <span class="deadline btn btn-primary" data-quizID="{{quiz_id = v.quiz_id}}" ng-click="releaseQuiz()">发布</span>
+                <span class="deadline btn btn-primary" ng-click="countCorrectRate()" ng-show="detail" style="margin-right: 10px;">正确率</span>
+            </div>
+            <div class="item-detail" ng-show="detail">
+                <!-- <p>每题正确率：<span ng-repeat="data in correctRate">{{$index+1}}.{{data}}</span></p> -->
+                <p>每题正确率：<span class="c-red">{{correctRate}}</span></p>
+                <p ng-repeat="value in v.questions">{{$index+1}}.{{value.question}}</p>
+            </div>
+        </div>
     </div>
 </div>
 <div ng-show="student">
@@ -21,36 +43,40 @@
         <p class="user-classify"><b>&gt;&nbsp;往期小测成绩</b></p>
     </div>
     <div class="text-section">
-        <!-- <p>暂无成绩</p> -->
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th><b>时间</b></th>
-                    <th><b>得分</b></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="v in score">
-                    <td>{{v.quiz_time}}</td>
-                    <td>{{v.totalscore}}</td>
-                </tr>
-            </tbody>
-        </table>
+        <p ng-if="noPastScore">暂无成绩</p>
+        <div ng-if="!noPastScore">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th><b>时间</b></th>
+                        <th><b>得分</b></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="v in score">
+                        <td>{{v.quiz_time}}</td>
+                        <td>{{v.totalscore}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
     </div>
 </div>
 <div style="margin-bottom: 40px;"></div>
-<!-- <div class="bot-button" ng-click="quitLogin()">
+<div class="bot-button" ng-click="quitLogin()">
     <span>退出登录</span>
 </div>
-<div class="pop-up">
+<!-- <div class="pop-up" ng-show="popUp">
     <p class="title">
         发布在线测试
     </p>
     <div class="main">
-        请选择日期：<input id="date" type="date" ng-model="date">
+        请填写持续时间：
+        <input class="mt-10" type="number" ng-model="date"> 分钟
     </div>
     <div class="btn-wrap text-center">
-        <button class="btn btn-primary" ng-click="confirm()" style="width: 30%;">确认</button>
+        <button class="btn btn-primary" ng-click="release()" style="width: 30%;">确认</button>
         <button class="btn btn-default" style="width: 30%;margin-left: 20px;">取消</button>
     </div>
 </div> -->

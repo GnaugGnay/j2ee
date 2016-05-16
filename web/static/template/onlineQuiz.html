@@ -2,6 +2,7 @@
     <h2 class="f-24"><b>在线测试</b></h2>
 </div>
 <div class="text-section" data-quizid="{{quiz_id}}">
+    <p ng-if="noOnlineQuiz">测试还未开始，请等待老师发布题目</p>
     <div class="quiz-item" ng-repeat="v in quiz">
         <p class="question">{{$index+1}}.<span ng-if="v.question_type==3">(多选)</span>{{v.question}}
             <span class="c-red" ng-show="rightAnswer">正确答案:{{answer = v.answer}}</span>

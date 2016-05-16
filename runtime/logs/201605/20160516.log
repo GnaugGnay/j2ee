@@ -1,0 +1,4721 @@
+
+-----------------------------------
+[2016-05-16 02:38:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:38:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.097)
+[2016-05-16 02:38:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.021)
+[2016-05-16 02:38:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:38:15]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337495,
+)
+
+-----------------------------------
+[2016-05-16 02:38:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:38:24]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:38:24]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:38:24]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:38:24]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337504,
+)
+
+-----------------------------------
+[2016-05-16 02:38:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '21',
+)
+[2016-05-16 02:38:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '21'(OK:0.004)
+[2016-05-16 02:38:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '21'(OK:0.001)
+[2016-05-16 02:38:27]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '0%',
+      1 => '0%',
+      2 => '33.33%',
+      3 => '66.67%',
+    ),
+    'scoreNum' => '3',
+  ),
+  'ct' => 1463337507,
+)
+
+-----------------------------------
+[2016-05-16 02:38:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '20',
+)
+[2016-05-16 02:38:29]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '20'(OK:0.002)
+[2016-05-16 02:38:29]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '20'(OK:0.001)
+[2016-05-16 02:38:29]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '100%',
+      1 => '25%',
+      2 => '50%',
+      3 => '25%',
+      4 => '75%',
+      5 => '75%',
+    ),
+    'scoreNum' => '4',
+  ),
+  'ct' => 1463337509,
+)
+
+-----------------------------------
+[2016-05-16 02:38:30] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '20',
+)
+[2016-05-16 02:38:30]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '20'(OK:0.002)
+[2016-05-16 02:38:30]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '20'(OK:0.001)
+[2016-05-16 02:38:30]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '100%',
+      1 => '25%',
+      2 => '50%',
+      3 => '25%',
+      4 => '75%',
+      5 => '75%',
+    ),
+    'scoreNum' => '4',
+  ),
+  'ct' => 1463337510,
+)
+
+-----------------------------------
+[2016-05-16 02:38:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '20',
+)
+[2016-05-16 02:38:31]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '20'(OK:0.002)
+[2016-05-16 02:38:31]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '20'(OK:0.001)
+[2016-05-16 02:38:31]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '100%',
+      1 => '25%',
+      2 => '50%',
+      3 => '25%',
+      4 => '75%',
+      5 => '75%',
+    ),
+    'scoreNum' => '4',
+  ),
+  'ct' => 1463337511,
+)
+
+-----------------------------------
+[2016-05-16 02:38:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:38:34]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:38:34]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '21',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '21',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463337514,
+)
+
+-----------------------------------
+[2016-05-16 02:38:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:38:38]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:38:38]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:38:38]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:38:38]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337518,
+)
+
+-----------------------------------
+[2016-05-16 02:40:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:40:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-16 02:40:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:40:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:40:14]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337614,
+)
+
+-----------------------------------
+[2016-05-16 02:40:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:40:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-16 02:40:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:40:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:40:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337616,
+)
+
+-----------------------------------
+[2016-05-16 02:40:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '20',
+)
+[2016-05-16 02:40:31]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '20'(OK:0.002)
+[2016-05-16 02:40:31]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '20'(OK:0.001)
+[2016-05-16 02:40:31]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '100%',
+      1 => '25%',
+      2 => '50%',
+      3 => '25%',
+      4 => '75%',
+      5 => '75%',
+    ),
+    'scoreNum' => '4',
+  ),
+  'ct' => 1463337631,
+)
+
+-----------------------------------
+[2016-05-16 02:40:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '20',
+)
+[2016-05-16 02:40:35]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '20'(OK:0.002)
+[2016-05-16 02:40:35]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '20'(OK:0.001)
+[2016-05-16 02:40:35]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '100%',
+      1 => '25%',
+      2 => '50%',
+      3 => '25%',
+      4 => '75%',
+      5 => '75%',
+    ),
+    'scoreNum' => '4',
+  ),
+  'ct' => 1463337635,
+)
+
+-----------------------------------
+[2016-05-16 02:41:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getSections
+[2016-05-16 02:41:03]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 12
+SQL: select `section_id` FROM `questions` group by `section_id`(OK:0.002)
+[2016-05-16 02:41:03]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463337663,
+)
+
+-----------------------------------
+[2016-05-16 02:41:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-16 02:41:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 17
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.004)
+[2016-05-16 02:41:04]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463337664,
+)
+
+-----------------------------------
+[2016-05-16 02:41:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.addToPastQuiz
+POST: array (
+  'question_ids' => '3,4,5,6',
+)
+[2016-05-16 02:41:12]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: insert INTO `pastquiz`(`question_ids`) VALUES ('3,4,5,6')(OK:0.003)
+[2016-05-16 02:41:12]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463337672,
+)
+
+-----------------------------------
+[2016-05-16 02:41:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:41:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.012)
+[2016-05-16 02:41:15]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '21',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '21',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463337675,
+)
+
+-----------------------------------
+[2016-05-16 02:41:19] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:41:19]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-16 02:41:19]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:41:19]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:41:19]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:41:19]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '0000-00-00',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337679,
+)
+
+-----------------------------------
+[2016-05-16 02:41:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:41:21]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:41:21]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '21',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '21',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463337681,
+)
+
+-----------------------------------
+[2016-05-16 02:41:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:41:24]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 02:41:24]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '21',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '21',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463337684,
+)
+
+-----------------------------------
+[2016-05-16 02:41:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:41:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:41:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:41:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:41:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:41:27]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '0000-00-00',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337687,
+)
+
+-----------------------------------
+[2016-05-16 02:41:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => '2012051337',
+  'password' => '2012051337',
+)
+[2016-05-16 02:41:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '2012051337' and `password` = '2012051337'(OK:0.002)
+[2016-05-16 02:41:42]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => '2012051337',
+      'password' => '2012051337',
+      'fullname' => '哈哈哈',
+      'usertype' => '1',
+    ),
+  ),
+  'ct' => 1463337702,
+)
+
+-----------------------------------
+[2016-05-16 02:41:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-16 02:41:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 12
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.002)
+[2016-05-16 02:41:42]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '26',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-15',
+      'scores' => '0,0,0,0',
+      'totalscore' => '0',
+    ),
+    1 => 
+    array (
+      'score_id' => '22',
+      'username' => '2012051337',
+      'quiz_id' => '20',
+      'quiz_time' => '2016-05-15',
+      'scores' => '1,0,0,0,0,0',
+      'totalscore' => '1',
+    ),
+  ),
+  'ct' => 1463337702,
+)
+
+-----------------------------------
+[2016-05-16 02:41:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:41:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:41:46]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '21',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '21',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463337706,
+)
+
+-----------------------------------
+[2016-05-16 02:41:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.insertScore
+POST: array (
+  'scoreList' => '0,0,1,1',
+  'totalScore' => '2',
+  'username' => '2012051337',
+  'quiz_id' => '21',
+)
+[2016-05-16 02:41:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051337', '21', '2016-05-16', '0,0,1,1', '2')(OK:0.002)
+[2016-05-16 02:41:53]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463337713,
+)
+
+-----------------------------------
+[2016-05-16 02:42:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-16 02:42:03]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 12
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.002)
+[2016-05-16 02:42:03]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '26',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-15',
+      'scores' => '0,0,0,0',
+      'totalscore' => '0',
+    ),
+    1 => 
+    array (
+      'score_id' => '22',
+      'username' => '2012051337',
+      'quiz_id' => '20',
+      'quiz_time' => '2016-05-15',
+      'scores' => '1,0,0,0,0,0',
+      'totalscore' => '1',
+    ),
+    2 => 
+    array (
+      'score_id' => '29',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-16',
+      'scores' => '0,0,1,1',
+      'totalscore' => '2',
+    ),
+  ),
+  'ct' => 1463337723,
+)
+
+-----------------------------------
+[2016-05-16 02:42:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-16 02:42:11]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 12
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.002)
+[2016-05-16 02:42:11]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '26',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-15',
+      'scores' => '0,0,0,0',
+      'totalscore' => '0',
+    ),
+    1 => 
+    array (
+      'score_id' => '22',
+      'username' => '2012051337',
+      'quiz_id' => '20',
+      'quiz_time' => '2016-05-15',
+      'scores' => '1,0,0,0,0,0',
+      'totalscore' => '1',
+    ),
+    2 => 
+    array (
+      'score_id' => '29',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-16',
+      'scores' => '0,0,1,1',
+      'totalscore' => '2',
+    ),
+  ),
+  'ct' => 1463337731,
+)
+
+-----------------------------------
+[2016-05-16 02:42:26] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => '2012051337',
+  'password' => '2012051337',
+)
+[2016-05-16 02:42:26]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '2012051337' and `password` = '2012051337'(OK:0.002)
+[2016-05-16 02:42:26]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => '2012051337',
+      'password' => '2012051337',
+      'fullname' => '哈哈哈',
+      'usertype' => '1',
+    ),
+  ),
+  'ct' => 1463337746,
+)
+
+-----------------------------------
+[2016-05-16 02:42:26] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-16 02:42:26]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 12
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.002)
+[2016-05-16 02:42:26]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '26',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-15',
+      'scores' => '0,0,0,0',
+      'totalscore' => '0',
+    ),
+    1 => 
+    array (
+      'score_id' => '22',
+      'username' => '2012051337',
+      'quiz_id' => '20',
+      'quiz_time' => '2016-05-15',
+      'scores' => '1,0,0,0,0,0',
+      'totalscore' => '1',
+    ),
+    2 => 
+    array (
+      'score_id' => '29',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-16',
+      'scores' => '0,0,1,1',
+      'totalscore' => '2',
+    ),
+  ),
+  'ct' => 1463337746,
+)
+
+-----------------------------------
+[2016-05-16 02:42:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-16 02:42:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.002)
+[2016-05-16 02:42:37]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => 'admin',
+      'password' => 'admin',
+      'fullname' => '管理员',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1463337757,
+)
+
+-----------------------------------
+[2016-05-16 02:42:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:42:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:42:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:42:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:42:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:42:37]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '0000-00-00',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337757,
+)
+
+-----------------------------------
+[2016-05-16 02:42:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:42:45]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:42:45]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '21',
+      'question_type' => '1',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+      'A' => '法撒旦法2345撒旦',
+      'B' => '法师打的挂号费发斯蒂芬',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    1 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '21',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '21',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463337765,
+)
+
+-----------------------------------
+[2016-05-16 02:42:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:42:48]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:42:48]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:42:48]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:42:48]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:42:48]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '0000-00-00',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337768,
+)
+
+-----------------------------------
+[2016-05-16 02:42:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.releaseQuiz
+POST: array (
+  'quiz_id' => '22',
+)
+[2016-05-16 02:42:51]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 48
+SQL: update `pastquiz` SET `quiz_time`='2016-05-16' WHERE `quiz_id` = '22'(OK:0.002)
+[2016-05-16 02:42:51]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 50
+SQL: select `question_ids` FROM `pastquiz` WHERE `quiz_id` = '22'(OK:0.001)
+[2016-05-16 02:42:51]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 55
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.001)
+[2016-05-16 02:42:51]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 57
+SQL: insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:42:51]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 59
+SQL: update `onlinequiz` SET `quiz_id`= 22 WHERE 1(OK:0.001)
+[2016-05-16 02:42:51]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463337771,
+)
+
+-----------------------------------
+[2016-05-16 02:42:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:42:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:42:53]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463337773,
+)
+
+-----------------------------------
+[2016-05-16 02:43:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:43:21]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:43:21]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:43:21]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:43:21]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:43:21]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337801,
+)
+
+-----------------------------------
+[2016-05-16 02:43:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:43:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:43:27]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463337807,
+)
+
+-----------------------------------
+[2016-05-16 02:43:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => '2012051337',
+  'password' => '2012051337',
+)
+[2016-05-16 02:43:39]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = '2012051337' and `password` = '2012051337'(OK:0.011)
+[2016-05-16 02:43:39]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => '2012051337',
+      'password' => '2012051337',
+      'fullname' => '哈哈哈',
+      'usertype' => '1',
+    ),
+  ),
+  'ct' => 1463337819,
+)
+
+-----------------------------------
+[2016-05-16 02:43:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-16 02:43:39]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 12
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.002)
+[2016-05-16 02:43:39]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '26',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-15',
+      'scores' => '0,0,0,0',
+      'totalscore' => '0',
+    ),
+    1 => 
+    array (
+      'score_id' => '22',
+      'username' => '2012051337',
+      'quiz_id' => '20',
+      'quiz_time' => '2016-05-15',
+      'scores' => '1,0,0,0,0,0',
+      'totalscore' => '1',
+    ),
+  ),
+  'ct' => 1463337819,
+)
+
+-----------------------------------
+[2016-05-16 02:43:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:43:40]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:43:40]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463337820,
+)
+
+-----------------------------------
+[2016-05-16 02:43:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.insertScore
+POST: array (
+  'scoreList' => '0,0,0,0',
+  'totalScore' => '0',
+  'username' => '2012051337',
+  'quiz_id' => '22',
+)
+[2016-05-16 02:43:50]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051337', '22', '2016-05-16', '0,0,0,0', '0')(OK:0.002)
+[2016-05-16 02:43:50]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463337830,
+)
+
+-----------------------------------
+[2016-05-16 02:43:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-16 02:43:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 12
+SQL: select * from `userscore` where `username` = '2012051337'(OK:0.002)
+[2016-05-16 02:43:53]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '26',
+      'username' => '2012051337',
+      'quiz_id' => '21',
+      'quiz_time' => '2016-05-15',
+      'scores' => '0,0,0,0',
+      'totalscore' => '0',
+    ),
+    1 => 
+    array (
+      'score_id' => '22',
+      'username' => '2012051337',
+      'quiz_id' => '20',
+      'quiz_time' => '2016-05-15',
+      'scores' => '1,0,0,0,0,0',
+      'totalscore' => '1',
+    ),
+    2 => 
+    array (
+      'score_id' => '30',
+      'username' => '2012051337',
+      'quiz_id' => '22',
+      'quiz_time' => '2016-05-16',
+      'scores' => '0,0,0,0',
+      'totalscore' => '0',
+    ),
+  ),
+  'ct' => 1463337833,
+)
+
+-----------------------------------
+[2016-05-16 02:44:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-16 02:44:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.002)
+[2016-05-16 02:44:00]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => 'admin',
+      'password' => 'admin',
+      'fullname' => '管理员',
+      'usertype' => '0',
+    ),
+  ),
+  'ct' => 1463337840,
+)
+
+-----------------------------------
+[2016-05-16 02:44:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:44:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:44:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:44:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:44:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:44:00]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337840,
+)
+
+-----------------------------------
+[2016-05-16 02:44:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '22',
+)
+[2016-05-16 02:44:03]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '22'(OK:0.012)
+[2016-05-16 02:44:03]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '22'(OK:0.001)
+[2016-05-16 02:44:03]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '0%',
+      1 => '0%',
+      2 => '0%',
+      3 => '0%',
+    ),
+    'scoreNum' => '1',
+  ),
+  'ct' => 1463337843,
+)
+
+-----------------------------------
+[2016-05-16 02:44:33] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:44:33]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:44:33]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463337873,
+)
+
+-----------------------------------
+[2016-05-16 02:44:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-16 02:44:41]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-16 02:44:41]Info: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 18
+SQL: select * from `homework`(OK:0.002)
+[2016-05-16 02:44:41]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '11',
+      'hw_content' => '洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a洒洒洒a',
+      'file_name' => '2.doc',
+      'file_path' => '131231dasdsa',
+      'deadline' => '2016-05-04',
+    ),
+    1 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463337881,
+)
+
+-----------------------------------
+[2016-05-16 02:44:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:44:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:44:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:44:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:44:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:44:46]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337886,
+)
+
+-----------------------------------
+[2016-05-16 02:45:01] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '21',
+)
+[2016-05-16 02:45:01]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '21'(OK:0.002)
+[2016-05-16 02:45:01]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '21'(OK:0.001)
+[2016-05-16 02:45:01]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '0%',
+      1 => '0%',
+      2 => '33.33%',
+      3 => '66.67%',
+    ),
+    'scoreNum' => '3',
+  ),
+  'ct' => 1463337901,
+)
+
+-----------------------------------
+[2016-05-16 02:45:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:45:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:45:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:45:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:45:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:45:37]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463337937,
+)
+
+-----------------------------------
+[2016-05-16 02:45:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '22',
+)
+[2016-05-16 02:45:40]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '22'(OK:0.011)
+[2016-05-16 02:45:40]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '22'(OK:0.001)
+[2016-05-16 02:45:40]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '0%',
+      1 => '0%',
+      2 => '0%',
+      3 => '0%',
+    ),
+    'scoreNum' => '1',
+  ),
+  'ct' => 1463337940,
+)
+
+-----------------------------------
+[2016-05-16 02:45:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '21',
+)
+[2016-05-16 02:45:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '21'(OK:0.002)
+[2016-05-16 02:45:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '21'(OK:0.001)
+[2016-05-16 02:45:46]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '0%',
+      1 => '0%',
+      2 => '33.33%',
+      3 => '66.67%',
+    ),
+    'scoreNum' => '3',
+  ),
+  'ct' => 1463337946,
+)
+
+-----------------------------------
+[2016-05-16 02:48:01] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '22',
+)
+[2016-05-16 02:48:01]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '22'(OK:0.002)
+[2016-05-16 02:48:01]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '22'(OK:0.001)
+[2016-05-16 02:48:01]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '0%',
+      1 => '0%',
+      2 => '0%',
+      3 => '0%',
+    ),
+    'scoreNum' => '1',
+  ),
+  'ct' => 1463338081,
+)
+
+-----------------------------------
+[2016-05-16 02:48:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.countCorrect
+POST: array (
+  'quiz_id' => '21',
+)
+[2016-05-16 02:48:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '21'(OK:0.026)
+[2016-05-16 02:48:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '21'(OK:0.001)
+[2016-05-16 02:48:04]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '0%',
+      1 => '0%',
+      2 => '33.33%',
+      3 => '66.67%',
+    ),
+    'scoreNum' => '3',
+  ),
+  'ct' => 1463338084,
+)
+
+-----------------------------------
+[2016-05-16 02:49:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:49:06]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:49:06]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:49:06]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:49:06]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:49:06]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463338146,
+)
+
+-----------------------------------
+[2016-05-16 02:49:49] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:49:49]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:49:49]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:49:49]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:49:49]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:49:49]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463338189,
+)
+
+-----------------------------------
+[2016-05-16 02:50:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:50:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 43
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:50:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:50:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:50:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:50:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463338216,
+)
+
+-----------------------------------
+[2016-05-16 02:51:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:51:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 02:51:32]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463338292,
+)
+
+-----------------------------------
+[2016-05-16 02:55:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.closeOnlineQuiz
+[2016-05-16 02:55:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 66
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.002)
+[2016-05-16 02:55:42]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463338542,
+)
+
+-----------------------------------
+[2016-05-16 02:57:22] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:57:22]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 02:57:22]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463338642,
+)
+
+-----------------------------------
+[2016-05-16 02:57:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:57:25]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:57:25]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:57:25]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:57:25]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:57:25]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463338645,
+)
+
+-----------------------------------
+[2016-05-16 02:57:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.releaseQuiz
+POST: array (
+  'quiz_id' => '22',
+)
+[2016-05-16 02:57:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 49
+SQL: update `pastquiz` SET `quiz_time`='2016-05-16' WHERE `quiz_id` = '22'(OK:0.002)
+[2016-05-16 02:57:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 51
+SQL: select `question_ids` FROM `pastquiz` WHERE `quiz_id` = '22'(OK:0.001)
+[2016-05-16 02:57:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 56
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.001)
+[2016-05-16 02:57:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 58
+SQL: insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:57:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 60
+SQL: update `onlinequiz` SET `quiz_id`= 22 WHERE 1(OK:0.002)
+[2016-05-16 02:57:32]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463338652,
+)
+
+-----------------------------------
+[2016-05-16 02:57:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:57:34]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 02:57:34]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463338654,
+)
+
+-----------------------------------
+[2016-05-16 02:57:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:57:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:57:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:57:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:57:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:57:53]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463338673,
+)
+
+-----------------------------------
+[2016-05-16 02:57:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.closeOnlineQuiz
+[2016-05-16 02:57:56]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 66
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.012)
+[2016-05-16 02:57:56]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463338676,
+)
+
+-----------------------------------
+[2016-05-16 02:57:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:57:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 02:57:58]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463338678,
+)
+
+-----------------------------------
+[2016-05-16 02:58:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 02:58:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 02:58:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 02:58:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 02:58:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 02:58:00]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463338680,
+)
+
+-----------------------------------
+[2016-05-16 02:58:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:58:55]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 02:58:55]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463338735,
+)
+
+-----------------------------------
+[2016-05-16 02:59:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 02:59:08]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 02:59:08]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+)
+
+-----------------------------------
+[2016-05-16 03:01:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.insertScore
+[2016-05-16 03:01:29]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:01:29]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+)
+
+-----------------------------------
+[2016-05-16 03:01:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.insertScore
+[2016-05-16 03:01:40]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:01:40]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+false
+
+-----------------------------------
+[2016-05-16 03:02:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.insertScore
+[2016-05-16 03:02:12]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-16 03:02:12]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => false,
+  'ct' => 1463338932,
+)
+
+-----------------------------------
+[2016-05-16 03:03:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 03:03:39]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:03:39]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463339019,
+)
+
+-----------------------------------
+[2016-05-16 03:03:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:03:44]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:03:44]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:03:44]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:03:44]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:03:44]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339024,
+)
+
+-----------------------------------
+[2016-05-16 03:05:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 03:05:06]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:05:06]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463339106,
+)
+
+-----------------------------------
+[2016-05-16 03:05:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:05:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:05:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:05:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:14]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339114,
+)
+
+-----------------------------------
+[2016-05-16 03:05:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:05:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:05:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:05:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:15]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339115,
+)
+
+-----------------------------------
+[2016-05-16 03:05:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.releaseQuiz
+POST: array (
+  'quiz_id' => '22',
+)
+[2016-05-16 03:05:18]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 49
+SQL: update `pastquiz` SET `quiz_time`='2016-05-16' WHERE `quiz_id` = '22'(OK:0.003)
+[2016-05-16 03:05:18]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 51
+SQL: select `question_ids` FROM `pastquiz` WHERE `quiz_id` = '22'(OK:0.001)
+[2016-05-16 03:05:18]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 56
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.001)
+[2016-05-16 03:05:18]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 58
+SQL: insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:18]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 60
+SQL: update `onlinequiz` SET `quiz_id`= 22 WHERE 1(OK:0.001)
+[2016-05-16 03:05:18]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463339118,
+)
+
+-----------------------------------
+[2016-05-16 03:05:20] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 03:05:20]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:05:20]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463339120,
+)
+
+-----------------------------------
+[2016-05-16 03:05:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:05:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:05:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:05:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:23]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339123,
+)
+
+-----------------------------------
+[2016-05-16 03:05:31] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 03:05:31]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:05:31]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463339131,
+)
+
+-----------------------------------
+[2016-05-16 03:05:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:05:43]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:05:43]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:43]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:05:43]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:43]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339143,
+)
+
+-----------------------------------
+[2016-05-16 03:05:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 03:05:56]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:05:56]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '22',
+      'question_type' => '2',
+      'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+      'A' => '法撒14旦法撒旦',
+      'B' => '法师打发斯蒂1234芬',
+      'C' => '发散的撒4旦饭撒旦饭',
+      'D' => '发起无法区4分发生地方',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无法区分F发生地方',
+      'answer' => 'A,B,C',
+    ),
+    3 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '22',
+      'question_type' => '3',
+      'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+      'A' => '法F撒旦法撒旦',
+      'B' => '法F师打发斯蒂芬',
+      'C' => '发散的撒旦饭F撒旦饭',
+      'D' => '发起无af法方',
+      'answer' => 'A,C',
+    ),
+  ),
+  'ct' => 1463339156,
+)
+
+-----------------------------------
+[2016-05-16 03:05:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:05:57]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:05:57]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:57]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:05:57]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:05:57]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339157,
+)
+
+-----------------------------------
+[2016-05-16 03:05:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.closeOnlineQuiz
+[2016-05-16 03:05:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 66
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.003)
+[2016-05-16 03:05:58]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463339158,
+)
+
+-----------------------------------
+[2016-05-16 03:06:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:06:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:06:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:06:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:06:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:06:04]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339164,
+)
+
+-----------------------------------
+[2016-05-16 03:06:05] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:06:05]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:06:05]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:06:05]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:06:05]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:06:05]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339165,
+)
+
+-----------------------------------
+[2016-05-16 03:06:22] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-16 03:06:22]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.002)
+[2016-05-16 03:06:22]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463339182,
+)
+
+-----------------------------------
+[2016-05-16 03:06:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-16 03:06:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 37
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-05-16 03:06:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (3,4,5,6)(OK:0.001)
+[2016-05-16 03:06:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-16 03:06:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 31
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-16 03:06:23]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '22',
+      'question_ids' => '3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '21',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '20',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-15',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463339183,
+)
