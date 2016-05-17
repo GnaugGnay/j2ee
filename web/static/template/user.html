@@ -5,6 +5,7 @@
     <button class="btn btn-primary mr-10 mt-10" ui-sref="changePassword">修改密码</button>
     <button class="btn btn-primary mr-10 mt-10" ui-sref="studentList" ng-show="teacher">查看学生名单</button>
     <button class="btn btn-primary mr-10 mt-10" ui-sref="courseDesignGroup" >课程设计分组</button>
+    <button class="btn btn-primary mr-10 mt-10" ng-click="jumpMyGroup()" ng-show="student">我的小组</button>
 </div>
 <div ng-show="teacher">
     <div class="text-section">
@@ -69,16 +70,4 @@
 <div class="bot-button" ng-click="quitLogin()">
     <span>退出登录</span>
 </div>
-<!-- <div class="pop-up" ng-show="popUp">
-    <p class="title">
-        发布在线测试
-    </p>
-    <div class="main">
-        请填写持续时间：
-        <input class="mt-10" type="number" ng-model="date"> 分钟
-    </div>
-    <div class="btn-wrap text-center">
-        <button class="btn btn-primary" ng-click="release()" style="width: 30%;">确认</button>
-        <button class="btn btn-default" style="width: 30%;margin-left: 20px;">取消</button>
-    </div>
-</div> -->
+

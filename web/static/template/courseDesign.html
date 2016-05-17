@@ -44,4 +44,24 @@
         </div>
     </div>
 </div>
+<div ng-show="student">
+    <div class="text-section">
+        <p class="user-classify"><b>&gt;&nbsp;提交作业</b></p>
+    </div>
+    <div class="text-section">
+        <div class="">
+            <form action="/main/?ct=api&method=CommitRecord.importCourseDesighStu" method="post" enctype="multipart/form-data" id="courseDesighForm" target="hideIframe">   
+                <div class="form-group form-inline">
+                    <label for="">小组成员：</label>
+                    <input type="text" class="form-control" name="groupMember" ng-model="groupMember" style="pointer-events: none;background:#eee">
+                </div>
+                <div class="form-group form-inline">
+                    <input id="courseDesighFile" name="filename" type="file">
+                </div>
+                <button class="btn btn-primary mt-20" ng-click="courseDesighSubmit()">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+            </form>
+            <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
+        </div>
+    </div>
+</div>
 

@@ -1,0 +1,46 @@
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;小组详细</b></p>
+</div>
+<div class="text-section">
+	小组成员:
+	<p ng-repeat="value in groupMember">{{$index+1}}.{{value.name}}{{value.username}}</p>
+</div>
+<div class="text-section">
+    <p class="user-classify"><b>&gt;&nbsp;提交记录</b></p>
+</div>
+<div class="text-section">
+	<div class="homework-item" ng-repeat="value in record" data-recordId="{{recordId = value.record_id}}">
+	    <div class="item-head clearfix">
+	        <span class="doc-name">{{ value.file_name }}</span><a href="{{value.file_path}}">下载</a>
+	        <span class="deadline">
+	        	<button class="btn btn-success btn-sm" ng-show="teacher" ng-click="showPopUp()">评分</button></b>
+			</span>
+	    </div>
+	    <div class="item-detail">
+	        <p>提交日期：<b>{{value.commit_date}}</b></p>
+	        <p>老师评分：<b>{{value.score}}</b></p>
+	        <p>老师评语：<b>{{value.tea_comment}}</b></p>
+	    </div>
+	</div>
+</div>
+<div class="pop-up-wrap" ng-show="popUp">
+	<div class="pop-up">
+	    <p class="title">
+	        发布在线测试
+	    </p>
+	    <div class="main">
+	        <div class="form-group form-inline">
+	        	<label for="">分数：</label>
+	        	<input type="number" class="form-control" ng-model="homeworkScore">
+	        </div>	
+	        <div class="form-group">
+	        	<label for="">评语：</label>
+	        	<textarea class="form-control" ng-model="homeworkComment"></textarea>
+	        </div>
+	    </div>
+	    <div class="btn-wrap text-center">
+	        <button class="btn btn-primary" ng-click="giveScore()" style="width: 30%;">确认</button>
+	        <button class="btn btn-default" ng-click="hidePopUp()"style="width: 30%;margin-left: 20px;">取消</button>
+	    </div>
+	</div>
+</div>

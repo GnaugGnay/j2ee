@@ -14,11 +14,25 @@ var Util = {
     getUsername: function() { //返回用户名
         return window.localStorage.getItem('j2ee_username');
     },
-    getTotalScore: function (array) {
+    getFullname: function() { //返回用户姓名
+        return window.localStorage.getItem('j2ee_fullname');
+    },
+    getGroupId: function() { //返回分组id，0代表没有分组
+        return window.localStorage.getItem('j2ee_groupId');
+    },
+    getTotalScore: function(array) {
         var sum = 0;
-        for (var i = 0,len = array.length;i < len;i++) {
+        for (var i = 0, len = array.length; i < len; i++) {
             sum += Number(array[i]);
         }
         return sum;
+    },
+    getQueryString: function(token) {
+        var reg = new RegExp('(^|&)' + token + '=([^&]*)(&|$)', 'i');
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
     }
 }

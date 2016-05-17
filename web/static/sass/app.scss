@@ -243,6 +243,9 @@ html,body {
 .f-18 {
     font-size: 1.8rem;
 }
+.f-14 {
+    font-size: 1.4rem;
+}
 .bot-button {
     position: absolute;
     bottom: 50px;
@@ -259,6 +262,15 @@ html,body {
     &:active {
         background-color: darken(#007aff,20%);
     }
+}
+.bot-wrap {
+    position: absolute;
+    bottom: 50px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background: #007aff;
+    padding: 0 10px;
 }
 //教学队伍表格
 .team-table {
@@ -305,7 +317,14 @@ html,body {
         font-weight: bold;
     }
 }
-
+.pop-up-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+}
 .pop-up {
     position: absolute;
     width: 300px;

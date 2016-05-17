@@ -30,4 +30,10 @@ class ModUser extends Model{
         return $this->query($sql);
     }
 
+    //统计人数
+    public function countPeople () {
+        $sql = "select count(*) FROM `user` WHERE `usertype` = 1";
+        return $this->query($sql);
+    }
+
 }

@@ -14,7 +14,7 @@ class ModHomework extends Model{
 
     // 获取全部作业
     public function getAll() {
-        $sql = "select * from `{$this->table_homework}`";
+        $sql = "select * from `{$this->table_homework}` ORDER BY `deadline` DESC";
         return $this->query($sql);
     }
 

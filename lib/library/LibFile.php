@@ -106,8 +106,7 @@ class LibFile{
 		$res['state'] = true;
 		$res['url'] = $uploadInfo['uploadUrl'];
 		$res['file'] = $uploadInfo['uploadpath'];
-
-		$result = move_uploaded_file($tmp_name, $uploadInfo['uploadpath']);
+		$result = move_uploaded_file($tmp_name, iconv("UTF-8","gb2312",$uploadInfo['uploadpath']));
 		if(!$result){
 			$res['state'] = false;
 			$res['url'] = "";

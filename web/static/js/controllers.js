@@ -18,10 +18,10 @@ angular.module('myApp')
                     if (data.length) {
                         $rootScope.user = username;
                         window.localStorage.setItem('j2ee_username', username);
-                        window.localStorage.setItem('j2ee_uid', data[0].uid);
                         window.localStorage.setItem('j2ee_usertype', data[0].usertype);
                         window.localStorage.setItem('j2ee_isLogin', true);
                         window.localStorage.setItem('j2ee_fullname', data[0].fullname);
+                        window.localStorage.setItem('j2ee_groupId', data[0].group_id);
                         $state.go('user');
                     } else {
                         alert("用户名或密码错误");
@@ -58,6 +58,15 @@ angular.module('myApp')
                 }
                 $scope.score = response.data;
             });
+            $scope.jumpMyGroup = function() {
+                var groupId = Util.getGroupId();
+                if (groupId == 0) {
+                    alert('你还未加入任何小组');
+                    $state.go('courseDesignGroup');
+                } else {
+                    $state.go('groupDetail', { group_id: groupId });
+                }
+            };
         } else {
             $scope.teacher = true;
             $scope.student = false;
@@ -194,50 +203,176 @@ angular.module('myApp')
     })
     //课程设计
     .controller('courseDesignController', function($scope, $http, $state) {
-
         $http.post('/main/?ct=api&method=homework.getHomeworks').success(function(response) {
             var homework = response.data;
             $scope.homework = homework;
         });
-        $scope.showDetail = function() {
-            this.detail = !this.detail;
-        };
-        $scope.deleteHw = function() {
-            if (confirm("确认删除？")) {
-                var postData = {
-                    hw_no: this.hw_no
-                };
-                $http.post('/main/?ct=api&method=homework.deleteHomework', postData).success(function(response) {
-                    if (response) {
-                        var homework = response.data;
-                        $scope.homework = homework;
-                    }
-                });
-            }
-        };
-        $scope.homeworkDocSubmit = function($event) {
-            var doc = document.getElementById('homeworkDoc').value;
-            var deadline = document.getElementById('deadline').value;
-            var form = document.getElementById('homeworkForm');
-            if (doc == "") {
-                alert("请先选择文件");
-                return;
-            }
-            if (deadline == "") {
-                alert("请选择截止时间");
-                return;
-            } else {
+        if (Util.getUserType() == 1) { //学生
+            var groupLeader;
+            $http.post('/main/?ct=api&method=group.getGroupMember', { group_id: Util.getGroupId() }).success(function(response) {
+                var groupMember = JSON.parse(response.data[0].group_member);
+                var str = '';
+                for (var i = 0, len = groupMember.length; i < len; i++) {
+                    str += ',' + groupMember[i].name;
+                }
+                $scope.groupMember = str.substr(1);
+                groupLeader = response.data[0].group_leader;
+            });
+            $scope.courseDesighSubmit = function() {
+                var form = document.getElementById('courseDesighForm');
+                var doc = document.getElementById('courseDesighFile').value;
+                if (doc == "") {
+                    alert("请先选择文件");
+                    return;
+                }
                 if (confirm("确认提交？")) {
+                    if (groupLeader != Util.getUsername()) {
+                        alert("您没有提交权限，请联系小组长来提交");
+                        return;
+                    }
                     form.submit();
+                    form.action += '&group_id=' + Util.getGroupId();
                     alert("提交成功");
 
                 }
-            }
+            };
+        } else { //老师
+            $scope.deleteHw = function() {
+                if (confirm("确认删除？")) {
+                    var postData = {
+                        hw_no: this.hw_no
+                    };
+                    $http.post('/main/?ct=api&method=homework.deleteHomework', postData).success(function(response) {
+                        if (response) {
+                            var homework = response.data;
+                            $scope.homework = homework;
+                        }
+                    });
+                }
+            };
+            $scope.homeworkDocSubmit = function($event) {
+                var doc = document.getElementById('homeworkDoc').value;
+                var deadline = document.getElementById('deadline').value;
+                var form = document.getElementById('homeworkForm');
+                if (doc == "") {
+                    alert("请先选择文件");
+                    return;
+                }
+                if (deadline == "") {
+                    alert("请选择截止时间");
+                    return;
+                } else {
+                    if (confirm("确认提交？")) {
+                        form.submit();
+                        alert("提交成功");
+                        location.reload();
+                    }
+                }
+            };
+        }
+
+        $scope.showDetail = function() {
+            this.detail = !this.detail;
         };
+
+
     })
     //课程设计分组
-    .controller('courseDesignGroupController', function($scope, $http) {
-        console.log(123);
+    .controller('courseDesignGroupController', function($scope, $http, $state) {
+        $http.post('/main/?ct=api&method=group.getGroups').success(function(response) {
+            if (response.c) {
+                var groups = response.data;
+                if (groups.length > 0) {
+                    $scope.isNotEmpty = true;
+                    $scope.groups = groups;
+                }
+            }
+        });
+        if (Util.getGroupId() != 0) {
+            $scope.hasGroup = true;
+        }
+        if (Util.getUserType() == 1) { //学生
+            $scope.enterGroup = function() {
+                if (confirm("确认加入此小组？")) {
+                    var username = Util.getUsername();
+                    var name = Util.getFullname();
+                    var group_id = this.group_id;
+                    var postData = {
+                        group_id: group_id,
+                        username: username,
+                        name: name
+                    };
+                    $http.post('/main/?ct=api&method=group.enterGroup', postData).success(function(response) {
+                        alert(response.msg);
+                        window.localStorage.setItem('j2ee_groupId', group_id);
+                        location.reload();
+                    });
+                }
+            };
+        } else {
+            $scope.createGroups = function() {
+                var number = $scope.numPerGroup;
+                if (!number || number <= 0) {
+                    alert("请输入大于0的数字");
+                    return;
+                }
+                $http.post('/main/?ct=api&method=group.createGroups', { number: number }).success(function(response) {
+                    if (response.c) {
+                        alert("生成成功");
+                        location.reload();
+                    }
+                });
+            };
+            $scope.groupDetail = function() {
+                $state.go('groupDetail', { group_id: this.group_id });
+            };
+        }
+
+    })
+    //小组详细
+    .controller('groupDetailController', function($scope, $http, $stateParams) {
+        var groupId = $stateParams.group_id;
+        var recordId;
+        $http.post('/main/?ct=api&method=group.getGroupMember', { group_id: groupId }).success(function(response) {
+            var groupMember = JSON.parse(response.data[0].group_member);
+            $scope.groupMember = groupMember;
+        });
+        $http.post('/main/?ct=api&method=commitrecord.getRecord', { group_id: groupId }).success(function(response) {
+            $scope.record = response.data;
+        });
+        if (Util.getUserType() == 0) { //老师
+            $scope.showPopUp = function() {
+                $scope.popUp = true;
+                recordId = this.recordId;
+            };
+            $scope.hidePopUp = function() {
+                $scope.popUp = false;
+                $scope.homeworkScore = '';
+                $scope.homeworkComment = '';
+            };
+            $scope.giveScore = function() {
+                var score = $scope.homeworkScore;
+                var comment = $scope.homeworkComment;
+                if (!(score <= 100 && score >= 0)) {
+                    alert("请输入0到100之间的数字");
+                    return;
+                }
+                var postData = {
+                    score: score,
+                    tea_comment: comment,
+                    record_id: recordId,
+                    group_id: groupId
+                };
+                $http.post('/main/?ct=api&method=commitrecord.giveScore', postData).success(function(response) {
+                    alert("评分成功");
+                    $scope.record = response.data;
+                    $scope.popUp = false;
+                    $scope.homeworkScore = '';
+                    $scope.homeworkComment = '';
+                });
+            }
+        }
+
     })
     //试题库(章节目录)
     .controller('questionController', function($scope, $http, $state) {
@@ -270,47 +405,49 @@ angular.module('myApp')
                 questionIds.push(questions[i].question_id);
             }
         });
-        $scope.addPastQuiz = function() {
-            var targetQuesIds = [];
-            var checkboxs = document.getElementsByName('choose_ques');
-            for (var i = 0, len = checkboxs.length; i < len; i++) {
-                if (checkboxs[i].checked) {
-                    targetQuesIds.push(questionIds[i]);
+        if (Util.getUserType() == 0) { //老师
+            $scope.addPastQuiz = function() {
+                var targetQuesIds = [];
+                var checkboxs = document.getElementsByName('choose_ques');
+                for (var i = 0, len = checkboxs.length; i < len; i++) {
+                    if (checkboxs[i].checked) {
+                        targetQuesIds.push(questionIds[i]);
+                    }
                 }
-            }
-            if (targetQuesIds.length < 1) {
-                alert("请选择至少一个题目");
-                return;
-            }
-            if (confirm("您当前选择了" + targetQuesIds.length + "个题目，确认添加？")) {
-                var postData = {
-                    question_ids: targetQuesIds.join(',')
+                if (targetQuesIds.length < 1) {
+                    alert("请选择至少一个题目");
+                    return;
                 }
-                $http.post('/main/?ct=api&method=quiz.addToPastQuiz', postData).success(function(response) {
-                    if (response.data) {
-                        alert("success!");
+                if (confirm("您当前选择了" + targetQuesIds.length + "个题目，确认添加？")) {
+                    var postData = {
+                        question_ids: targetQuesIds.join(',')
                     }
-                });
-            }
-        };
-        $scope.openSection = function() {
-            if (confirm("确认开放本章试题？")) {
-                $http.post('/main/?ct=api&method=section.openSection', postData).success(function(response) {
-                    if (response.data) {
-                        alert("开放成功");
-                    }
-                });
-            }
-        };
-        $scope.closeSection = function() {
-            if (confirm("确认开放本章试题？")) {
-                $http.post('/main/?ct=api&method=section.closeSection', postData).success(function(response) {
-                    if (response.data) {
-                        alert("关闭成功");
-                    }
-                });
-            }
-        };
+                    $http.post('/main/?ct=api&method=quiz.addToPastQuiz', postData).success(function(response) {
+                        if (response.data) {
+                            alert("success!");
+                        }
+                    });
+                }
+            };
+            $scope.openSection = function() {
+                if (confirm("确认开放本章试题？")) {
+                    $http.post('/main/?ct=api&method=section.openSection', postData).success(function(response) {
+                        if (response.data) {
+                            alert("开放成功");
+                        }
+                    });
+                }
+            };
+            $scope.closeSection = function() {
+                if (confirm("确认关闭本章试题？")) {
+                    $http.post('/main/?ct=api&method=section.closeSection', postData).success(function(response) {
+                        if (response.data) {
+                            alert("关闭成功");
+                        }
+                    });
+                }
+            };
+        }
         $scope.showAnswer = function() {
             $scope.rightAnswer = true;
         };
@@ -323,6 +460,45 @@ angular.module('myApp')
             $scope.listData = response.data.listData;
         });
     })
+    .controller('forumController', function($scope, $http) {
+        $http.post('/main/?ct=api&method=forum.getPosts').success(function(response) {
+            $scope.posts = response.data;
+        });
+        var postId;
+        $scope.comment = function() {
+            var comment = $scope.forumComment;
+            if (comment == '' || !comment) {
+                alert("请填写评论内容");
+                return;
+            }
+            var postData = {
+                post_id: postId,
+                username: Util.getUsername(),
+                name: Util.getFullname(),
+                comment: $scope.forumComment
+            };
+            $http.post('/main/?ct=api&method=forum.comment',postData).success(function(response) {
+                if (response.c) {
+                    alert("评论成功");
+                    $scope.popUp = false;
+                    $scope.forumComment = '';
+                    location.reload();
+                }
+            });
+        };
+        $scope.showDetail = function() {
+            this.detail = !this.detail;
+        };
+
+        $scope.showPopUp = function() {
+            $scope.popUp = true;
+            postId = this.postId;
+        };
+        $scope.hidePopUp = function() {
+            $scope.popUp = false;
+            $scope.forumComment = '';
+        };
+    })
     //在线测试
     .controller('onlineQuizController', function($scope, $http) {
         $http.post('/main/?ct=api&method=quiz.getQuiz').success(function(response) {
@@ -333,53 +509,56 @@ angular.module('myApp')
             $scope.quiz = response.data;
             $scope.quiz_id = response.data[0].quiz_id;
         });
-        $scope.submit = function() {
-            var quizList = $scope.quiz;
-            if (confirm("请确保您的每一道题都已填写，确认提交？")) {
-                var quizsLength = quizList.length;
-                var scoreList = [];
-                for (var i = 0; i < quizsLength; i++) {
-                    var name = 'question_' + i;
-                    var answerList = document.getElementsByName(name);
-                    var myAnswer = [];
-                    var correctAnswer = quizList[i].answer;
-                    var isMulti = correctAnswer.length == 1 ? false : true;
-                    for (var j = 0, len = answerList.length; j < len; j++) {
-                        if (answerList[j].checked) {
-                            myAnswer.push(answerFormat(j));
-                            if (!isMulti) {
-                                break;
+        if (Util.getUserType() == 1) { //学生
+            $scope.submit = function() {
+                var quizList = $scope.quiz;
+                if (confirm("请确保您的每一道题都已填写，确认提交？")) {
+                    var quizsLength = quizList.length;
+                    var scoreList = [];
+                    for (var i = 0; i < quizsLength; i++) {
+                        var name = 'question_' + i;
+                        var answerList = document.getElementsByName(name);
+                        var myAnswer = [];
+                        var correctAnswer = quizList[i].answer;
+                        var isMulti = correctAnswer.length == 1 ? false : true;
+                        for (var j = 0, len = answerList.length; j < len; j++) {
+                            if (answerList[j].checked) {
+                                myAnswer.push(answerFormat(j));
+                                if (!isMulti) {
+                                    break;
+                                }
                             }
                         }
+                        if (myAnswer.join(',') == correctAnswer) {
+                            scoreList.push(1);
+                        } else {
+                            scoreList.push(0);
+                        }
                     }
-                    if (myAnswer.join(',') == correctAnswer) {
-                        scoreList.push(1);
-                    } else {
-                        scoreList.push(0);
-                    }
+                    var totalScore = Util.getTotalScore(scoreList);
+                    var username = Util.getUsername();
+                    var quiz_id = $scope.quiz_id;
+                    var date = (new Date()).toLocaleDateString();
+
+                    var postData = {
+                        scoreList: scoreList,
+                        totalScore: totalScore,
+                        username: username,
+                        quiz_id: quiz_id
+                    };
+                    $http.post('/main/?ct=api&method=quiz.submitAnswer', postData).success(function(response) {
+                        if (response.data == 1) {
+                            alert("提交成功！本次测试您的得分为" + totalScore);
+                            $scope.rightAnswer = true;
+                        } else {
+                            alert("本次测试已经结束");
+                        }
+                    });
                 }
-                var totalScore = Util.getTotalScore(scoreList);
-                var username = Util.getUsername();
-                var quiz_id = $scope.quiz_id;
-                var date = (new Date()).toLocaleDateString();
 
-                var postData = {
-                    scoreList: scoreList,
-                    totalScore: totalScore,
-                    username: username,
-                    quiz_id: quiz_id
-                };
-                $http.post('/main/?ct=api&method=quiz.submitAnswer', postData).success(function(response) {
-                    if (response.data == 1) {
-                        alert("提交成功！本次测试您的得分为" + totalScore);
-                        $scope.rightAnswer = true;
-                    } else {
-                        alert("本次测试已经结束");
-                    }
-                });
-            }
+            };
+        }
 
-        };
 
         function answerFormat(number) {
             switch (number) {

@@ -87,9 +87,16 @@ app.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: "./static/template/courseDesignGroup.html",
             controller: 'courseDesignGroupController'
         })
+        .state("groupDetail", { //小组明细
+            url: "/groupDetail",
+            templateUrl: "./static/template/groupDetail.html",
+            controller: 'groupDetailController',
+            params: {'group_id': null}
+        })
         .state("forum", { //课程论坛
             url: "/forum",
-            templateUrl: "./static/template/forum.html"
+            templateUrl: "./static/template/forum.html",
+            controller: 'forumController'
         })
         .state("extended_1", { //javaEE相关资源
             url: "/extended_1",
