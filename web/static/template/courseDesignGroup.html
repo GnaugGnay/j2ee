@@ -10,13 +10,20 @@
 <div class="text-section">
     <div ng-hide="isNotEmpty">
         <p ng-show="student">还未有分组，请等待老师安排</p>
-    </div>
-    <div ng-show="teacher">
-        <div ng-hide="isNotEmpty">
+        <div ng-show="teacher">
             <p>还未有分组，请填写每个小组的人数</p>
             <div class="form-group form-inline mt-20">
                 <input type="number" class="form-control mr-10" ng-model="numPerGroup">
                 <button class="btn btn-primary" ng-click="createGroups()">生成分组</button>
+            </div>
+        </div>
+    </div>
+    <div ng-hide="!isNotEmpty">
+        <div ng-show="teacher">
+            <p>继续添加分组，请填写小组的人数</p>
+            <div class="form-group form-inline mt-20">
+                <input type="number" class="form-control mr-10" ng-model="addGroup">
+                <button class="btn btn-primary" ng-click="aadOneGroup()">添加小组</button>
             </div>
         </div>
     </div>
@@ -28,7 +35,7 @@
         </div>
         <div class="item-detail">
             <p>小组成员：</p>
-            <p ng-repeat="member in value.group_member track by $index">{{$index+1}}.<span class="c-red">{{member.name}}</span></p>
+            <p ng-repeat="member in value.group_member track by $index">{{$index+1}}.<span class="c-red">&nbsp;{{member.name}}</span></p>
         </div>
     </div>
 </div>

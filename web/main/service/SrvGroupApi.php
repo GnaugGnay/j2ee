@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:36
- */
 
 class SrvGroupApi{
 
@@ -77,8 +71,23 @@ class SrvGroupApi{
         for ($i=0; $i < $groupNum; $i++) { 
             $mod->insertEmpty($group_member);
         }
-        $re = $mod->getAll();
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
+    //添加新分组
+    public function addGroup($data) {
+        $memberNum = $data['number'];
+        $str = '{"username":"","name":""}';
+        $mod = new ModGroup();
+        for ($i=0; $i < $memberNum; $i++) { 
+            if ($i == 0) {
+                $group_member .= $str;
+            } else {
+                $group_member .= ',' . $str;
+            }
+        }
+        $group_member = '[' . $group_member . ']';
+        $mod->insertEmpty($group_member);
 
+        return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
+    }
 }

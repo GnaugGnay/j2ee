@@ -11,4 +11,9 @@ class ModQuestion extends Model{
         $sql = "select * FROM `questions` WHERE `section_id` = {$section_id} order by `question_type`";
         return $this->query($sql);
     } 
+    //添加题目到试题库
+    public function addQuestion($section_id, $question_type, $question, $A, $B, $C, $D, $answer) {
+    	$sql = "insert INTO `questions`(`section_id`, `question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) VALUES ('{$section_id}','{$question_type}','{$question}','{$A}','{$B}','{$C}','{$D}','{$answer}')";
+        return $this->query($sql);
+    }
 }

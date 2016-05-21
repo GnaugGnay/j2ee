@@ -3,8 +3,6 @@
  * 接口中心
  * 整站的接口通过http://www.xxx.com/api/?method=user.xxx或者http://www.xxx.com/api/?method=user.xxx&from=js这样来提供
  * 接口业务要在/system/模块/service/SrvXxxApi中实现
- * User: a-yi
- * Date: 2015/7/18
  */
 class SrvApi{
 	public function run($method, $from = '', $data = array()){

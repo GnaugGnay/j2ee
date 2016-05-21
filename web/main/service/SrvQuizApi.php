@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:36
- */
 
 class SrvQuizApi{
     
@@ -51,7 +45,10 @@ class SrvQuizApi{
     }
     // 发布在线测试
     public function releaseQuiz($data) {
+        set_time_limit (0);
+        
         $quiz_id = $data['quiz_id'];
+        $quizTime = (int)$data['quizTime'];
         $date = date("Y-m-d");
         $mod = new ModQuiz();
         $re = $mod->updateDate($date,$quiz_id);
@@ -62,7 +59,15 @@ class SrvQuizApi{
         foreach ($students as $key => $value) {
             $mod->insertScore($value['username'],$quiz_id,$date,'',0);
         }
+        sleep($quizTime);
+        $re = $mod->deleteOnlineQuiz();
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 
+    //结束当前的在线测试
+    public function closeOnlineQuiz() {
+        $mod = new ModQuiz();
+        $re = $mod->deleteOnlineQuiz();
+        return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
+    }
 }

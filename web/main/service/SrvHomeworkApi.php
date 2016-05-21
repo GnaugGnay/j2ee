@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:36
- */
 
 class SrvHomeworkApi{
 
@@ -30,19 +24,24 @@ class SrvHomeworkApi{
         ini_set('memory_limit','256M');
 
         $name = $_FILES['filename']['name'];
-        $tmp_name = $_FILES['filename']['tmp_name'];
-        $size = $_FILES['filename']['size'];
-        $upload = LibFile::uploadByFile($name, $tmp_name,$size, WEB_ROOT.'/uploads/homework', WEB_ROOT.'/uploads/homework', 2048, array('.doc','.docx'),$name);
+        if (!empty($name)) {
+            $tmp_name = $_FILES['filename']['tmp_name'];
+            $size = $_FILES['filename']['size'];
+            $upload = LibFile::uploadByFile($name, $tmp_name,$size, WEB_ROOT.'/uploads/homework', WEB_ROOT.'/uploads/homework', 2048, array('.doc','.docx'),$name);
 
-        if(!$upload['state']) return array('state'=>0,'msg'=>$upload['msg']);
-
-
+            if(!$upload['state']) return array('state'=>0,'msg'=>$upload['msg']);
+            $file_path = '/uploads/homework/' . $name;
+        } else {
+            $name = $_POST['title'];
+            $file_path = '';
+        }
+        $hw_grade = $_POST['grade'];
         $textDesc = $_POST['textDesc'];
         if ($textDesc == '') {$textDesc = "无文件描述";}
         $deadline = $_POST['deadline'];
-        $file_path = '/uploads/homework/' . $name;
         $mod = new ModHomework();
-        $re = $mod->insert($textDesc,$name,$file_path,$deadline);
+        $re = $mod->insert($textDesc,$name,$file_path,$hw_grade,$deadline);
+
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
     /// 首页图片

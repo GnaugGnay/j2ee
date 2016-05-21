@@ -2,11 +2,12 @@
     <h2 class="f-24"><b>课程论坛</b></h2>
 </div>
 <div class="text-section">
-	<div class="homework-item" ng-repeat="value in posts" data-postId="{{postId = value.post_id}}">
+	<div class="homework-item" ng-repeat="value in posts track by $index" data-postId="{{postId = value.post_id}}">
 	    <div class="item-head clearfix">
 	        <span class="doc-name" ng-click="showDetail()">{{value.title}}</span>
 	        <span class="deadline">
 				<button class="btn btn-success btn-sm" ng-click="showPopUp()">回复</button>
+				<button class="btn btn-danger btn-sm" ng-show="teacher" ng-click="deletePost()">删除</button>
 			</span>
 	    </div>
 	    <div class="item-detail" ng-show="detail">
@@ -21,8 +22,8 @@
 </div>
 <div class="bot-wrap">
     <div class="form-group form-inline text-center">
-    	<input type="text" class="form-control" style="display: inline-block;width: 80%;">
-    	<button class="btn btn-default">提问</button>
+    	<input type="text" class="form-control" ng-model="forumQuestion" style="display: inline-block;width: 80%;">
+    	<button class="btn btn-default" ng-click="postQuestion()">提问</button>
     </div>	
 </div>
 <div class="pop-up-wrap" ng-show="popUp">

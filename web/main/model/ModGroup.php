@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:44
- */
 
 class ModGroup extends Model{
     public function __construct(){

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:44
- */
 
 class ModHomework extends Model{
     public function __construct(){
@@ -25,8 +19,8 @@ class ModHomework extends Model{
     }
 
     //上传作业
-    public function insert ($hw_content, $file_name, $file_path, $deadline) {
-        $sql = "insert INTO `homework`(`hw_content`, `file_name`, `file_path`, `deadline`) VALUES ('{$hw_content}','{$file_name}','{$file_path}','{$deadline}')";
+    public function insert ($hw_content, $file_name, $file_path, $hw_grade, $deadline) {
+        $sql = "insert INTO `homework`(`hw_content`, `file_name`, `file_path`, `hw_grade`,`deadline` ) VALUES ('{$hw_content}','{$file_name}','{$file_path}','{$hw_grade}','{$deadline}')";
         return $this->query($sql);
     }
 

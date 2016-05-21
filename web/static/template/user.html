@@ -21,20 +21,20 @@
         </div>
     </div>
     <div class="text-section">
-        <p class="user-classify"><b>&gt;&nbsp;往期测试</b></p>
+        <p class="user-classify"><b>&gt;&nbsp;往期课堂测试</b></p>
     </div>
     <div class="text-section">
         <p ng-if="noPastQuiz">暂无往期测试，请到试题库添加</p>
-        <button class="btn btn-danger" ng-if="!noPastQuiz" ng-click="closeOnlineQuiz()">结束当前在线测试</button>
+        <button class="btn btn-primary" ui-sref="questionBank">新建课堂检测试题</button>
+        <button class="btn btn-danger" ng-if="!noPastQuiz" ng-click="closeOnlineQuizNow()">立即结束当前测试</button>
         <div class="mt-10"></div>
         <div class="homework-item" ng-repeat="v in pastQuiz">
             <div class="item-head clearfix">
                 <span class="doc-name"  ng-click="showDetail()">{{v.quiz_time}}</span>
-                <span class="deadline btn btn-primary" data-quizID="{{quiz_id = v.quiz_id}}" ng-click="releaseQuiz()">发布</span>
+                <span class="deadline btn btn-primary" data-quizID="{{quiz_id = v.quiz_id}}" ng-click="showPopUp()">发布</span>
                 <span class="deadline btn btn-primary" ng-click="countCorrectRate()" ng-show="detail" style="margin-right: 10px;">正确率</span>
             </div>
             <div class="item-detail" ng-show="detail">
-                <!-- <p>每题正确率：<span ng-repeat="data in correctRate">{{$index+1}}.{{data}}</span></p> -->
                 <p>每题正确率：<span class="c-red">{{correctRate}}</span></p>
                 <p ng-repeat="value in v.questions">{{$index+1}}.{{value.question}}</p>
             </div>
@@ -43,7 +43,7 @@
 </div>
 <div ng-show="student">
     <div class="text-section">
-        <p class="user-classify"><b>&gt;&nbsp;往期小测成绩</b></p>
+        <p class="user-classify"><b>&gt;&nbsp;往期课堂成绩</b></p>
     </div>
     <div class="text-section">
         <p ng-if="noPastScore">暂无成绩</p>
@@ -70,4 +70,20 @@
 <div class="bot-button" ng-click="quitLogin()">
     <span>退出登录</span>
 </div>
-
+<div class="pop-up-wrap" ng-show="popUp">
+    <div class="pop-up">
+        <p class="title">
+            课程设计评分
+        </p>
+        <div class="main">
+            <div class="form-group">
+                <label for="">测试时间(分钟)：</label>
+                <input type="number" class="form-control mt-10" ng-model="quizTime">
+            </div>  
+        </div>
+        <div class="btn-wrap text-center">
+            <button class="btn btn-primary" ng-click="releaseQuiz()" style="width: 30%;">确认</button>
+            <button class="btn btn-default" ng-click="hidePopUp()" style="width: 30%;margin-left: 20px;">取消</button>
+        </div>
+    </div>
+</div>

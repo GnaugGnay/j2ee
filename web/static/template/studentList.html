@@ -6,7 +6,8 @@
         <thead>
             <tr>
                 <th><b>#</b></th>
-                <th ng-repeat="v in quiz_times"><b>{{v}}</b></th>
+                <th ng-repeat="v in quiz_times track by $index"><b>{{v}}</b></th>
+                <th><b>总分(百分制)</b></th>
             </tr>
         </thead>
         <tbody>
@@ -15,8 +16,8 @@
                 <td ng-repeat="score in item.totalscore track by $index">
                     {{score}}
                 </td>
-                <!-- <td>{{v.totalscore}}</td>
-                <td>{{v.totalscore}}</td> -->
+                <td>{{item.finalscore}}</td>
+                <!-- <td>{{v.totalscore}}</td> -->
             </tr>
         </tbody>
     </table>

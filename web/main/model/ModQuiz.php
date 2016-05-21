@@ -70,4 +70,5 @@ class ModQuiz extends Model{
         $sql = "delete FROM `onlinequiz` WHERE 1";
         return $this->query($sql);
     }
+
 }

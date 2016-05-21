@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:36
- */
-
 class SrvUserScoreApi{
     //查询成绩
     public function pastScore($data) {
@@ -51,9 +44,17 @@ class SrvUserScoreApi{
         $modQuiz = new ModQuiz();
         $quizs = $modQuiz->getPastQuiz();
         $modUserscore = new ModUserscore();
+
         $temp = [];
         foreach ($quizs as $key => $value) {
             array_push($temp,$value['quiz_time']);
+        }
+        $result['quiz_times'] = array_reverse($temp);
+
+        // 已进行了多少场测试
+        foreach ($quizs as $key => $value) {
+            $arr = explode(',', $value['question_ids']);
+            $length += count($arr);
         }
         $listData = [];
         foreach ($username as $key => $value) {
@@ -61,15 +62,20 @@ class SrvUserScoreApi{
             $temp2['username'] = $value['username'];
             $temp2['fullname'] = $value['fullname'];
             $temp2['totalscore'] = [];
+            $finalscore = 0;
             foreach ($re as $key2 => $value2) {
                 array_push($temp2['totalscore'], $value2['totalscore']);
+                $finalscore += round(($value2['totalscore'] / $length) * 100);
             }
+            $temp2['finalscore'] = $finalscore;
             array_push($listData,$temp2);
         }
-        $result['quiz_times'] = array_reverse($temp);
         $result['listData'] = $listData;
+
+
         
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $result);
 
     }
+
 }

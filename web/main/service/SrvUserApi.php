@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:36
- */
 
 class SrvUserApi{
     // 登录
@@ -90,10 +84,5 @@ class SrvUserApi{
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $result);
     }
          
-    //结束当前的在线测试
-    public function closeOnlineQuiz() {
-        $mod = new ModQuiz();
-        $re = $mod->deleteOnlineQuiz();
-        return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
-    }
+    
 }

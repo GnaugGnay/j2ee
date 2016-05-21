@@ -37351,3 +37351,2158 @@ array (
   ),
   'ct' => 1463488306,
 )
+
+-----------------------------------
+[2016-05-17 22:03:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-17 22:03:14]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 9
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-05-17 22:03:14]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 9
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-17 22:03:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 18
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.009)
+[2016-05-17 22:03:14]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '29',
+      'hw_content' => '测试测试测试',
+      'file_name' => '而是测试.docx',
+      'file_path' => '/uploads/homework/而是测试.docx',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '13',
+      'hw_content' => 'afsdffaf321r发生的发生发生的',
+      'file_name' => '2.doc',
+      'file_path' => '\\uploads\\homework\\2.doc',
+      'deadline' => '2016-05-26',
+    ),
+    2 => 
+    array (
+      'hw_no' => '18',
+      'hw_content' => '大大说的爱迪生爱的撒',
+      'file_name' => 'asda.docx',
+      'file_path' => '/uploads/homework/asda.docx',
+      'deadline' => '2016-05-18',
+    ),
+    3 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463493794,
+)
+
+-----------------------------------
+[2016-05-17 22:03:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:03:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 18
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.005)
+[2016-05-17 22:03:27]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463493807,
+)
+
+-----------------------------------
+[2016-05-17 22:03:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-17 22:03:50]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.004)
+[2016-05-17 22:03:50]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '7',
+      'quiz_id' => '25',
+      'question_type' => '2',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '8',
+      'quiz_id' => '25',
+      'question_type' => '2',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+      'A' => '法FFAFAFAS1341234DF',
+      'B' => '法1412341234',
+      'C' => '23444',
+      'D' => '134',
+      'answer' => 'D',
+    ),
+    2 => 
+    array (
+      'question_id' => '9',
+      'quiz_id' => '25',
+      'question_type' => '2',
+      'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+      'A' => '12345撒旦',
+      'B' => '法师打134发斯蒂1234芬',
+      'C' => '发散的2412341234',
+      'D' => '发1432452654',
+      'answer' => 'B',
+    ),
+  ),
+  'ct' => 1463493830,
+)
+
+-----------------------------------
+[2016-05-17 22:07:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:07:11]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-17 22:07:11]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463494031,
+)
+
+-----------------------------------
+[2016-05-17 22:10:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:10:13]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.005)
+[2016-05-17 22:10:13]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463494213,
+)
+
+-----------------------------------
+[2016-05-17 22:14:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:14:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.004)
+[2016-05-17 22:14:14]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463494454,
+)
+
+-----------------------------------
+[2016-05-17 22:14:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:14:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.005)
+[2016-05-17 22:14:37]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463494477,
+)
+
+-----------------------------------
+[2016-05-17 22:14:46] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-17 22:14:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.005)
+[2016-05-17 22:14:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (7,8,9)(OK:0.001)
+[2016-05-17 22:14:46]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-17 22:14:46]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '25',
+      'question_ids' => '7,8,9',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '24',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463494486,
+)
+
+-----------------------------------
+[2016-05-17 22:14:54] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-17 22:14:54]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.003)
+[2016-05-17 22:14:54]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => 'admin',
+      'password' => 'admin',
+      'fullname' => '张老师',
+      'usertype' => '0',
+      'group_id' => '-1',
+    ),
+  ),
+  'ct' => 1463494494,
+)
+
+-----------------------------------
+[2016-05-17 22:14:54] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-17 22:14:54]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-17 22:14:54]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (7,8,9)(OK:0.001)
+[2016-05-17 22:14:54]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-17 22:14:54]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '25',
+      'question_ids' => '7,8,9',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '24',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-16',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的划分空间撒大黄蜂厉害撒打开后福利',
+        ),
+        1 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法律咖啡花露水的开后福利',
+        ),
+        2 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        3 => 
+        array (
+          'question' => '挂机开个房卡仕达官34方撒个法范了十多个法1234律挂电话345675厉害撒打开后福利',
+        ),
+        4 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+        5 => 
+        array (
+          'question' => '挂机开个房卡仕达官方撒ggfg个法师的规范AD2354125345345154厉害撒打开后福利',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463494494,
+)
+
+-----------------------------------
+[2016-05-17 22:14:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:14:57]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.004)
+[2016-05-17 22:14:57]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463494497,
+)
+
+-----------------------------------
+[2016-05-17 22:21:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.postQuestion
+POST: array (
+  'post_user' => '张老师',
+  'title' => 'dgakjhdjkashdkashkdja',
+)
+[2016-05-17 22:21:24]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 27
+SQL: insert INTO `forum`(`post_user`, `title`, `comment`) VALUES ('张老师','dgakjhdjkashdkashkdja','[]')(OK:0.003)
+[2016-05-17 22:21:24]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463494884,
+)
+
+-----------------------------------
+[2016-05-17 22:21:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:21:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.005)
+[2016-05-17 22:21:32]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+    2 => 
+    array (
+      'post_id' => '3',
+      'post_user' => '张老师',
+      'title' => 'dgakjhdjkashdkashkdja',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '0000-00-00',
+    ),
+  ),
+  'ct' => 1463494892,
+)
+
+-----------------------------------
+[2016-05-17 22:21:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.comment
+POST: array (
+  'post_id' => '3',
+  'username' => 'admin',
+  'name' => '张老师',
+  'comment' => 'dasdasdasd',
+)
+[2016-05-17 22:21:40]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 17
+SQL: select * from `forum` where `post_id` = 3(OK:0.004)
+[2016-05-17 22:21:40]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 22
+SQL: update `forum` SET `comment`='[{"username":"admin","name":"张老师","comment":"dasdasdasd"}]' WHERE `post_id` = 3(OK:0.001)
+[2016-05-17 22:21:40]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463494900,
+)
+
+-----------------------------------
+[2016-05-17 22:21:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:21:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.005)
+[2016-05-17 22:21:42]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    1 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+    2 => 
+    array (
+      'post_id' => '3',
+      'post_user' => '张老师',
+      'title' => 'dgakjhdjkashdkashkdja',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => 'admin',
+           'name' => '张老师',
+           'comment' => 'dasdasdasd',
+        )),
+      ),
+      'post_date' => '0000-00-00',
+    ),
+  ),
+  'ct' => 1463494902,
+)
+
+-----------------------------------
+[2016-05-17 22:23:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.postQuestion
+POST: array (
+  'post_user' => '张老师',
+  'title' => 'dgakjhdjkashdkashkdja',
+)
+[2016-05-17 22:23:41]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 27
+SQL: insert INTO `forum`(`post_user`, `title`, `comment`,`post_date`) VALUES ('张老师','dgakjhdjkashdkashkdja','[]', '2016-05-17')(OK:0.004)
+[2016-05-17 22:23:41]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463495021,
+)
+
+-----------------------------------
+[2016-05-17 22:23:52] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:23:52]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-17 22:23:52]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '4',
+      'post_user' => '张老师',
+      'title' => 'dgakjhdjkashdkashkdja',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    1 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    2 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463495032,
+)
+
+-----------------------------------
+[2016-05-17 22:25:27] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:25:27]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-17 22:25:27]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '4',
+      'post_user' => '张老师',
+      'title' => 'dgakjhdjkashdkashkdja',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    1 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    2 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463495127,
+)
+
+-----------------------------------
+[2016-05-17 22:25:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:25:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.004)
+[2016-05-17 22:25:32]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '4',
+      'post_user' => '张老师',
+      'title' => 'dgakjhdjkashdkashkdja',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    1 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    2 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463495132,
+)
+
+-----------------------------------
+[2016-05-17 22:25:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.postQuestion
+POST: array (
+  'post_user' => '张老师',
+  'title' => 'shdajsdhajk',
+)
+[2016-05-17 22:25:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 27
+SQL: insert INTO `forum`(`post_user`, `title`, `comment`,`post_date`) VALUES ('张老师','shdajsdhajk','[]', '2016-05-17')(OK:0.003)
+[2016-05-17 22:25:37]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463495137,
+)
+
+-----------------------------------
+[2016-05-17 22:25:39] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:25:39]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-17 22:25:39]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '5',
+      'post_user' => '张老师',
+      'title' => 'shdajsdhajk',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    1 => 
+    array (
+      'post_id' => '4',
+      'post_user' => '张老师',
+      'title' => 'dgakjhdjkashdkashkdja',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    2 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    3 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463495139,
+)
+
+-----------------------------------
+[2016-05-17 22:25:44] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.comment
+POST: array (
+  'post_id' => '5',
+  'username' => 'admin',
+  'name' => '张老师',
+  'comment' => 'gsdfasdfsd',
+)
+[2016-05-17 22:25:44]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 17
+SQL: select * from `forum` where `post_id` = 5(OK:0.003)
+[2016-05-17 22:25:44]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 22
+SQL: update `forum` SET `comment`='[{"username":"admin","name":"张老师","comment":"gsdfasdfsd"}]' WHERE `post_id` = 5(OK:0.001)
+[2016-05-17 22:25:44]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463495144,
+)
+
+-----------------------------------
+[2016-05-17 22:25:45] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:25:45]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-17 22:25:45]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '5',
+      'post_user' => '张老师',
+      'title' => 'shdajsdhajk',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => 'admin',
+           'name' => '张老师',
+           'comment' => 'gsdfasdfsd',
+        )),
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    1 => 
+    array (
+      'post_id' => '4',
+      'post_user' => '张老师',
+      'title' => 'dgakjhdjkashdkashkdja',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    2 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    3 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463495145,
+)
+
+-----------------------------------
+[2016-05-17 22:26:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:26:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-17 22:26:04]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '5',
+      'post_user' => '张老师',
+      'title' => 'shdajsdhajk',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => 'admin',
+           'name' => '张老师',
+           'comment' => 'gsdfasdfsd',
+        )),
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    1 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    2 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463495164,
+)
+
+-----------------------------------
+[2016-05-17 22:27:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-17 22:27:04]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-05-17 22:27:04]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-17 22:27:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.003)
+[2016-05-17 22:27:04]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '29',
+      'hw_content' => '测试测试测试',
+      'file_name' => '而是测试.docx',
+      'file_path' => '/uploads/homework/而是测试.docx',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '13',
+      'hw_content' => 'afsdffaf321r发生的发生发生的',
+      'file_name' => '2.doc',
+      'file_path' => '\\uploads\\homework\\2.doc',
+      'deadline' => '2016-05-26',
+    ),
+    2 => 
+    array (
+      'hw_no' => '18',
+      'hw_content' => '大大说的爱迪生爱的撒',
+      'file_name' => 'asda.docx',
+      'file_path' => '/uploads/homework/asda.docx',
+      'deadline' => '2016-05-18',
+    ),
+    3 => 
+    array (
+      'hw_no' => '5',
+      'hw_content' => 'afsdfasdfasdfasdfsdfqwerqwq32541235fasdfasdf234rwefasdf',
+      'file_name' => '1.doc',
+      'file_path' => '\\uploads\\homework\\1.doc',
+      'deadline' => '2016-04-27',
+    ),
+  ),
+  'ct' => 1463495224,
+)
+
+-----------------------------------
+[2016-05-17 22:27:11] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-17 22:27:11]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-17 22:27:11]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '5',
+      'post_user' => '张老师',
+      'title' => 'shdajsdhajk',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => 'admin',
+           'name' => '张老师',
+           'comment' => 'gsdfasdfsd',
+        )),
+      ),
+      'post_date' => '2016-05-17',
+    ),
+    1 => 
+    array (
+      'post_id' => '2',
+      'post_user' => '杨哈哈',
+      'title' => 'XXX作业什么时候交？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '是这样的吗',
+        )),
+      ),
+      'post_date' => '2016-05-06',
+    ),
+    2 => 
+    array (
+      'post_id' => '1',
+      'post_user' => '刘哈哈',
+      'title' => 'xxx问题该怎么解',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+           'comment' => '我怎么知道',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012123457',
+           'name' => '刘哈哈',
+           'comment' => '哈哈哈哈哈哈哈',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '2012123461',
+           'name' => '欧阳间隔',
+           'comment' => '说没事没事没事没事没事',
+        )),
+        3 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => 'noNONO',
+        )),
+        4 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '什么什么审美',
+        )),
+        5 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时打算打算',
+        )),
+        6 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '爱的是的撒的撒打算',
+        )),
+        7 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '按时大大是多少',
+        )),
+        8 => 
+        stdClass::__set_state(array(
+           'username' => '2012123458',
+           'name' => '温莎莎',
+           'comment' => '给我儿给我二个人',
+        )),
+      ),
+      'post_date' => '2016-05-04',
+    ),
+  ),
+  'ct' => 1463495231,
+)
+
+-----------------------------------
+[2016-05-17 22:27:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-17 22:27:14]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.005)
+[2016-05-17 22:27:14]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '7',
+      'quiz_id' => '25',
+      'question_type' => '2',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十多个fdf',
+      'A' => '法FFAFAFASDF',
+      'B' => '法师打发斯蒂AF芬',
+      'C' => '发散的撒旦DF饭撒旦饭',
+      'D' => '发起无法区DF分发生地方',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '8',
+      'quiz_id' => '25',
+      'question_type' => '2',
+      'question' => '挂机开个房FASKDFGWIEF卡仕达官方撒个法师的规范了十3412多个fdf',
+      'A' => '法FFAFAFAS1341234DF',
+      'B' => '法1412341234',
+      'C' => '23444',
+      'D' => '134',
+      'answer' => 'D',
+    ),
+    2 => 
+    array (
+      'question_id' => '9',
+      'quiz_id' => '25',
+      'question_type' => '2',
+      'question' => '挂机开话345675厉害撒打开后福利adfsdfasdf',
+      'A' => '12345撒旦',
+      'B' => '法师打134发斯蒂1234芬',
+      'C' => '发散的2412341234',
+      'D' => '发1432452654',
+      'answer' => 'B',
+    ),
+  ),
+  'ct' => 1463495234,
+)

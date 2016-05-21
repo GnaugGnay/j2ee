@@ -8,7 +8,7 @@ class ModUserscore extends Model{
 
     //查询历史成绩
     public function getScore($username){
-        $sql = "select * from `userscore` where `username` = '{$username}'";
+        $sql = "select * from `userscore` where `username` = '{$username}' order by `quiz_time` desc";
         return $this->query($sql);
     }
 

@@ -5,7 +5,7 @@
 </div>
 <div class="text-section">
     <div ng-show="teacher">
-        <button class="btn btn-default">&nbsp;添加试题&nbsp;</button>
+        <button class="btn btn-default" ng-click="showPopUp()">&nbsp;添加试题&nbsp;</button>
         <button class="btn btn-success" ng-click="openSection()">开放给学生</button>
         <button class="btn btn-danger" ng-click="closeSection()">关闭开放</button>
         <div class="mt-20"></div>
@@ -35,4 +35,47 @@
 <div style="margin-bottom: 40px;"></div>
 <div class="bot-button" ng-click="showAnswer()">
     <span>查看答案</span>
+</div>
+<div class="pop-up-wrap" ng-show="popUp">
+    <div class="pop-up">
+        <p class="title">
+            添加试题
+        </p>
+        <div class="main">
+            <div class="form-group form-inline">
+                <label for="">题目类型：</label>
+                <input type="radio" name="quesType">判断
+                <input type="radio" name="quesType">单选
+                <input type="radio" name="quesType">多选
+            </div>  
+            <div class="form-group form-inline">
+                <label for="" style="width: 45px;text-align: right;">题目：</label>
+                <input type="text" class="form-control" ng-model="question">
+            </div>
+            <div class="form-group form-inline">
+                <label for="" style="width: 45px;text-align: right;">A：</label>
+                <input type="text" class="form-control" ng-model="answerA">
+            </div>
+            <div class="form-group form-inline">
+                <label for="" style="width: 45px;text-align: right;">B：</label>
+                <input type="text" class="form-control" ng-model="answerB">
+            </div>
+            <div class="form-group form-inline">
+                <label for="" style="width: 45px;text-align: right;">C：</label>
+                <input type="text" class="form-control" ng-model="answerC">
+            </div>
+            <div class="form-group form-inline">
+                <label for="" style="width: 45px;text-align: right;">D：</label>
+                <input type="text" class="form-control" ng-model="answerD">
+            </div>
+            <div class="form-group form-inline">
+                <label for="" style="width: 45px;text-align: right;">答案：</label>
+                <input type="text" class="form-control" placeholder="A,B,C" ng-model="answer">
+            </div>
+        </div>
+        <div class="btn-wrap text-center">
+            <button class="btn btn-primary" ng-click="addQuestion()" style="width: 30%;">确认</button>
+            <button class="btn btn-default" ng-click="hidePopUp()"style="width: 30%;margin-left: 20px;">取消</button>
+        </div>
+    </div>
 </div>

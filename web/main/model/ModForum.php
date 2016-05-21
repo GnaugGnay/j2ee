@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hzm
- * Date: 2015/10/22
- * Time: 16:44
- */
 
 class ModForum extends Model{
     public function __construct(){
@@ -27,6 +21,15 @@ class ModForum extends Model{
         $sql = "update `{$this->table_forum}` SET `comment`='{$comment}' WHERE `post_id` = {$post_id}";
         return $this->query($sql);
     }
+    //发表提问
+    public function postQuestion($post_user, $title, $post_date) {
+        $sql = "insert INTO `forum`(`post_user`, `title`, `comment`,`post_date`) VALUES ('{$post_user}','{$title}','[]', '{$post_date}')";
+        return $this->query($sql);
+    }
     
-
+    // 删除帖子
+    public function deletePost($post_id) {
+        $sql = "delete FROM `forum` WHERE `post_id` = '{$post_id}'";
+        return $this->query($sql);
+    }
 }
