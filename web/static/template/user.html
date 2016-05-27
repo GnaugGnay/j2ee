@@ -1,10 +1,10 @@
 <div class="text-section">
     <p class="user-classify"><b>&gt;&nbsp;功能列表</b></p>
 </div>
-<div class="text-section"> 
+<div class="text-section">
     <button class="btn btn-primary mr-10 mt-10" ui-sref="changePassword">修改密码</button>
     <button class="btn btn-primary mr-10 mt-10" ui-sref="studentList" ng-show="teacher">查看学生名单</button>
-    <button class="btn btn-primary mr-10 mt-10" ui-sref="courseDesignGroup" >课程设计分组</button>
+    <button class="btn btn-primary mr-10 mt-10" ui-sref="courseDesignGroup">课程设计分组</button>
     <button class="btn btn-primary mr-10 mt-10" ng-click="jumpMyGroup()" ng-show="student">我的小组</button>
 </div>
 <div ng-show="teacher">
@@ -21,6 +21,18 @@
         </div>
     </div>
     <div class="text-section">
+        <p class="user-classify"><b>&gt;&nbsp;上传试题库试题</b></p>
+    </div>
+    <div class="text-section">
+        <div class="">
+            <form action="/main/?ct=api&method=question.importQuestion" method="post" enctype="multipart/form-data" id="userForm2" target="hideIframe">
+                <input id="userFormExcel2" name="filename" type="file">
+                <button class="btn btn-primary mt-20" ng-click="userFormSubmit2()">&nbsp;&nbsp;提交&nbsp;&nbsp;</button>
+            </form>
+            <iframe name="hideIframe" frameborder="0" style="display: none;"></iframe>
+        </div>
+    </div>
+    <div class="text-section">
         <p class="user-classify"><b>&gt;&nbsp;往期课堂测试</b></p>
     </div>
     <div class="text-section">
@@ -30,15 +42,21 @@
         <div class="mt-10"></div>
         <div class="homework-item" ng-repeat="v in pastQuiz">
             <div class="item-head clearfix">
-                <span class="doc-name"  ng-click="showDetail()">{{v.quiz_time}}</span>
+                <span class="doc-name" ng-click="showDetail()">{{v.quiz_time}}</span>
                 <span class="deadline btn btn-primary" data-quizID="{{quiz_id = v.quiz_id}}" ng-click="showPopUp()">发布</span>
                 <span class="deadline btn btn-primary" ng-click="countCorrectRate()" ng-show="detail" style="margin-right: 10px;">正确率</span>
             </div>
             <div class="item-detail" ng-show="detail">
                 <p>每题正确率：<span class="c-red">{{correctRate}}</span></p>
-                <p ng-repeat="value in v.questions">{{$index+1}}.{{value.question}}</p>
+                <p ng-repeat="value in v.questions">{{$index+1}}.{{value.question}}<span class="c-red">{{value.answer}}</span></p>
             </div>
         </div>
+    </div>
+    <div class="text-section">
+        <p class="user-classify"><b>&gt;&nbsp;导出各种列表</b></p>
+    </div>
+    <div class="text-section">
+        <a href="/main/?ct=api&method=user.exportQuizGrade" class="btn btn-primary mr-10 mt-10">课堂测试成绩</a>
     </div>
 </div>
 <div ng-show="student">
@@ -63,7 +81,6 @@
                 </tbody>
             </table>
         </div>
-        
     </div>
 </div>
 <div style="margin-bottom: 40px;"></div>
@@ -79,7 +96,7 @@
             <div class="form-group">
                 <label for="">测试时间(分钟)：</label>
                 <input type="number" class="form-control mt-10" ng-model="quizTime">
-            </div>  
+            </div>
         </div>
         <div class="btn-wrap text-center">
             <button class="btn btn-primary" ng-click="releaseQuiz()" style="width: 30%;">确认</button>

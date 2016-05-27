@@ -13,13 +13,17 @@
 	    <div class="item-head clearfix">
 	        <span class="doc-name" ng-click="showDetail()">{{ value.file_name }}</span><a href="{{value.file_path}}">下载</a>
 	        <span class="deadline">
-	        	<button class="btn btn-success btn-sm" ng-show="teacher" ng-click="showPopUp()">评分</button></b>
+	        	<button class="btn btn-primary btn-sm" ng-show="teacher" ng-click="showPopUp()">评分</button></b>
+	        	<button class="btn btn-success btn-sm" ng-click="showPopUp2()">继续回复</button></b>
 			</span>
 	    </div>
 	    <div class="item-detail" ng-show="detail">
 	        <p>提交日期：<b>{{value.commit_date}}</b></p>
 	        <p>老师评分：<b>{{value.score}}</b></p>
-	        <p>老师评语：<b>{{value.tea_comment}}</b></p>
+	        <p ng-repeat="value2 in value.comments">
+	        	<span>{{value2.user}}：</span>
+	        	<b>{{value2.comment}}</b>
+	        </p>
 	    </div>
 	</div>
 </div>
@@ -41,6 +45,23 @@
 	    <div class="btn-wrap text-center">
 	        <button class="btn btn-primary" ng-click="giveScore()" style="width: 30%;">确认</button>
 	        <button class="btn btn-default" ng-click="hidePopUp()"style="width: 30%;margin-left: 20px;">取消</button>
+	    </div>
+	</div>
+</div>
+<div class="pop-up-wrap" ng-show="popUp2">
+	<div class="pop-up">
+	    <p class="title">
+	        评论
+	    </p>
+	    <div class="main">
+	        <div class="form-group">
+	        	<label for="">评语：</label>
+	        	<textarea class="form-control" ng-model="comment"></textarea>
+	        </div>
+	    </div>
+	    <div class="btn-wrap text-center">
+	        <button class="btn btn-primary" ng-click="sendComment()" style="width: 30%;">确认</button>
+	        <button class="btn btn-default" ng-click="hidePopUp2()"style="width: 30%;margin-left: 20px;">取消</button>
 	    </div>
 	</div>
 </div>

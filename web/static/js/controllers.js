@@ -154,6 +154,20 @@ angular.module('myApp')
                 }
 
             };
+            //导入试题库试题
+            $scope.userFormSubmit2 = function() {
+                var excel = document.getElementById('userFormExcel2').value;
+                var form = document.getElementById('userForm2');
+                if (excel == "") {
+                    alert("请先选择文件");
+                    return;
+                }
+                if (confirm("确认提交？")) {
+                    form.submit();
+                    alert("提交成功");
+                }
+
+            };
         }
 
         //退出登录
@@ -391,13 +405,12 @@ angular.module('myApp')
                 }
                 var postData = {
                     score: score,
-                    tea_comment: comment,
+                    comments: '[{"user":"老师评语","comment":"' + comment + '"}]',
                     record_id: recordId,
                     group_id: groupId
                 };
                 $http.post('/main/?ct=api&method=commitrecord.giveScore', postData).success(function(response) {
                     alert("评分成功");
-                    $scope.record = response.data;
                     $scope.popUp = false;
                     $scope.homeworkScore = '';
                     $scope.homeworkComment = '';
@@ -407,10 +420,31 @@ angular.module('myApp')
             $scope.teacher = false;
             $scope.student = true;
         }
+        $scope.sendComment = function() {
+            var comment = $scope.comment;
+            var user = Util.getUserType() == 1 ? "学生追问" : "老师评语";
+            var postData = {
+                record_id: recordId,
+                comment: comment,
+                user: user
+            }
+            $http.post('/main/?ct=api&method=commitrecord.comment', postData).success(function(response) {
+                alert("评论成功");
+                $scope.popUp2 = false;
+                $scope.comment = '';
+            });
+        };
         $scope.showDetail = function() {
             this.detail = !this.detail;
-        }
-
+        };
+        $scope.showPopUp2 = function() {
+            $scope.popUp2 = true;
+            recordId = this.recordId;
+        };
+        $scope.hidePopUp2 = function() {
+            $scope.popUp2 = false;
+            $scope.comment = '';
+        };
     })
     //试题库(章节目录)
     .controller('questionController', function($scope, $http, $state) {
@@ -466,6 +500,30 @@ angular.module('myApp')
                         if (response.data) {
                             alert("success!");
                             $state.go('user');
+                        }
+                    });
+                }
+            };
+            $scope.delQuestion = function() {
+                var targetQuesIds = [];
+                var checkboxs = document.getElementsByName('choose_ques');
+                for (var i = 0, len = checkboxs.length; i < len; i++) {
+                    if (checkboxs[i].checked) {
+                        targetQuesIds.push(questionIds[i]);
+                    }
+                }
+                if (targetQuesIds.length < 1) {
+                    alert("请选择至少一个题目");
+                    return;
+                }
+                if (confirm("您当前选择了" + targetQuesIds.length + "个题目，确认删除？")) {
+                    var postData = {
+                        question_ids: targetQuesIds.join(',')
+                    }
+                    $http.post('/main/?ct=api&method=question.delQuestions', postData).success(function(response) {
+                        if (response.data) {
+                            alert("success!");
+                            $state.go('questionBank');
                         }
                     });
                 }
@@ -533,7 +591,7 @@ angular.module('myApp')
             $scope.popUp = false;
         };
         $scope.showAnswer = function() {
-            $scope.rightAnswer = true;
+            $scope.rightAnswer = !$scope.rightAnswer;
         };
 
         function validate(question_type, question, answerA, answerB, answer) {

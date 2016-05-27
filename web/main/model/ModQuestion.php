@@ -16,4 +16,10 @@ class ModQuestion extends Model{
     	$sql = "insert INTO `questions`(`section_id`, `question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) VALUES ('{$section_id}','{$question_type}','{$question}','{$A}','{$B}','{$C}','{$D}','{$answer}')";
         return $this->query($sql);
     }
+
+    //删除试题
+    public function delQuestions($question_ids) {
+        $sql = "delete FROM `questions` WHERE `question_id` in ({$question_ids})";
+        return $this->query($sql);
+    } 
 }

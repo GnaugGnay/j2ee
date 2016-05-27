@@ -35,7 +35,7 @@
         </div>
         <div class="item-detail">
             <p>小组成员：</p>
-            <p ng-repeat="member in value.group_member track by $index">{{$index+1}}.<span class="c-red">&nbsp;{{member.name}}</span></p>
+            <p ng-repeat="member in value.group_member track by $index">{{$index+1}}.<span class="c-red">&nbsp;{{member.name}}</span><span ng-if="$first">（小组长）</span></p>
         </div>
     </div>
 </div>

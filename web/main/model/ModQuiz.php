@@ -32,7 +32,7 @@ class ModQuiz extends Model{
     }
     //查找questions中若干条题目,仅题目
     public function searchQuestionsOnly($question_ids) {
-        $sql = "select question from `{$this->table_questions}` WHERE `question_id` in ({$question_ids})";
+        $sql = "select `question`,`answer` from `{$this->table_questions}` WHERE `question_id` in ({$question_ids})";
         return $this->query($sql);
     }
 
@@ -57,7 +57,7 @@ class ModQuiz extends Model{
     }
     //先删除之前的试题，然后将question_ids插入onlinequiz表中并将quiz_id改为相应的，供学生测试用
     public function insertOnlineQuiz($question_ids, $quiz_id) {
-        $sql = "delete FROM `onlinequiz` WHERE 1";
+        $sql = "TRUNCATE TABLE `onlinequiz`";
         $this->query($sql);
         $sql = "insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in ({$question_ids})";
         $this->query($sql);
@@ -67,7 +67,7 @@ class ModQuiz extends Model{
 
     //删除在线测试的试题
     public function deleteOnlineQuiz() {
-        $sql = "delete FROM `onlinequiz` WHERE 1";
+        $sql = "TRUNCATE TABLE `onlinequiz`";
         return $this->query($sql);
     }
 

@@ -6,8 +6,10 @@
 	    <div class="item-head clearfix">
 	        <span class="doc-name" ng-click="showDetail()">{{value.title}}</span>
 	        <span class="deadline">
-				<button class="btn btn-success btn-sm" ng-click="showPopUp()">回复</button>
-				<button class="btn btn-danger btn-sm" ng-show="teacher" ng-click="deletePost()">删除</button>
+	        	<div ng-show="isLogin">
+					<button class="btn btn-success btn-sm" ng-click="showPopUp()">回复</button>
+					<button class="btn btn-danger btn-sm" ng-show="teacher" ng-click="deletePost()">删除</button>
+	        	</div>
 			</span>
 	    </div>
 	    <div class="item-detail" ng-show="detail">
@@ -21,10 +23,13 @@
 	</div>
 </div>
 <div class="bot-wrap">
-    <div class="form-group form-inline text-center">
+    <div class="form-group form-inline text-center" ng-show="isLogin">
     	<input type="text" class="form-control" ng-model="forumQuestion" style="display: inline-block;width: 80%;">
     	<button class="btn btn-default" ng-click="postQuestion()">提问</button>
     </div>	
+    <div class="text-center" style="color: #fff;" ng-show="!isLogin">
+    	请先登录获取提问及回复的权限。
+    </div>
 </div>
 <div class="pop-up-wrap" ng-show="popUp">
 	<div class="pop-up">

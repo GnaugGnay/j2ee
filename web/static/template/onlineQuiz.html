@@ -1,7 +1,7 @@
 <div class="text-section">
     <h2 class="f-24"><b>课堂测验</b></h2>
 </div>
-<div class="text-section" data-quizid="{{quiz_id}}">
+<div class="text-section" data-quizid="{{quiz_id}}" ng-show="isLogin">
     <p ng-if="noOnlineQuiz">测试还未开始，请等待老师发布题目</p>
     <div class="quiz-item" ng-repeat="v in quiz">
         <p class="question">{{$index+1}}.<span ng-if="v.question_type==3">(多选)</span>{{v.question}}
@@ -31,7 +31,10 @@
         </ul>
     </div>
 </div>
+<div class="text-section" ng-show="!isLogin">
+    请先登录
+</div>
 <div style="margin-bottom: 40px;"></div>
-<div class="bot-button" ng-click="submit()">
+<div class="bot-button" ng-click="submit()" ng-show="isLogin">
     <span>提交</span>
 </div>

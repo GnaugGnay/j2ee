@@ -203,6 +203,11 @@ app.controller('mainController', function($scope, $state) {
         $scope.teacher = false;
         $scope.student = true;
     }
+    if (Util.isLogin()) {
+        $scope.isLogin = true;
+    } else {
+        $scope.isLogin = false;
+    }
     // 左侧边栏的原生对象
     var leftBar = document.getElementById('sidebar_left');
     //依据url来初始化侧边栏

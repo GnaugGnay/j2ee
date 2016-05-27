@@ -7,6 +7,9 @@ class SrvCommitRecordApi{
         $group_id = $data['group_id'];
         $mod = new ModCommitRecord();
         $re = $mod->getRecord($group_id);
+        foreach ($re as $key => $value) {
+            $re[$key]['comments'] = json_decode($value['comments'],JSON_UNESCAPED_UNICODE);
+        }
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
     }
 
@@ -14,12 +17,29 @@ class SrvCommitRecordApi{
     public function giveScore($data){
         $record_id = $data['record_id'];
         $score = $data['score'];
-        $tea_comment = $data['tea_comment'];
-        $group_id = $data['group_id'];
+        $comments = $data['comments'];
+
         $mod = new ModCommitRecord();
-        $mod->giveScore($record_id, $score, $tea_comment);
-        $re = $mod->getRecord($group_id);
+        $mod->giveScore($record_id, $score, $comments);
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
+    }
+
+    //继续评论等
+    public function comment($data){
+        $record_id = $data['record_id'];
+        $user = $data['user'];
+        $comment = $data['comment'];
+
+        $userComent = array("user"=>$user,"comment"=>$comment);
+        $mod = new ModCommitRecord();
+        $re = $mod->getSingleRecord($record_id)[0]['comments'];
+        $re = json_decode($re);
+        array_push($re, $userComent);
+        $re = json_encode($re,JSON_UNESCAPED_UNICODE);
+        $re = $mod->commentRecord($record_id, $re);
+
+        return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $re);
+
     }
 
     //学生提交课程设计

@@ -83,6 +83,38 @@ class SrvUserApi{
         $result['scoreNum'] = $scoreNum;
         return LibUtil::reData(Code::$CODE_SYSTEM_ERROR, $result);
     }
-         
-    
+
+    //导出表格
+    public function exportQuizGrade() {
+        $srv = new SrvUserScoreApi();
+        $re = $srv->getStuList()['data']['listData'];
+
+        require_once LIB.'/library/excel/PHPExcel.php';;
+
+        error_reporting(E_ALL);
+        date_default_timezone_set('Europe/London');
+        $objPHPExcel = new PHPExcel();
+
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('A1', '学号');
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('B1', '姓名');
+        $objPHPExcel->setActiveSheetIndex(0)->setCellValue('C1', '总分');
+        
+        foreach($re as $k => $v){
+            $num=$k+2;
+            $objPHPExcel->setActiveSheetIndex(0)
+                         //Excel的第A列，uid是你查出数组的键值，下面以此类推
+                        ->setCellValue('A'.$num, $v['username'])    
+                        ->setCellValue('B'.$num, $v['fullname'])
+                        ->setCellValue('C'.$num, $v['finalscore']);
+        }
+
+        $objPHPExcel->getActiveSheet()->setTitle('User');
+        $objPHPExcel->setActiveSheetIndex(0);
+        header('Content-Type: application/vnd.ms-excel');
+        header('Content-Disposition: attachment;filename="'.'gradeList'.'.xls"');
+        header('Cache-Control: max-age=0');
+        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+        $objWriter->save('php://output');
+    }
+
 }
