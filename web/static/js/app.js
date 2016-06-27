@@ -7,6 +7,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.when("", "/");
     $stateProvider
+        .state("test", { //测试界面
+            url: "/test",
+            templateUrl: "./static/template/test.html",
+            controller: 'testController'
+        })
         .state("login", { //登录界面
             url: "/login",
             templateUrl: "./static/template/login.html",

@@ -1,5 +1,8 @@
 // 测试
 angular.module('myApp')
+    .controller('testController', function($scope) {
+        console.log("这是测试页面");
+    })
     //用户登录页面
     .controller('loginController', function($scope, $http, $rootScope, $state) {
         console.log(Util.isLogin());

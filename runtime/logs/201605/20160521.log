@@ -1,0 +1,3709 @@
+
+-----------------------------------
+[2016-05-21 16:58:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.pastScore
+POST: array (
+  'username' => '2012051337',
+)
+[2016-05-21 16:58:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 12
+SQL: select * from `userscore` where `username` = '2012051337' order by `quiz_time` desc(OK:0.282)
+[2016-05-21 16:58:00]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'score_id' => '263',
+      'username' => '2012051337',
+      'quiz_id' => '33',
+      'quiz_time' => '2016-05-19',
+      'scores' => '',
+      'totalscore' => '0',
+    ),
+    1 => 
+    array (
+      'score_id' => '205',
+      'username' => '2012051337',
+      'quiz_id' => '32',
+      'quiz_time' => '2016-05-19',
+      'scores' => '1,1,1,1,1,1',
+      'totalscore' => '6',
+    ),
+  ),
+  'ct' => 1463821080,
+)
+
+-----------------------------------
+[2016-05-21 16:58:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=user.login
+POST: array (
+  'username' => 'admin',
+  'password' => 'admin',
+)
+[2016-05-21 16:58:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 12
+SQL: select * from `user` where `username` = 'admin' and `password` = 'admin'(OK:0.055)
+[2016-05-21 16:58:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'username' => 'admin',
+      'password' => 'admin',
+      'fullname' => '张老师',
+      'usertype' => '0',
+      'group_id' => '-1',
+    ),
+  ),
+  'ct' => 1463821096,
+)
+
+-----------------------------------
+[2016-05-21 16:58:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 16:58:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.024)
+[2016-05-21 16:58:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.032)
+[2016-05-21 16:58:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 16:58:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463821096,
+)
+
+-----------------------------------
+[2016-05-21 16:58:22] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 16:58:22]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.132)
+[2016-05-21 16:58:22]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.002)
+[2016-05-21 16:58:22]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 16:58:22]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 16:58:22]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463821102,
+)
+
+-----------------------------------
+[2016-05-21 16:58:26] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '32',
+)
+[2016-05-21 16:58:26]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '32' and `scores` <> ''(OK:0.002)
+[2016-05-21 16:58:26]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '32' and `scores` <> ''(OK:0.001)
+[2016-05-21 16:58:26]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '82.61%',
+      1 => '30.43%',
+      2 => '65.22%',
+      3 => '17.39%',
+      4 => '100%',
+      5 => '73.91%',
+    ),
+    'scoreNum' => '23',
+  ),
+  'ct' => 1463821106,
+)
+
+-----------------------------------
+[2016-05-21 16:59:02] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '32',
+)
+[2016-05-21 16:59:02]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '32' and `scores` <> ''(OK:0.003)
+[2016-05-21 16:59:02]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '32' and `scores` <> ''(OK:0.001)
+[2016-05-21 16:59:02]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '82.61%',
+      1 => '30.43%',
+      2 => '65.22%',
+      3 => '17.39%',
+      4 => '100%',
+      5 => '73.91%',
+    ),
+    'scoreNum' => '23',
+  ),
+  'ct' => 1463821142,
+)
+
+-----------------------------------
+[2016-05-21 16:59:50] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-21 16:59:50]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.041)
+[2016-05-21 16:59:50]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463821190,
+)
+
+-----------------------------------
+[2016-05-21 16:59:53] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 16:59:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-21 16:59:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 16:59:53]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 16:59:53]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463821193,
+)
+
+-----------------------------------
+[2016-05-21 16:59:54] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-21 16:59:54]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.004)
+[2016-05-21 16:59:54]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463821194,
+)
+
+-----------------------------------
+[2016-05-21 16:59:55] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 16:59:55]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-21 16:59:55]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 16:59:55]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 16:59:55]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463821195,
+)
+
+-----------------------------------
+[2016-05-21 17:01:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.004)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463821318,
+)
+
+-----------------------------------
+[2016-05-21 17:01:58] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.releaseQuiz
+POST: array (
+  'quiz_id' => '32',
+  'quizTime' => '60',
+)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 54
+SQL: update `pastquiz` SET `quiz_time`='2016-05-21' WHERE `quiz_id` = '32'(OK:0.047)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 56
+SQL: select `question_ids` FROM `pastquiz` WHERE `quiz_id` = '32'(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 61
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.025)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 63
+SQL: insert INTO `onlinequiz`(`question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer`) SELECT `question_id`,`question_type`, `question`, `A`, `B`, `C`, `D`, `answer` FROM `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 65
+SQL: update `onlinequiz` SET `quiz_id`= 32 WHERE 1(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUser.php 30
+SQL: select `username`, `fullname` FROM `user` WHERE `usertype` = 1 order by `username`(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051337', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051338', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051339', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051340', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051341', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051342', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051343', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051344', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051345', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051346', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051347', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051348', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051349', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051350', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051351', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051352', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051353', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051354', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051355', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051356', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051357', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051358', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051359', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051360', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051361', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051362', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051363', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051364', '32', '2016-05-21', '', '0')(OK:0.001)
+[2016-05-21 17:01:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 20
+SQL: insert into `j2ee`.`userscore` (`username`, `quiz_id`, `quiz_time`, `scores`, `totalscore`) VALUES ('2012051365', '32', '2016-05-21', '', '0')(OK:0.001)
+
+-----------------------------------
+[2016-05-21 17:02:00] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-21 17:02:00]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.004)
+[2016-05-21 17:02:00]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'quiz_id' => '32',
+      'question_type' => '1',
+      'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'quiz_id' => '32',
+      'question_type' => '1',
+      'question' => 'session的标志符不可能存放在cookie和url中',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'quiz_id' => '32',
+      'question_type' => '2',
+      'question' => '在三层结构中，数据访问层承担的责任是',
+      'A' => '定义实体类 ',
+      'B' => '数据的增删改查操作',
+      'C' => '业务逻辑的描述 ',
+      'D' => '页面展示和控制转发',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'quiz_id' => '32',
+      'question_type' => '2',
+      'question' => '下面关于数据持久化概念的描述，错误的是',
+      'A' => '保存在内存中数据的状态是瞬时状态',
+      'B' => '持久状态的数据在关机后数据依然存在',
+      'C' => '数据可以由持久状态转换为瞬时状态',
+      'D' => '将数据转换为持久状态的机制称为数据持久化',
+      'answer' => 'D',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'quiz_id' => '32',
+      'question_type' => '3',
+      'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+      'A' => '管理Bean 生命周期。',
+      'B' => '生成代码来实现对Bean 的存取访问。',
+      'C' => '对客户端而言EJB 容器是透明的。',
+      'D' => '管理客户访问的整个生命周期。',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'quiz_id' => '32',
+      'question_type' => '3',
+      'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+      'A' => '安全 ',
+      'B' => '远程连接事务',
+      'C' => '生命周期管理',
+      'D' => '事务管理',
+      'answer' => 'A,B,C,D',
+    ),
+  ),
+  'ct' => 1463821320,
+)
+
+-----------------------------------
+[2016-05-21 17:02:02] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 17:02:02]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-21 17:02:02]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 17:02:02]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 17:02:02]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-21',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463821322,
+)
+[2016-05-21 17:02:58]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 71
+SQL: delete FROM `onlinequiz` WHERE 1(OK:0.003)
+[2016-05-21 17:02:58]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463821378,
+)
+
+-----------------------------------
+[2016-05-21 17:06:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:06:09]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.018)
+[2016-05-21 17:06:09]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463821569,
+)
+
+-----------------------------------
+[2016-05-21 17:06:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-21 17:06:12]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 12
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.006)
+[2016-05-21 17:06:12]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => 'session的标志符不可能存放在cookie和url中',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '在三层结构中，数据访问层承担的责任是',
+      'A' => '定义实体类 ',
+      'B' => '数据的增删改查操作',
+      'C' => '业务逻辑的描述 ',
+      'D' => '页面展示和控制转发',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '下面关于数据持久化概念的描述，错误的是',
+      'A' => '保存在内存中数据的状态是瞬时状态',
+      'B' => '持久状态的数据在关机后数据依然存在',
+      'C' => '数据可以由持久状态转换为瞬时状态',
+      'D' => '将数据转换为持久状态的机制称为数据持久化',
+      'answer' => 'D',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+      'A' => '管理Bean 生命周期。',
+      'B' => '生成代码来实现对Bean 的存取访问。',
+      'C' => '对客户端而言EJB 容器是透明的。',
+      'D' => '管理客户访问的整个生命周期。',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+      'A' => '安全 ',
+      'B' => '远程连接事务',
+      'C' => '生命周期管理',
+      'D' => '事务管理',
+      'answer' => 'A,B,C,D',
+    ),
+  ),
+  'ct' => 1463821572,
+)
+
+-----------------------------------
+[2016-05-21 17:13:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-21 17:13:06]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.142)
+[2016-05-21 17:13:06]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '8',
+      'post_user' => '张老师',
+      'title' => '同学们有什么想问的都可以在这提问',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-19',
+    ),
+    1 => 
+    array (
+      'post_id' => '9',
+      'post_user' => '杨哈哈',
+      'title' => 'J2EE用到的开发软件有哪些啊？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+           'comment' => '先安装JDK',
+        )),
+      ),
+      'post_date' => '2016-05-19',
+    ),
+  ),
+  'ct' => 1463821986,
+)
+
+-----------------------------------
+[2016-05-21 17:13:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-21 17:13:09]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.004)
+[2016-05-21 17:13:09]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463821989,
+)
+
+-----------------------------------
+[2016-05-21 17:13:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-21 17:13:16]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-05-21 17:13:16]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-21 17:13:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.046)
+[2016-05-21 17:13:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1463821996,
+)
+
+-----------------------------------
+[2016-05-21 17:14:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 17:14:35]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-21 17:14:35]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 17:14:35]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 17:14:35]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-21',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463822075,
+)
+
+-----------------------------------
+[2016-05-21 17:14:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=group.getGroups
+[2016-05-21 17:14:37]Info: E:\HowToMakeLove\j2ee\web\main\model\ModGroup.php 12
+SQL: select * from `group`(OK:0.009)
+[2016-05-21 17:14:37]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'group_id' => '50',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051338',
+           'name' => '邝沈然',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051337',
+    ),
+    1 => 
+    array (
+      'group_id' => '51',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051356',
+           'name' => '虢和暄',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051339',
+    ),
+    2 => 
+    array (
+      'group_id' => '49',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051340',
+           'name' => '邹冰冰',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051355',
+           'name' => '爱嘉平',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051340',
+    ),
+    3 => 
+    array (
+      'group_id' => '48',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051348',
+           'name' => '贵梦秋',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051348',
+    ),
+    4 => 
+    array (
+      'group_id' => '45',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051343',
+           'name' => '栋乐安',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051343',
+    ),
+    5 => 
+    array (
+      'group_id' => '47',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051350',
+           'name' => '仆书君',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051350',
+    ),
+    6 => 
+    array (
+      'group_id' => '46',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051346',
+           'name' => '节浩瀚',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051346',
+    ),
+    7 => 
+    array (
+      'group_id' => '44',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    8 => 
+    array (
+      'group_id' => '52',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    9 => 
+    array (
+      'group_id' => '53',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    10 => 
+    array (
+      'group_id' => '54',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+  ),
+  'ct' => 1463822077,
+)
+
+-----------------------------------
+[2016-05-21 17:15:18] 127.0.0.1 http://j2ee.com/main/?ct=api&method=group.getGroups
+[2016-05-21 17:15:18]Info: E:\HowToMakeLove\j2ee\web\main\model\ModGroup.php 12
+SQL: select * from `group`(OK:0.003)
+[2016-05-21 17:15:18]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'group_id' => '50',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051338',
+           'name' => '邝沈然',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051337',
+    ),
+    1 => 
+    array (
+      'group_id' => '51',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051356',
+           'name' => '虢和暄',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051339',
+    ),
+    2 => 
+    array (
+      'group_id' => '49',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051340',
+           'name' => '邹冰冰',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051355',
+           'name' => '爱嘉平',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051340',
+    ),
+    3 => 
+    array (
+      'group_id' => '48',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051348',
+           'name' => '贵梦秋',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051348',
+    ),
+    4 => 
+    array (
+      'group_id' => '45',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051343',
+           'name' => '栋乐安',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051343',
+    ),
+    5 => 
+    array (
+      'group_id' => '47',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051350',
+           'name' => '仆书君',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051350',
+    ),
+    6 => 
+    array (
+      'group_id' => '46',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051346',
+           'name' => '节浩瀚',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051346',
+    ),
+    7 => 
+    array (
+      'group_id' => '44',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    8 => 
+    array (
+      'group_id' => '52',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    9 => 
+    array (
+      'group_id' => '53',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    10 => 
+    array (
+      'group_id' => '54',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+  ),
+  'ct' => 1463822118,
+)
+
+-----------------------------------
+[2016-05-21 17:15:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=group.getGroups
+[2016-05-21 17:15:40]Info: E:\HowToMakeLove\j2ee\web\main\model\ModGroup.php 12
+SQL: select * from `group`(OK:0.003)
+[2016-05-21 17:15:40]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'group_id' => '50',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051338',
+           'name' => '邝沈然',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051337',
+    ),
+    1 => 
+    array (
+      'group_id' => '51',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051356',
+           'name' => '虢和暄',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051339',
+    ),
+    2 => 
+    array (
+      'group_id' => '49',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051340',
+           'name' => '邹冰冰',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051355',
+           'name' => '爱嘉平',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051340',
+    ),
+    3 => 
+    array (
+      'group_id' => '48',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051348',
+           'name' => '贵梦秋',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051348',
+    ),
+    4 => 
+    array (
+      'group_id' => '45',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051343',
+           'name' => '栋乐安',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051343',
+    ),
+    5 => 
+    array (
+      'group_id' => '47',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051350',
+           'name' => '仆书君',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051350',
+    ),
+    6 => 
+    array (
+      'group_id' => '46',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051346',
+           'name' => '节浩瀚',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051346',
+    ),
+    7 => 
+    array (
+      'group_id' => '44',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    8 => 
+    array (
+      'group_id' => '52',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    9 => 
+    array (
+      'group_id' => '53',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    10 => 
+    array (
+      'group_id' => '54',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+  ),
+  'ct' => 1463822140,
+)
+
+-----------------------------------
+[2016-05-21 17:16:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=group.getGroupMember
+POST: array (
+  'group_id' => '50',
+)
+[2016-05-21 17:16:29]Info: E:\HowToMakeLove\j2ee\web\main\model\ModGroup.php 17
+SQL: select * from `group` where `group_id` = '50'(OK:0.005)
+[2016-05-21 17:16:29]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'group_id' => '50',
+      'group_member' => '[{"username":"2012051337","name":"杨哈哈"},{"username":"2012051338","name":"邝沈然"},{"username":"","name":""}]',
+      'group_leader' => '2012051337',
+    ),
+  ),
+  'ct' => 1463822189,
+)
+
+-----------------------------------
+[2016-05-21 17:16:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=commitrecord.getRecord
+POST: array (
+  'group_id' => '50',
+)
+[2016-05-21 17:16:29]Info: E:\HowToMakeLove\j2ee\web\main\model\ModCommitRecord.php 12
+SQL: select * from `commitrecord` where `group_id` = '50' order by `commit_date` DESC(OK:0.024)
+[2016-05-21 17:16:29]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'record_id' => '9',
+      'group_id' => '50',
+      'commit_date' => '2016-05-19',
+      'file_name' => '需求分析1(2012051337).docx',
+      'file_path' => '/uploads/courseDesigh/杨哈哈,邝沈然,/需求分析1(2012051337).docx',
+      'score' => '80',
+      'tea_comment' => '需求分析还不够清晰，再接再厉',
+    ),
+    1 => 
+    array (
+      'record_id' => '10',
+      'group_id' => '50',
+      'commit_date' => '2016-05-19',
+      'file_name' => '需求分析2(2012051337).docx',
+      'file_path' => '/uploads/courseDesigh/杨哈哈,邝沈然,/需求分析2(2012051337).docx',
+      'score' => '0',
+      'tea_comment' => '',
+    ),
+  ),
+  'ct' => 1463822189,
+)
+
+-----------------------------------
+[2016-05-21 17:16:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=group.getGroups
+[2016-05-21 17:16:35]Info: E:\HowToMakeLove\j2ee\web\main\model\ModGroup.php 12
+SQL: select * from `group`(OK:0.004)
+[2016-05-21 17:16:35]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'group_id' => '50',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051338',
+           'name' => '邝沈然',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051337',
+    ),
+    1 => 
+    array (
+      'group_id' => '51',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051356',
+           'name' => '虢和暄',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051339',
+    ),
+    2 => 
+    array (
+      'group_id' => '49',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051340',
+           'name' => '邹冰冰',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051355',
+           'name' => '爱嘉平',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051340',
+    ),
+    3 => 
+    array (
+      'group_id' => '48',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051348',
+           'name' => '贵梦秋',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051348',
+    ),
+    4 => 
+    array (
+      'group_id' => '45',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051343',
+           'name' => '栋乐安',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051343',
+    ),
+    5 => 
+    array (
+      'group_id' => '47',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051350',
+           'name' => '仆书君',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051350',
+    ),
+    6 => 
+    array (
+      'group_id' => '46',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051346',
+           'name' => '节浩瀚',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051346',
+    ),
+    7 => 
+    array (
+      'group_id' => '44',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    8 => 
+    array (
+      'group_id' => '52',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    9 => 
+    array (
+      'group_id' => '53',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    10 => 
+    array (
+      'group_id' => '54',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+  ),
+  'ct' => 1463822195,
+)
+
+-----------------------------------
+[2016-05-21 17:18:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-21 17:18:21]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-05-21 17:18:21]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463822301,
+)
+
+-----------------------------------
+[2016-05-21 17:18:48] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 17:18:48]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-21 17:18:48]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 17:18:48]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 17:18:48]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-21',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463822328,
+)
+
+-----------------------------------
+[2016-05-21 17:29:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:08]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.004)
+[2016-05-21 17:29:08]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:08]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:08]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:08]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822948,
+)
+
+-----------------------------------
+[2016-05-21 17:29:09] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:09]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:09]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:09]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:09]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:09]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822949,
+)
+
+-----------------------------------
+[2016-05-21 17:29:12] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 17:29:12]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-21 17:29:12]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 17:29:12]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 17:29:12]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-21',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463822952,
+)
+
+-----------------------------------
+[2016-05-21 17:29:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:15]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:15]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:15]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822955,
+)
+
+-----------------------------------
+[2016-05-21 17:29:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:15]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:15]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:15]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822955,
+)
+
+-----------------------------------
+[2016-05-21 17:29:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822956,
+)
+
+-----------------------------------
+[2016-05-21 17:29:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822956,
+)
+
+-----------------------------------
+[2016-05-21 17:29:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822956,
+)
+
+-----------------------------------
+[2016-05-21 17:29:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:16]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822956,
+)
+
+-----------------------------------
+[2016-05-21 17:29:23] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '33',
+)
+[2016-05-21 17:29:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:23]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '33' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:23]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 28
+array_map(): Argument #2 should be an array
+[2016-05-21 17:29:23]Warn: E:\HowToMakeLove\j2ee\web\main\service\SrvUserScoreApi.php 32
+Invalid argument supplied for foreach()
+[2016-05-21 17:29:23]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => NULL,
+    'scoreNum' => '0',
+  ),
+  'ct' => 1463822963,
+)
+
+-----------------------------------
+[2016-05-21 17:29:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.countCorrect
+POST: array (
+  'quiz_id' => '32',
+)
+[2016-05-21 17:29:25]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 18
+SQL: select count(*) from `userscore` where `quiz_id` = '32' and `scores` <> ''(OK:0.003)
+[2016-05-21 17:29:25]Info: E:\HowToMakeLove\j2ee\web\main\model\ModUserscore.php 20
+SQL: select `scores` from `userscore` where `quiz_id` = '32' and `scores` <> ''(OK:0.001)
+[2016-05-21 17:29:25]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'correctRate' => 
+    array (
+      0 => '82.61%',
+      1 => '30.43%',
+      2 => '65.22%',
+      3 => '17.39%',
+      4 => '100%',
+      5 => '73.91%',
+    ),
+    'scoreNum' => '23',
+  ),
+  'ct' => 1463822965,
+)
+
+-----------------------------------
+[2016-05-21 17:31:56] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:31:56]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.004)
+[2016-05-21 17:31:56]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463823116,
+)
+
+-----------------------------------
+[2016-05-21 17:32:10] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:32:10]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.004)
+[2016-05-21 17:32:10]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463823130,
+)
+
+-----------------------------------
+[2016-05-21 17:32:13] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-21 17:32:13]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 12
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.005)
+[2016-05-21 17:32:13]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => 'session的标志符不可能存放在cookie和url中',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '在三层结构中，数据访问层承担的责任是',
+      'A' => '定义实体类 ',
+      'B' => '数据的增删改查操作',
+      'C' => '业务逻辑的描述 ',
+      'D' => '页面展示和控制转发',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '下面关于数据持久化概念的描述，错误的是',
+      'A' => '保存在内存中数据的状态是瞬时状态',
+      'B' => '持久状态的数据在关机后数据依然存在',
+      'C' => '数据可以由持久状态转换为瞬时状态',
+      'D' => '将数据转换为持久状态的机制称为数据持久化',
+      'answer' => 'D',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+      'A' => '管理Bean 生命周期。',
+      'B' => '生成代码来实现对Bean 的存取访问。',
+      'C' => '对客户端而言EJB 容器是透明的。',
+      'D' => '管理客户访问的整个生命周期。',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+      'A' => '安全 ',
+      'B' => '远程连接事务',
+      'C' => '生命周期管理',
+      'D' => '事务管理',
+      'answer' => 'A,B,C,D',
+    ),
+  ),
+  'ct' => 1463823133,
+)
+
+-----------------------------------
+[2016-05-21 17:32:15] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:32:15]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.004)
+[2016-05-21 17:32:15]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463823135,
+)
+
+-----------------------------------
+[2016-05-21 17:32:16] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-21 17:32:16]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 12
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.005)
+[2016-05-21 17:32:16]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => 'session的标志符不可能存放在cookie和url中',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '在三层结构中，数据访问层承担的责任是',
+      'A' => '定义实体类 ',
+      'B' => '数据的增删改查操作',
+      'C' => '业务逻辑的描述 ',
+      'D' => '页面展示和控制转发',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '下面关于数据持久化概念的描述，错误的是',
+      'A' => '保存在内存中数据的状态是瞬时状态',
+      'B' => '持久状态的数据在关机后数据依然存在',
+      'C' => '数据可以由持久状态转换为瞬时状态',
+      'D' => '将数据转换为持久状态的机制称为数据持久化',
+      'answer' => 'D',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+      'A' => '管理Bean 生命周期。',
+      'B' => '生成代码来实现对Bean 的存取访问。',
+      'C' => '对客户端而言EJB 容器是透明的。',
+      'D' => '管理客户访问的整个生命周期。',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+      'A' => '安全 ',
+      'B' => '远程连接事务',
+      'C' => '生命周期管理',
+      'D' => '事务管理',
+      'answer' => 'A,B,C,D',
+    ),
+  ),
+  'ct' => 1463823136,
+)
+
+-----------------------------------
+[2016-05-21 17:33:03] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:33:03]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.004)
+[2016-05-21 17:33:03]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463823183,
+)
+
+-----------------------------------
+[2016-05-21 17:33:04] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '1',
+)
+[2016-05-21 17:33:04]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 12
+SQL: select * FROM `questions` WHERE `section_id` = 1 order by `question_type`(OK:0.005)
+[2016-05-21 17:33:04]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '1',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '2',
+      'section_id' => '1',
+      'question_type' => '1',
+      'question' => 'session的标志符不可能存放在cookie和url中',
+      'A' => '是',
+      'B' => '否',
+      'C' => '',
+      'D' => '',
+      'answer' => 'B',
+    ),
+    2 => 
+    array (
+      'question_id' => '3',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '在三层结构中，数据访问层承担的责任是',
+      'A' => '定义实体类 ',
+      'B' => '数据的增删改查操作',
+      'C' => '业务逻辑的描述 ',
+      'D' => '页面展示和控制转发',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '4',
+      'section_id' => '1',
+      'question_type' => '2',
+      'question' => '下面关于数据持久化概念的描述，错误的是',
+      'A' => '保存在内存中数据的状态是瞬时状态',
+      'B' => '持久状态的数据在关机后数据依然存在',
+      'C' => '数据可以由持久状态转换为瞬时状态',
+      'D' => '将数据转换为持久状态的机制称为数据持久化',
+      'answer' => 'D',
+    ),
+    4 => 
+    array (
+      'question_id' => '5',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+      'A' => '管理Bean 生命周期。',
+      'B' => '生成代码来实现对Bean 的存取访问。',
+      'C' => '对客户端而言EJB 容器是透明的。',
+      'D' => '管理客户访问的整个生命周期。',
+      'answer' => 'A,B,C',
+    ),
+    5 => 
+    array (
+      'question_id' => '6',
+      'section_id' => '1',
+      'question_type' => '3',
+      'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+      'A' => '安全 ',
+      'B' => '远程连接事务',
+      'C' => '生命周期管理',
+      'D' => '事务管理',
+      'answer' => 'A,B,C,D',
+    ),
+  ),
+  'ct' => 1463823184,
+)
+
+-----------------------------------
+[2016-05-21 17:33:35] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.addToPastQuiz
+POST: array (
+  'question_ids' => '2,3,4,5',
+)
+[2016-05-21 17:33:35]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 48
+SQL: insert INTO `pastquiz`(`question_ids`) VALUES ('2,3,4,5')(OK:0.003)
+[2016-05-21 17:33:35]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => true,
+  'ct' => 1463823215,
+)
+
+-----------------------------------
+[2016-05-21 17:33:36] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 17:33:36]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.003)
+[2016-05-21 17:33:36]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 17:33:36]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 17:33:36]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-21 17:33:36]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-21',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '34',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '0000-00-00',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        3 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463823216,
+)
+
+-----------------------------------
+[2016-05-21 17:35:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:35:24]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.003)
+[2016-05-21 17:35:24]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463823324,
+)
+
+-----------------------------------
+[2016-05-21 17:35:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => '3',
+)
+[2016-05-21 17:35:25]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 12
+SQL: select * FROM `questions` WHERE `section_id` = 3 order by `question_type`(OK:0.004)
+[2016-05-21 17:35:25]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'question_id' => '12',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => 'Struts的哪个标签可以创建用于上传文件的表单控件（     ）',
+      'A' => '<html:file> ',
+      'B' => '<html:text> ',
+      'C' => '<html:password> ',
+      'D' => '<html:upfile>',
+      'answer' => 'A',
+    ),
+    1 => 
+    array (
+      'question_id' => '11',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => '下列选项中不能能获得Locale实例是',
+      'A' => 'Locale locale=new Locale();',
+      'B' => ' Locale locale=new Locale("ch","CH");',
+      'C' => 'Locale locale=Locale.CHINA；',
+      'D' => 'Locale locale =request.getLocale(); ',
+      'answer' => 'A',
+    ),
+    2 => 
+    array (
+      'question_id' => '16',
+      'section_id' => '3',
+      'question_type' => '2',
+      'question' => 'JSP页面经过编译之后，将创建一个（）',
+      'A' => 'applet',
+      'B' => 'servlet',
+      'C' => 'application',
+      'D' => ' exe文件',
+      'answer' => 'B',
+    ),
+    3 => 
+    array (
+      'question_id' => '15',
+      'section_id' => '3',
+      'question_type' => '3',
+      'question' => '如果需要使用XMLType 表，可以存储如下（     ）类型的数据。',
+      'A' => ' CLOB 非结构化数据。',
+      'B' => '结构化数据。',
+      'C' => '混合结构数据或者半结构化数据。',
+      'D' => 'BLOB 非结构化数据。 ',
+      'answer' => 'A,B,C',
+    ),
+  ),
+  'ct' => 1463823325,
+)
+
+-----------------------------------
+[2016-05-21 17:38:05] 127.0.0.1 http://j2ee.com/main/?ct=api&method=question.getQuestions
+POST: array (
+  'section_id' => 'null',
+)
+[2016-05-21 17:38:05]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuestion.php 12
+SQL: select * FROM `questions` WHERE `section_id` = null order by `question_type`(OK:0.003)
+[2016-05-21 17:38:05]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463823485,
+)
+
+-----------------------------------
+[2016-05-21 17:38:07] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-21 17:38:07]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-05-21 17:38:07]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-21 17:38:07]Info: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.004)
+[2016-05-21 17:38:07]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1463823487,
+)
+
+-----------------------------------
+[2016-05-21 17:38:42] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-05-21 17:38:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.004)
+[2016-05-21 17:38:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (1,2,3,4,5,6)(OK:0.001)
+[2016-05-21 17:38:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4)(OK:0.001)
+[2016-05-21 17:38:42]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 36
+SQL: select question from `questions` WHERE `question_id` in (2,3,4,5)(OK:0.001)
+[2016-05-21 17:38:42]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '32',
+      'question_ids' => '1,2,3,4,5,6',
+      'quiz_time' => '2016-05-21',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '控制共享资源的并发访问，需要用到的java关键字是synchronized',
+        ),
+        1 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        2 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        3 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        4 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+        5 => 
+        array (
+          'question' => 'EJB 容器功能很强大，通常，可以提供如下（     ）系统级事务服务。',
+        ),
+      ),
+    ),
+    1 => 
+    array (
+      'quiz_id' => '33',
+      'question_ids' => '2,3,4',
+      'quiz_time' => '2016-05-19',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+      ),
+    ),
+    2 => 
+    array (
+      'quiz_id' => '34',
+      'question_ids' => '2,3,4,5',
+      'quiz_time' => '0000-00-00',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => 'session的标志符不可能存放在cookie和url中',
+        ),
+        1 => 
+        array (
+          'question' => '在三层结构中，数据访问层承担的责任是',
+        ),
+        2 => 
+        array (
+          'question' => '下面关于数据持久化概念的描述，错误的是',
+        ),
+        3 => 
+        array (
+          'question' => 'EJB 容器具有如下（     ）特点，使得系统级事务能够得到更好的管理。',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1463823522,
+)
+
+-----------------------------------
+[2016-05-21 17:38:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=group.getGroups
+[2016-05-21 17:38:43]Info: E:\HowToMakeLove\j2ee\web\main\model\ModGroup.php 12
+SQL: select * from `group`(OK:0.004)
+[2016-05-21 17:38:43]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'group_id' => '50',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051337',
+           'name' => '杨哈哈',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051338',
+           'name' => '邝沈然',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051337',
+    ),
+    1 => 
+    array (
+      'group_id' => '51',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051356',
+           'name' => '虢和暄',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051339',
+    ),
+    2 => 
+    array (
+      'group_id' => '49',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051340',
+           'name' => '邹冰冰',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '2012051355',
+           'name' => '爱嘉平',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051340',
+    ),
+    3 => 
+    array (
+      'group_id' => '48',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051348',
+           'name' => '贵梦秋',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051348',
+    ),
+    4 => 
+    array (
+      'group_id' => '45',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051343',
+           'name' => '栋乐安',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051343',
+    ),
+    5 => 
+    array (
+      'group_id' => '47',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051350',
+           'name' => '仆书君',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051350',
+    ),
+    6 => 
+    array (
+      'group_id' => '46',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051346',
+           'name' => '节浩瀚',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '2012051346',
+    ),
+    7 => 
+    array (
+      'group_id' => '44',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    8 => 
+    array (
+      'group_id' => '52',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    9 => 
+    array (
+      'group_id' => '53',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+    10 => 
+    array (
+      'group_id' => '54',
+      'group_member' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        1 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+        2 => 
+        stdClass::__set_state(array(
+           'username' => '',
+           'name' => '',
+        )),
+      ),
+      'group_leader' => '',
+    ),
+  ),
+  'ct' => 1463823523,
+)
+
+-----------------------------------
+[2016-05-21 17:38:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=group.getGroupMember
+POST: array (
+  'group_id' => '50',
+)
+[2016-05-21 17:38:51]Info: E:\HowToMakeLove\j2ee\web\main\model\ModGroup.php 17
+SQL: select * from `group` where `group_id` = '50'(OK:0.004)
+[2016-05-21 17:38:51]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'group_id' => '50',
+      'group_member' => '[{"username":"2012051337","name":"杨哈哈"},{"username":"2012051338","name":"邝沈然"},{"username":"","name":""}]',
+      'group_leader' => '2012051337',
+    ),
+  ),
+  'ct' => 1463823531,
+)
+
+-----------------------------------
+[2016-05-21 17:38:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=commitrecord.getRecord
+POST: array (
+  'group_id' => '50',
+)
+[2016-05-21 17:38:51]Info: E:\HowToMakeLove\j2ee\web\main\model\ModCommitRecord.php 12
+SQL: select * from `commitrecord` where `group_id` = '50' order by `commit_date` DESC(OK:0.003)
+[2016-05-21 17:38:51]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'record_id' => '9',
+      'group_id' => '50',
+      'commit_date' => '2016-05-19',
+      'file_name' => '需求分析1(2012051337).docx',
+      'file_path' => '/uploads/courseDesigh/杨哈哈,邝沈然,/需求分析1(2012051337).docx',
+      'score' => '80',
+      'tea_comment' => '需求分析还不够清晰，再接再厉',
+    ),
+    1 => 
+    array (
+      'record_id' => '10',
+      'group_id' => '50',
+      'commit_date' => '2016-05-19',
+      'file_name' => '需求分析2(2012051337).docx',
+      'file_path' => '/uploads/courseDesigh/杨哈哈,邝沈然,/需求分析2(2012051337).docx',
+      'score' => '0',
+      'tea_comment' => '',
+    ),
+  ),
+  'ct' => 1463823531,
+)
+
+-----------------------------------
+[2016-05-21 17:39:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-21 17:39:43]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.004)
+[2016-05-21 17:39:43]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '8',
+      'post_user' => '张老师',
+      'title' => '同学们有什么想问的都可以在这提问',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-19',
+    ),
+    1 => 
+    array (
+      'post_id' => '9',
+      'post_user' => '杨哈哈',
+      'title' => 'J2EE用到的开发软件有哪些啊？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+           'comment' => '先安装JDK',
+        )),
+      ),
+      'post_date' => '2016-05-19',
+    ),
+  ),
+  'ct' => 1463823583,
+)
+
+-----------------------------------
+[2016-05-21 17:48:32] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-21 17:48:32]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-05-21 17:48:32]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-21 17:48:32]Info: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.003)
+[2016-05-21 17:48:32]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1463824112,
+)
+
+-----------------------------------
+[2016-05-21 17:54:21] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:54:21]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.004)
+[2016-05-21 17:54:21]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463824461,
+)
+
+-----------------------------------
+[2016-05-21 17:54:29] 127.0.0.1 http://j2ee.com/main/?ct=api&method=section.getSectionsTea
+[2016-05-21 17:54:29]Info: E:\HowToMakeLove\j2ee\web\main\model\ModSection.php 12
+SQL: select `section_id` FROM `sections`(OK:0.004)
+[2016-05-21 17:54:29]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'section_id' => '1',
+    ),
+    1 => 
+    array (
+      'section_id' => '2',
+    ),
+    2 => 
+    array (
+      'section_id' => '3',
+    ),
+  ),
+  'ct' => 1463824469,
+)
+
+-----------------------------------
+[2016-05-21 17:55:01] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-05-21 17:55:01]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-05-21 17:55:01]Error: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-05-21 17:55:01]Info: E:\HowToMakeLove\j2ee\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.003)
+[2016-05-21 17:55:01]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1463824501,
+)
+
+-----------------------------------
+[2016-05-21 17:55:24] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-05-21 17:55:24]Info: E:\HowToMakeLove\j2ee\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-05-21 17:55:24]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '8',
+      'post_user' => '张老师',
+      'title' => '同学们有什么想问的都可以在这提问',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-19',
+    ),
+    1 => 
+    array (
+      'post_id' => '9',
+      'post_user' => '杨哈哈',
+      'title' => 'J2EE用到的开发软件有哪些啊？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+           'comment' => '先安装JDK',
+        )),
+      ),
+      'post_date' => '2016-05-19',
+    ),
+  ),
+  'ct' => 1463824524,
+)
+
+-----------------------------------
+[2016-05-21 17:55:43] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-05-21 17:55:43]Info: E:\HowToMakeLove\j2ee\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.004)
+[2016-05-21 17:55:43]Info: E:\HowToMakeLove\j2ee\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1463824543,
+)
