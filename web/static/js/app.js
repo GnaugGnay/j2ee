@@ -184,10 +184,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: "/experiment_5",
             templateUrl: "./static/template/wordPage/experiment_5.html"
         })
-        .state("test", { //测试页面
-            url: "/test",
-            templateUrl: "./static/template/test.html"
-        });
 });
 
 //将request payload => form-data
@@ -200,6 +196,7 @@ app.config(function($httpProvider) {
     }
 });
 
+//主控制器
 app.controller('mainController', function($scope, $state) {
     if (Util.getUserType() == 0) {
         $scope.teacher = true;

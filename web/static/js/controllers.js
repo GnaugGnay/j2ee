@@ -1,5 +1,8 @@
-// 测试
+/**
+控制器集合
+**/
 angular.module('myApp')
+    // 测试
     .controller('testController', function($scope) {
         console.log("这是测试页面");
     })

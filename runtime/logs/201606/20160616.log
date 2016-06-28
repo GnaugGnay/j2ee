@@ -1,0 +1,166 @@
+
+-----------------------------------
+[2016-06-16 14:48:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-06-16 14:48:08]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-06-16 14:48:08]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-06-16 14:48:08]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.078)
+[2016-06-16 14:48:08]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1466059688,
+)
+
+-----------------------------------
+[2016-06-16 14:48:08] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-06-16 14:48:08]Info: E:\HowToMakeLove\J2EE\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.015)
+[2016-06-16 14:48:08]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '8',
+      'post_user' => '张老师',
+      'title' => '同学们有什么想问的都可以在这提问',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-19',
+    ),
+    1 => 
+    array (
+      'post_id' => '9',
+      'post_user' => '杨哈哈',
+      'title' => 'J2EE用到的开发软件有哪些啊？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+           'comment' => '先安装JDK',
+        )),
+      ),
+      'post_date' => '2016-05-19',
+    ),
+  ),
+  'ct' => 1466059688,
+)
+
+-----------------------------------
+[2016-06-16 14:49:57] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-06-16 14:49:57]Info: E:\HowToMakeLove\J2EE\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.003)
+[2016-06-16 14:49:57]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '8',
+      'post_user' => '张老师',
+      'title' => '同学们有什么想问的都可以在这提问',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-19',
+    ),
+    1 => 
+    array (
+      'post_id' => '9',
+      'post_user' => '杨哈哈',
+      'title' => 'J2EE用到的开发软件有哪些啊？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+           'comment' => '先安装JDK',
+        )),
+      ),
+      'post_date' => '2016-05-19',
+    ),
+  ),
+  'ct' => 1466059797,
+)
+
+-----------------------------------
+[2016-06-16 14:51:02] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-06-16 14:51:02]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-06-16 14:51:02]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-06-16 14:51:02]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.011)
+[2016-06-16 14:51:02]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1466059862,
+)

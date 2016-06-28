@@ -1,0 +1,301 @@
+
+-----------------------------------
+[2016-06-28 12:51:14] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-06-28 12:51:14]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.047)
+[2016-06-28 12:51:14]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 36
+SQL: select `question`,`answer` from `questions` WHERE `question_id` in (7,10,14)(OK:0.016)
+[2016-06-28 12:51:14]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '35',
+      'question_ids' => '7,10,14',
+      'quiz_time' => '2016-05-27',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '如果要创建用于上传文件的表单，<html:form>标签的编码类型“method”属性必须设置为（     ）',
+          'answer' => 'B',
+        ),
+        1 => 
+        array (
+          'question' => '以下对于 JSP 的特性，说法正确的是（     ）',
+          'answer' => 'A,B,C,D',
+        ),
+        2 => 
+        array (
+          'question' => '事务具有以下（     ）基本属性。',
+          'answer' => 'A,B,C,D',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1467089474,
+)
+
+-----------------------------------
+[2016-06-28 12:56:06] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-06-28 12:56:06]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.006)
+[2016-06-28 12:56:06]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 36
+SQL: select `question`,`answer` from `questions` WHERE `question_id` in (7,10,14)(OK:0.001)
+[2016-06-28 12:56:06]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '35',
+      'question_ids' => '7,10,14',
+      'quiz_time' => '2016-05-27',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '如果要创建用于上传文件的表单，<html:form>标签的编码类型“method”属性必须设置为（     ）',
+          'answer' => 'B',
+        ),
+        1 => 
+        array (
+          'question' => '以下对于 JSP 的特性，说法正确的是（     ）',
+          'answer' => 'A,B,C,D',
+        ),
+        2 => 
+        array (
+          'question' => '事务具有以下（     ）基本属性。',
+          'answer' => 'A,B,C,D',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1467089766,
+)
+
+-----------------------------------
+[2016-06-28 13:35:51] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-06-28 13:35:51]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-06-28 13:35:51]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-06-28 13:35:51]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.002)
+[2016-06-28 13:35:51]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1467092151,
+)
+
+-----------------------------------
+[2016-06-28 13:36:22] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-06-28 13:36:22]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-06-28 13:36:22]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-06-28 13:36:22]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.003)
+[2016-06-28 13:36:22]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1467092182,
+)
+
+-----------------------------------
+[2016-06-28 13:37:34] 127.0.0.1 http://j2ee.com/main/?ct=api&method=homework.getHomeworks
+[2016-06-28 13:37:34]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::insert() should be compatible with Model::insert($data, $returnId = false, $table = '')
+[2016-06-28 13:37:34]Error: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 3
+Declaration of ModHomework::delete() should be compatible with Model::delete($where, $limit = 0, $table = '')
+[2016-06-28 13:37:34]Info: E:\HowToMakeLove\J2EE\web\main\model\ModHomework.php 12
+SQL: select * from `homework` ORDER BY `deadline` DESC(OK:0.01)
+[2016-06-28 13:37:34]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'hw_no' => '33',
+      'hw_content' => '设计出初步的系统模型并提交。',
+      'file_name' => '系统设计.docx',
+      'file_path' => '/uploads/homework/系统设计.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-28',
+    ),
+    1 => 
+    array (
+      'hw_no' => '32',
+      'hw_content' => '此时应有详细的系统需求分析，能够根据此设计系统模型。',
+      'file_name' => '需求分析2.docx',
+      'file_path' => '/uploads/homework/需求分析2.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-24',
+    ),
+    2 => 
+    array (
+      'hw_no' => '31',
+      'hw_content' => '进行初步的需求分析，统计各类的需求。。。。',
+      'file_name' => '需求分析1.docx',
+      'file_path' => '/uploads/homework/需求分析1.docx',
+      'hw_grade' => '25',
+      'deadline' => '2016-05-22',
+    ),
+  ),
+  'ct' => 1467092254,
+)
+
+-----------------------------------
+[2016-06-28 13:37:37] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-06-28 13:37:37]Info: E:\HowToMakeLove\J2EE\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.012)
+[2016-06-28 13:37:37]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '8',
+      'post_user' => '张老师',
+      'title' => '同学们有什么想问的都可以在这提问',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-19',
+    ),
+    1 => 
+    array (
+      'post_id' => '9',
+      'post_user' => '杨哈哈',
+      'title' => 'J2EE用到的开发软件有哪些啊？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+           'comment' => '先安装JDK',
+        )),
+      ),
+      'post_date' => '2016-05-19',
+    ),
+  ),
+  'ct' => 1467092257,
+)
+
+-----------------------------------
+[2016-06-28 13:37:38] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getQuiz
+[2016-06-28 13:37:38]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 14
+SQL: select * from `onlinequiz`(OK:0.003)
+[2016-06-28 13:37:38]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+  ),
+  'ct' => 1467092258,
+)
+
+-----------------------------------
+[2016-06-28 13:37:40] 127.0.0.1 http://j2ee.com/main/?ct=api&method=forum.getPosts
+[2016-06-28 13:37:40]Info: E:\HowToMakeLove\J2EE\web\main\model\ModForum.php 12
+SQL: select * from `forum` ORDER BY `post_date` DESC(OK:0.004)
+[2016-06-28 13:37:40]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'post_id' => '8',
+      'post_user' => '张老师',
+      'title' => '同学们有什么想问的都可以在这提问',
+      'comment' => 
+      array (
+      ),
+      'post_date' => '2016-05-19',
+    ),
+    1 => 
+    array (
+      'post_id' => '9',
+      'post_user' => '杨哈哈',
+      'title' => 'J2EE用到的开发软件有哪些啊？',
+      'comment' => 
+      array (
+        0 => 
+        stdClass::__set_state(array(
+           'username' => '2012051339',
+           'name' => '官浩丽',
+           'comment' => '先安装JDK',
+        )),
+      ),
+      'post_date' => '2016-05-19',
+    ),
+  ),
+  'ct' => 1467092260,
+)
