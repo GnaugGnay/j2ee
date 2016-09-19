@@ -30,8 +30,10 @@ var Util = {
     getQueryString: function(token) {
         var reg = new RegExp('(^|&)' + token + '=([^&]*)(&|$)', 'i');
         var r = window.location.search.substr(1).match(reg);
+        //angularJS中的search是空，需要通过下面的方法来获取
+        // var r = window.location.href.split('?')[1].match(reg);
         if (r != null) {
-            return unescape(r[2]);
+            return decodeURIComponent(r[2]);
         }
         return null;
     }

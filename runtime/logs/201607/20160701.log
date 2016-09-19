@@ -1,0 +1,448 @@
+
+-----------------------------------
+[2016-07-01 19:50:41] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-07-01 19:50:41]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.09)
+[2016-07-01 19:50:41]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 36
+SQL: select `question`,`answer` from `questions` WHERE `question_id` in (7,10,14)(OK:0.122)
+[2016-07-01 19:50:41]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '35',
+      'question_ids' => '7,10,14',
+      'quiz_time' => '2016-05-27',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '如果要创建用于上传文件的表单，<html:form>标签的编码类型“method”属性必须设置为（     ）',
+          'answer' => 'B',
+        ),
+        1 => 
+        array (
+          'question' => '以下对于 JSP 的特性，说法正确的是（     ）',
+          'answer' => 'A,B,C,D',
+        ),
+        2 => 
+        array (
+          'question' => '事务具有以下（     ）基本属性。',
+          'answer' => 'A,B,C,D',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1467373841,
+)
+
+-----------------------------------
+[2016-07-01 19:52:25] 127.0.0.1 http://j2ee.com/main/?ct=api&method=userscore.getStuList
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUser.php 30
+SQL: select `username`, `fullname` FROM `user` WHERE `usertype` = 1 order by `username`(OK:0.05)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051337' order by `quiz_time`(OK:0.018)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051338' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051339' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051340' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051341' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051342' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051343' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051344' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051345' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051346' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051347' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051348' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051349' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051350' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051351' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051352' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051353' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051354' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051355' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051356' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051357' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051358' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051359' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051360' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051361' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051362' order by `quiz_time`(OK:0.001)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051363' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051364' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\model\ModUserscore.php 28
+SQL: select `totalscore` from `userscore` where `username` = '2012051365' order by `quiz_time`(OK:0)
+[2016-07-01 19:52:25]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    'quiz_times' => 
+    array (
+      0 => '2016-05-27',
+    ),
+    'listData' => 
+    array (
+      0 => 
+      array (
+        'username' => '2012051337',
+        'fullname' => '杨哈哈',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      1 => 
+      array (
+        'username' => '2012051338',
+        'fullname' => '邝沈然',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      2 => 
+      array (
+        'username' => '2012051339',
+        'fullname' => '官浩丽',
+        'totalscore' => 
+        array (
+          0 => '3',
+        ),
+        'finalscore' => 100,
+      ),
+      3 => 
+      array (
+        'username' => '2012051340',
+        'fullname' => '邹冰冰',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      4 => 
+      array (
+        'username' => '2012051341',
+        'fullname' => '夕智美',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      5 => 
+      array (
+        'username' => '2012051342',
+        'fullname' => '甲高朗',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      6 => 
+      array (
+        'username' => '2012051343',
+        'fullname' => '栋乐安',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      7 => 
+      array (
+        'username' => '2012051344',
+        'fullname' => '奕丹丹',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      8 => 
+      array (
+        'username' => '2012051345',
+        'fullname' => '方雅容',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      9 => 
+      array (
+        'username' => '2012051346',
+        'fullname' => '节浩瀚',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      10 => 
+      array (
+        'username' => '2012051347',
+        'fullname' => '崇新立',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      11 => 
+      array (
+        'username' => '2012051348',
+        'fullname' => '贵梦秋',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      12 => 
+      array (
+        'username' => '2012051349',
+        'fullname' => '吉丽华',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      13 => 
+      array (
+        'username' => '2012051350',
+        'fullname' => '仆书君',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      14 => 
+      array (
+        'username' => '2012051351',
+        'fullname' => '王欣艳',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      15 => 
+      array (
+        'username' => '2012051352',
+        'fullname' => '折思云',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      16 => 
+      array (
+        'username' => '2012051353',
+        'fullname' => '韶彤彤',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      17 => 
+      array (
+        'username' => '2012051354',
+        'fullname' => '温婉静',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      18 => 
+      array (
+        'username' => '2012051355',
+        'fullname' => '爱嘉平',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      19 => 
+      array (
+        'username' => '2012051356',
+        'fullname' => '虢和暄',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      20 => 
+      array (
+        'username' => '2012051357',
+        'fullname' => '石凝心',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      21 => 
+      array (
+        'username' => '2012051358',
+        'fullname' => '强以彤',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      22 => 
+      array (
+        'username' => '2012051359',
+        'fullname' => '赏听枫',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      23 => 
+      array (
+        'username' => '2012051360',
+        'fullname' => '姓彬炳',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      24 => 
+      array (
+        'username' => '2012051361',
+        'fullname' => '旷寻琴',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      25 => 
+      array (
+        'username' => '2012051362',
+        'fullname' => '茹天骄',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      26 => 
+      array (
+        'username' => '2012051363',
+        'fullname' => '迮盼香',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      27 => 
+      array (
+        'username' => '2012051364',
+        'fullname' => '塔华芝',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+      28 => 
+      array (
+        'username' => '2012051365',
+        'fullname' => '声雅容',
+        'totalscore' => 
+        array (
+          0 => '0',
+        ),
+        'finalscore' => 0,
+      ),
+    ),
+  ),
+  'ct' => 1467373945,
+)
+
+-----------------------------------
+[2016-07-01 19:52:28] 127.0.0.1 http://j2ee.com/main/?ct=api&method=quiz.getPastQuiz
+[2016-07-01 19:52:28]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 42
+SQL: select * FROM `pastquiz` ORDER BY `quiz_time` DESC(OK:0.002)
+[2016-07-01 19:52:28]Info: E:\HowToMakeLove\J2EE\web\main\model\ModQuiz.php 36
+SQL: select `question`,`answer` from `questions` WHERE `question_id` in (7,10,14)(OK:0.001)
+[2016-07-01 19:52:28]Info: E:\HowToMakeLove\J2EE\web\main\controller\CtlApi.php 24
+array (
+  'c' => '100',
+  'data' => 
+  array (
+    0 => 
+    array (
+      'quiz_id' => '35',
+      'question_ids' => '7,10,14',
+      'quiz_time' => '2016-05-27',
+      'questions' => 
+      array (
+        0 => 
+        array (
+          'question' => '如果要创建用于上传文件的表单，<html:form>标签的编码类型“method”属性必须设置为（     ）',
+          'answer' => 'B',
+        ),
+        1 => 
+        array (
+          'question' => '以下对于 JSP 的特性，说法正确的是（     ）',
+          'answer' => 'A,B,C,D',
+        ),
+        2 => 
+        array (
+          'question' => '事务具有以下（     ）基本属性。',
+          'answer' => 'A,B,C,D',
+        ),
+      ),
+    ),
+  ),
+  'ct' => 1467373948,
+)
